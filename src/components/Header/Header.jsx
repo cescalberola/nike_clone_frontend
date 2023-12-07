@@ -1,9 +1,13 @@
 import React from 'react'
 import './Header.css'
+import Navbar from './Navbar/Navbar'
+import BrandHeader from './BrandHeader/BrandHeader'
+
 const Header = () => {
     return (
         <>
-            <div>Header</div>
+            <BrandHeader />
+            <Navbar />
         </>
     )
 }
