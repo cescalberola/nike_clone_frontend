@@ -88,312 +88,320 @@ const Navbar = () => {
                                     </li>
                                     <li className='pre-desktop-menu-item'>
                                         <Link to='#' className='pre-desktop-menu-link'>Men</Link>
-                                        {/* <div className='pre-desktop-menu-dropdown'>
-                                        <div className='pre-column-container'>
-                                            <h3>Limited Time</h3>
-                                            <a href="#">Shop All: Extra 25% Off</a>
-                                            <a href="#">Fleece Favorites: Ends 12.7</a>
-                                            <a href="#">Best Sellers</a>
-                                            <h3>Gifts</h3>
-                                            <a href="#">The Most Iconic Gifts</a>
-                                            <a href="#">Gifts Cards</a>
-                                            <a href="#">Stocking Stuffers</a>
-                                            </div>
+                                        <div className='pre-desktop-menu-dropdown'>
                                             <div className='pre-column-container'>
-                                            <h3>New & Featured</h3>
-                                            <a href="#">New Arrivals</a>
-                                            <a href="#">Best Sellers</a>
-                                            <a href="#">Only at Nike</a>
-                                            <a href="#">New & Upcomming Drops</a>
-                                            <a href="#">SNKRS Lunch Calendar</a>
-                                            <a href="#">Dunk the Halls</a>
-                                            <a href="#">NEW: Nike Refurbished</a>
-                                            </div>
-                                            <div className='pre-column-container'>
-                                            <h3>Shop Icons</h3>
-                                            <a href="#">Air Jordan 1</a>
-                                            <a href="#">Air Jordan</a>
-                                            <a href="#">Dunk</a>
-                                            <a href="#">Air Max</a>
-                                            <a href="#">Blazer</a>
-                                            <a href="#">Pegasus</a>
-                                            <a href="#">Metcom</a>
-                                            <a href="#">LeBron</a>
-                                            </div>
-                                            <div className='pre-column-container'>
-                                            <>
-                                                <h3>New For Men</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
-                                                </>
-                                                <>
-                                                <h3>New For Women</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
-                                                </>
-                                                <>
-                                                <h3>New For Kids</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
-                                                </>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Limited Time</h3>
+                                                    <a href="#">Shop All: Extra 25% Off</a>
+                                                    <a href="#">Fleece Favorites: Ends 12.7</a>
+                                                    <a href="#">Best Sellers</a>
+                                                    <h3>Gifts</h3>
+                                                    <a href="#">The Most Iconic Gifts</a>
+                                                    <a href="#">Gifts Cards</a>
+                                                    <a href="#">Stocking Stuffers</a>
                                                 </div>
-                                                <div className='pre-column-container'>
-                                                <h3>Jordan</h3>
-                                                <a href="#">Shop All</a>
-                                                <a href="#">Latest in Jordan</a>
-                                                <a href="#">Jordan 11 and More</a>
-                                                <a href="#">Complete the Fit with Jordan</a>
-                                                <a href="#">Men</a>
-                                            <a href="#">Women</a>
-                                            <a href="#">Kids</a>
-                                            <a href="#">Basketball</a>
+                                                <div className='pre-menu-column'>
+                                                    <h3>New & Featured</h3>
+                                                    <a href="#">New Arrivals</a>
+                                                    <a href="#">Best Sellers</a>
+                                                    <a href="#">Only at Nike</a>
+                                                    <a href="#">New & Upcomming Drops</a>
+                                                    <a href="#">SNKRS Lunch Calendar</a>
+                                                    <a href="#">Dunk the Halls</a>
+                                                    <a href="#">NEW: Nike Refurbished</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Shop Icons</h3>
+                                                    <a href="#">Air Jordan 1</a>
+                                                    <a href="#">Air Jordan</a>
+                                                    <a href="#">Dunk</a>
+                                                    <a href="#">Air Max</a>
+                                                    <a href="#">Blazer</a>
+                                                    <a href="#">Pegasus</a>
+                                                    <a href="#">Metcom</a>
+                                                    <a href="#">LeBron</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <>
+                                                        <h3>New For Men</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                    <>
+                                                        <h3>New For Women</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                    <>
+                                                        <h3>New For Kids</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Jordan</h3>
+                                                    <a href="#">Shop All</a>
+                                                    <a href="#">Latest in Jordan</a>
+                                                    <a href="#">Jordan 11 and More</a>
+                                                    <a href="#">Complete the Fit with Jordan</a>
+                                                    <a href="#">Men</a>
+                                                    <a href="#">Women</a>
+                                                    <a href="#">Kids</a>
+                                                    <a href="#">Basketball</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div> */}
                                     </li>
                                     <li className='pre-desktop-menu-item'>
                                         <Link to='#' className='pre-desktop-menu-link'>Women</Link>
-                                        {/* <div className='pre-desktop-menu-dropdown'>
-                                        <>
-                                        <h3>Limited Time</h3>
-                                        <a href="#">Shop All: Extra 25% Off</a>
-                                        <a href="#">Fleece Favorites: Ends 12.7</a>
-                                        <a href="#">Best Sellers</a>
-                                        <h3>Gifts</h3>
-                                        <a href="#">The Most Iconic Gifts</a>
-                                        <a href="#">Gifts Cards</a>
-                                        <a href="#">Stocking Stuffers</a>
-                                        </>
-                                        <>
-                                        <h3>New & Featured</h3>
-                                        <a href="#">New Arrivals</a>
-                                        <a href="#">Best Sellers</a>
-                                        <a href="#">Only at Nike</a>
-                                        <a href="#">New & Upcomming Drops</a>
-                                        <a href="#">SNKRS Lunch Calendar</a>
-                                        <a href="#">Dunk the Halls</a>
-                                        <a href="#">NEW: Nike Refurbished</a>
-                                        </>
-                                        <>
-                                        <h3>Shop Icons</h3>
-                                        <a href="#">Air Jordan 1</a>
-                                        <a href="#">Air Jordan</a>
-                                        <a href="#">Dunk</a>
-                                        <a href="#">Air Max</a>
-                                        <a href="#">Blazer</a>
-                                        <a href="#">Pegasus</a>
-                                        <a href="#">Metcom</a>
-                                        <a href="#">LeBron</a>
-                                        </>
-                                        <>
-                                            <>
-                                            <h3>New For Men</h3>
-                                            <a href="#">Shoes</a>
-                                            <a href="#">Clothing</a>
-                                            </>
-                                            <>
-                                            <h3>New For Women</h3>
-                                            <a href="#">Shoes</a>
-                                            <a href="#">Clothing</a>
-                                            </>
-                                            <>
-                                            <h3>New For Kids</h3>
-                                            <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
-                                            </>
-                                        </>
-                                        <>
-                                            <h3>Jordan</h3>
-                                            <a href="#">Shop All</a>
-                                            <a href="#">Latest in Jordan</a>
-                                            <a href="#">Jordan 11 and More</a>
-                                            <a href="#">Complete the Fit with Jordan</a>
-                                            <a href="#">Men</a>
-                                            <a href="#">Women</a>
-                                            <a href="#">Kids</a>
-                                            <a href="#">Basketball</a>
-                                            </>
-                                        </div> */}
+                                        <div className='pre-desktop-menu-dropdown'>
+                                            <div className='pre-column-container'>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Limited Time</h3>
+                                                    <a href="#">Shop All: Extra 25% Off</a>
+                                                    <a href="#">Fleece Favorites: Ends 12.7</a>
+                                                    <a href="#">Best Sellers</a>
+                                                    <h3>Gifts</h3>
+                                                    <a href="#">The Most Iconic Gifts</a>
+                                                    <a href="#">Gifts Cards</a>
+                                                    <a href="#">Stocking Stuffers</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>New & Featured</h3>
+                                                    <a href="#">New Arrivals</a>
+                                                    <a href="#">Best Sellers</a>
+                                                    <a href="#">Only at Nike</a>
+                                                    <a href="#">New & Upcomming Drops</a>
+                                                    <a href="#">SNKRS Lunch Calendar</a>
+                                                    <a href="#">Dunk the Halls</a>
+                                                    <a href="#">NEW: Nike Refurbished</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Shop Icons</h3>
+                                                    <a href="#">Air Jordan 1</a>
+                                                    <a href="#">Air Jordan</a>
+                                                    <a href="#">Dunk</a>
+                                                    <a href="#">Air Max</a>
+                                                    <a href="#">Blazer</a>
+                                                    <a href="#">Pegasus</a>
+                                                    <a href="#">Metcom</a>
+                                                    <a href="#">LeBron</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <>
+                                                        <h3>New For Men</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                    <>
+                                                        <h3>New For Women</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                    <>
+                                                        <h3>New For Kids</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Jordan</h3>
+                                                    <a href="#">Shop All</a>
+                                                    <a href="#">Latest in Jordan</a>
+                                                    <a href="#">Jordan 11 and More</a>
+                                                    <a href="#">Complete the Fit with Jordan</a>
+                                                    <a href="#">Men</a>
+                                                    <a href="#">Women</a>
+                                                    <a href="#">Kids</a>
+                                                    <a href="#">Basketball</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li className='pre-desktop-menu-item'>
                                         <Link to='#' className='pre-desktop-menu-link'>Kids</Link>
-                                        {/* <div className='pre-desktop-menu-dropdown'>
-                                        <>
-                                        <h3>Limited Time</h3>
-                                        <a href="#">Shop All: Extra 25% Off</a>
-                                        <a href="#">Fleece Favorites: Ends 12.7</a>
-                                        <a href="#">Best Sellers</a>
-                                        <h3>Gifts</h3>
-                                        <a href="#">The Most Iconic Gifts</a>
-                                        <a href="#">Gifts Cards</a>
-                                        <a href="#">Stocking Stuffers</a>
-                                        </>
-                                        <>
-                                            <h3>New & Featured</h3>
-                                            <a href="#">New Arrivals</a>
-                                            <a href="#">Best Sellers</a>
-                                            <a href="#">Only at Nike</a>
-                                            <a href="#">New & Upcomming Drops</a>
-                                            <a href="#">SNKRS Lunch Calendar</a>
-                                            <a href="#">Dunk the Halls</a>
-                                            <a href="#">NEW: Nike Refurbished</a>
-                                            </>
-                                            <>
-                                            <h3>Shop Icons</h3>
-                                            <a href="#">Air Jordan 1</a>
-                                            <a href="#">Air Jordan</a>
-                                            <a href="#">Dunk</a>
-                                            <a href="#">Air Max</a>
-                                            <a href="#">Blazer</a>
-                                            <a href="#">Pegasus</a>
-                                            <a href="#">Metcom</a>
-                                            <a href="#">LeBron</a>
-                                            </>
-                                            <>
-                                            <>
-                                                <h3>New For Men</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
-                                                </>
-                                                <>
-                                                <h3>New For Women</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
-                                                </>
-                                                <>
-                                                <h3>New For Kids</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
-                                                </>
-                                                </>
-                                                <>
-                                                <h3>Jordan</h3>
-                                                <a href="#">Shop All</a>
-                                                <a href="#">Latest in Jordan</a>
-                                                <a href="#">Jordan 11 and More</a>
-                                                <a href="#">Complete the Fit with Jordan</a>
-                                                <a href="#">Men</a>
-                                                <a href="#">Women</a>
-                                                <a href="#">Kids</a>
-                                                <a href="#">Basketball</a>
-                                                </>
-                                            </div> */}
+                                        <div className='pre-desktop-menu-dropdown'>
+                                            <div className='pre-column-container'>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Limited Time</h3>
+                                                    <a href="#">Shop All: Extra 25% Off</a>
+                                                    <a href="#">Fleece Favorites: Ends 12.7</a>
+                                                    <a href="#">Best Sellers</a>
+                                                    <h3>Gifts</h3>
+                                                    <a href="#">The Most Iconic Gifts</a>
+                                                    <a href="#">Gifts Cards</a>
+                                                    <a href="#">Stocking Stuffers</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>New & Featured</h3>
+                                                    <a href="#">New Arrivals</a>
+                                                    <a href="#">Best Sellers</a>
+                                                    <a href="#">Only at Nike</a>
+                                                    <a href="#">New & Upcomming Drops</a>
+                                                    <a href="#">SNKRS Lunch Calendar</a>
+                                                    <a href="#">Dunk the Halls</a>
+                                                    <a href="#">NEW: Nike Refurbished</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Shop Icons</h3>
+                                                    <a href="#">Air Jordan 1</a>
+                                                    <a href="#">Air Jordan</a>
+                                                    <a href="#">Dunk</a>
+                                                    <a href="#">Air Max</a>
+                                                    <a href="#">Blazer</a>
+                                                    <a href="#">Pegasus</a>
+                                                    <a href="#">Metcom</a>
+                                                    <a href="#">LeBron</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <>
+                                                        <h3>New For Men</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                    <>
+                                                        <h3>New For Women</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                    <>
+                                                        <h3>New For Kids</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Jordan</h3>
+                                                    <a href="#">Shop All</a>
+                                                    <a href="#">Latest in Jordan</a>
+                                                    <a href="#">Jordan 11 and More</a>
+                                                    <a href="#">Complete the Fit with Jordan</a>
+                                                    <a href="#">Men</a>
+                                                    <a href="#">Women</a>
+                                                    <a href="#">Kids</a>
+                                                    <a href="#">Basketball</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li className='pre-desktop-menu-item'>
                                         <Link to='#' className='pre-desktop-menu-link'>Accesories</Link>
-                                        {/* <div className='pre-desktop-menu-dropdown'>
-                                        <>
-                                        <h3>Limited Time</h3>
-                                        <a href="#">Shop All: Extra 25% Off</a>
-                                        <a href="#">Fleece Favorites: Ends 12.7</a>
-                                        <a href="#">Best Sellers</a>
-                                        <h3>Gifts</h3>
-                                        <a href="#">The Most Iconic Gifts</a>
-                                        <a href="#">Gifts Cards</a>
-                                        <a href="#">Stocking Stuffers</a>
-                                        </>
-                                        <>
-                                        <h3>New & Featured</h3>
-                                            <a href="#">New Arrivals</a>
-                                            <a href="#">Best Sellers</a>
-                                            <a href="#">Only at Nike</a>
-                                            <a href="#">New & Upcomming Drops</a>
-                                            <a href="#">SNKRS Lunch Calendar</a>
-                                            <a href="#">Dunk the Halls</a>
-                                            <a href="#">NEW: Nike Refurbished</a>
-                                            </>
-                                            <>
-                                            <h3>Shop Icons</h3>
-                                            <a href="#">Air Jordan 1</a>
-                                            <a href="#">Air Jordan</a>
-                                            <a href="#">Dunk</a>
-                                            <a href="#">Air Max</a>
-                                            <a href="#">Blazer</a>
-                                            <a href="#">Pegasus</a>
-                                            <a href="#">Metcom</a>
-                                            <a href="#">LeBron</a>
-                                            </>
-                                            <>
-                                            <>
-                                            <h3>New For Men</h3>
-                                            <a href="#">Shoes</a>
-                                            <a href="#">Clothing</a>
-                                            </>
-                                            <>
-                                                <h3>New For Women</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
-                                                </>
-                                                <>
-                                                <h3>New For Kids</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
-                                                </>
-                                                </>
-                                                <>
-                                            <h3>Jordan</h3>
-                                            <a href="#">Shop All</a>
-                                            <a href="#">Latest in Jordan</a>
-                                            <a href="#">Jordan 11 and More</a>
-                                            <a href="#">Complete the Fit with Jordan</a>
-                                            <a href="#">Men</a>
-                                            <a href="#">Women</a>
-                                            <a href="#">Kids</a>
-                                            <a href="#">Basketball</a>
-                                            </>
-                                        </div> */}
+                                        <div className='pre-desktop-menu-dropdown'>
+                                            <div className='pre-column-container'>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Limited Time</h3>
+                                                    <a href="#">Shop All: Extra 25% Off</a>
+                                                    <a href="#">Fleece Favorites: Ends 12.7</a>
+                                                    <a href="#">Best Sellers</a>
+                                                    <h3>Gifts</h3>
+                                                    <a href="#">The Most Iconic Gifts</a>
+                                                    <a href="#">Gifts Cards</a>
+                                                    <a href="#">Stocking Stuffers</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>New & Featured</h3>
+                                                    <a href="#">New Arrivals</a>
+                                                    <a href="#">Best Sellers</a>
+                                                    <a href="#">Only at Nike</a>
+                                                    <a href="#">New & Upcomming Drops</a>
+                                                    <a href="#">SNKRS Lunch Calendar</a>
+                                                    <a href="#">Dunk the Halls</a>
+                                                    <a href="#">NEW: Nike Refurbished</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Shop Icons</h3>
+                                                    <a href="#">Air Jordan 1</a>
+                                                    <a href="#">Air Jordan</a>
+                                                    <a href="#">Dunk</a>
+                                                    <a href="#">Air Max</a>
+                                                    <a href="#">Blazer</a>
+                                                    <a href="#">Pegasus</a>
+                                                    <a href="#">Metcom</a>
+                                                    <a href="#">LeBron</a>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <>
+                                                        <h3>New For Men</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                    <>
+                                                        <h3>New For Women</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                    <>
+                                                        <h3>New For Kids</h3>
+                                                        <a href="#">Shoes</a>
+                                                        <a href="#">Clothing</a>
+                                                    </>
+                                                </div>
+                                                <div className='pre-menu-column'>
+                                                    <h3>Jordan</h3>
+                                                    <a href="#">Shop All</a>
+                                                    <a href="#">Latest in Jordan</a>
+                                                    <a href="#">Jordan 11 and More</a>
+                                                    <a href="#">Complete the Fit with Jordan</a>
+                                                    <a href="#">Men</a>
+                                                    <a href="#">Women</a>
+                                                    <a href="#">Kids</a>
+                                                    <a href="#">Basketball</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li className='pre-desktop-menu-item'>
                                         <Link to='#' className='pre-desktop-menu-link'>Sales</Link>
-                                        {/* <div className='pre-desktop-menu-dropdown'>
-                                        <>
-                                        <h3>Limited Time</h3>
-                                        <a href="#">Shop All: Extra 25% Off</a>
-                                        <a href="#">Fleece Favorites: Ends 12.7</a>
-                                        <a href="#">Best Sellers</a>
-                                        <h3>Gifts</h3>
-                                        <a href="#">The Most Iconic Gifts</a>
-                                        <a href="#">Gifts Cards</a>
-                                        <a href="#">Stocking Stuffers</a>
-                                        </>
-                                        <>
-                                        <h3>New & Featured</h3>
-                                        <a href="#">New Arrivals</a>
-                                        <a href="#">Best Sellers</a>
-                                        <a href="#">Only at Nike</a>
-                                        <a href="#">New & Upcomming Drops</a>
-                                        <a href="#">SNKRS Lunch Calendar</a>
-                                        <a href="#">Dunk the Halls</a>
-                                        <a href="#">NEW: Nike Refurbished</a>
-                                        </>
-                                        <>
-                                            <h3>Shop Icons</h3>
-                                            <a href="#">Air Jordan 1</a>
-                                            <a href="#">Air Jordan</a>
-                                            <a href="#">Dunk</a>
-                                            <a href="#">Air Max</a>
-                                            <a href="#">Blazer</a>
-                                            <a href="#">Pegasus</a>
-                                            <a href="#">Metcom</a>
-                                            <a href="#">LeBron</a>
-                                        </>
-                                        <>
-                                        <>
-                                                <h3>New For Men</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
+                                        <div className='pre-desktop-menu-dropdown'>
+                                            <>
+                                                <h3>Limited Time</h3>
+                                                <a href="#">Shop All: Extra 25% Off</a>
+                                                <a href="#">Fleece Favorites: Ends 12.7</a>
+                                                <a href="#">Best Sellers</a>
+                                                <h3>Gifts</h3>
+                                                <a href="#">The Most Iconic Gifts</a>
+                                                <a href="#">Gifts Cards</a>
+                                                <a href="#">Stocking Stuffers</a>
+                                            </>
+                                            <>
+                                                <h3>New & Featured</h3>
+                                                <a href="#">New Arrivals</a>
+                                                <a href="#">Best Sellers</a>
+                                                <a href="#">Only at Nike</a>
+                                                <a href="#">New & Upcomming Drops</a>
+                                                <a href="#">SNKRS Lunch Calendar</a>
+                                                <a href="#">Dunk the Halls</a>
+                                                <a href="#">NEW: Nike Refurbished</a>
+                                            </>
+                                            <>
+                                                <h3>Shop Icons</h3>
+                                                <a href="#">Air Jordan 1</a>
+                                                <a href="#">Air Jordan</a>
+                                                <a href="#">Dunk</a>
+                                                <a href="#">Air Max</a>
+                                                <a href="#">Blazer</a>
+                                                <a href="#">Pegasus</a>
+                                                <a href="#">Metcom</a>
+                                                <a href="#">LeBron</a>
+                                            </>
+                                            <>
+                                                <>
+                                                    <h3>New For Men</h3>
+                                                    <a href="#">Shoes</a>
+                                                    <a href="#">Clothing</a>
                                                 </>
                                                 <>
-                                                <h3>New For Women</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
+                                                    <h3>New For Women</h3>
+                                                    <a href="#">Shoes</a>
+                                                    <a href="#">Clothing</a>
                                                 </>
                                                 <>
-                                                <h3>New For Kids</h3>
-                                                <a href="#">Shoes</a>
-                                                <a href="#">Clothing</a>
+                                                    <h3>New For Kids</h3>
+                                                    <a href="#">Shoes</a>
+                                                    <a href="#">Clothing</a>
                                                 </>
-                                                </>
-                                                <>
+                                            </>
+                                            <>
                                                 <h3>Jordan</h3>
                                                 <a href="#">Shop All</a>
                                                 <a href="#">Latest in Jordan</a>
@@ -403,8 +411,8 @@ const Navbar = () => {
                                                 <a href="#">Women</a>
                                                 <a href="#">Kids</a>
                                                 <a href="#">Basketball</a>
-                                                </>
-                                            </div> */}
+                                            </>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

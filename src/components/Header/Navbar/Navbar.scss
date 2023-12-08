@@ -50,6 +50,7 @@
             -webkit-box-flex: 1;
             -ms-flex-positive: 1;
             flex-grow: 1;
+            position: unset;
 
             .pre-l-nav {
                 .pre-l-desktop-menu {
@@ -63,6 +64,7 @@
                         padding-top: 4px;
 
                         .pre-desktop-menu {
+                            width: calc(100% - 690px);
                             margin: 0 auto;
                             padding: 2px;
                             height: 60px;
@@ -79,7 +81,7 @@
                                     padding: 12px;
                                     padding-bottom: 18px;
                                     transition: border-color .1s, color .1s;
-
+                                    display: block;
                                 }
 
                                 .pre-desktop-menu-dropdown {
@@ -89,7 +91,7 @@
                                     position: absolute;
                                     overflow: hidden;
                                     max-height: 800px;
-                                    top: 60px;
+                                    // top: 60px;
                                     left: 0;
                                     right: 0;
                                     transition: transform .1s ease, opacity 0ms linear .1s, visibility 0ms linear .1s;
@@ -98,17 +100,15 @@
 
                                     background: $podium-cds-color-white;
 
-                                    padding-top: 16px;
+                                    // padding-top: 16px;
 
-                                    padding: 40px;
+                                    // padding: 40px;
 
                                     width: 100%;
 
                                     vertical-align: baseline;
 
                                     .pre-column-container {
-                                        // display: flex;
-                                        // flex-direction: column;
                                         max-width: 1344px;
                                         margin-left: auto;
                                         margin-right: auto;
@@ -125,13 +125,12 @@
 
                                             text-align: left;
 
-                                            padding-top: 16px;
+                                            // padding-top: 16px;
 
                                             width: 16.666666666666664%;
 
                                             position: relative;
                                             min-height: 1px;
-                                            // display: none;
                                             font-size: 16px;
                                             line-height: 1.75;
                                             padding-left: 6px;
@@ -142,11 +141,9 @@
 
                             }
 
-                            .pre-desktop-menu-item:hover {
-                                .pre-desktop-menu-link {
-                                    border-bottom: 1px solid $podium-cds-color-black;
 
-                                }
+                            .pre-desktop-menu-item:hover {
+                                border-bottom: 2px solid $podium-cds-color-black;
 
                                 .pre-desktop-menu-dropdown {
                                     transform: scaleY(1);
@@ -156,7 +153,6 @@
                                     transition: transform .25s ease, opacity 0, visibility 0ms;
 
                                     .pre-menu-column {
-                                        // display: inline-flex;
                                         opacity: 1;
                                         transform: translateY(0);
                                         transition: transform .3s ease, opacity .2s linear;
@@ -165,7 +161,7 @@
                                         vertical-align: top;
 
                                         text-align: left;
-                                        padding-top: 16px;
+                                        // padding-top: 16px;
 
 
                                     }

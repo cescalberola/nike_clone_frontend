@@ -27,6 +27,7 @@
     font: inherit;
     vertical-align: baseline;
   }
+
 }
 
 #root {
@@ -39,28 +40,46 @@
   font-size: inherit;
   line-height: inherit;
   font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
-  // color: $podium-cds-color-black;
+  color: $podium-cds-color-black;
   background-color: $podium-cds-color-white;
 }
 
 a {
   text-decoration: none;
   color: $podium-cds-color-black;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
 }
 
 ol,
 ul {
   list-style: none;
   list-style-type: none;
+
+  li {
+    list-style: none;
+  }
 }
 
-li {
-  list-style: none;
+svg {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 .headline-5 {
   font: $podium-cds-typography-body1-strong
 }
+
 
 /* 
 .logo {
