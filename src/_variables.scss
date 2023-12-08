@@ -1,0 +1,95 @@
+$font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+$clr-1: rgba(255, 255, 255, 0.87);
+$clr-2: #646cff;
+$clr-3: #b5b9ff;
+$clr-4: #1a1a1a;
+$podium-cds-breakpoint-xs: 320px;
+$podium-cds-breakpoint-s: 600px;
+$podium-cds-breakpoint-m: 960px;
+$podium-cds-breakpoint-l: 1440px;
+$podium-cds-breakpoint-xl: 1920px;
+$podium-cds-color-black: #111111;
+$podium-cds-color-white: #FFFFFF;
+$podium-cds-color-modal-bg: #FFFFFF;
+$podium-cds-color-modal-bg-inverse: #1F1F21;
+$podium-cds-color-bg-active: #F5F5F5;
+$podium-cds-color-bg-critical: #D30005;
+$podium-cds-color-bg-disabled: #E5E5E5;
+$podium-cds-color-bg-hover: #E5E5E5;
+$podium-cds-color-bg-primary: #FFFFFF;
+$podium-cds-color-bg-secondary: #F5F5F5;
+$podium-cds-color-bg-success: #007D48;
+$podium-cds-color-bg-warning: #FEDF35;
+$podium-cds-button-padding-top-s: 6px;
+$podium-cds-button-padding-top-m: 12px;
+$podium-cds-button-padding-top-l: 18px;
+$podium-cds-button-padding-bottom-s: 6px;
+$podium-cds-button-padding-bottom-m: 12px;
+$podium-cds-button-padding-bottom-l: 18px;
+$podium-cds-button-padding-sides-s: 20px;
+$podium-cds-button-padding-sides-m: 24px;
+$podium-cds-button-padding-sides-l: 24px;
+$podium-cds-button-padding-underline: 0;
+$podium-cds-button-height-s: 34px;
+$podium-cds-button-height-m: 46px;
+$podium-cds-button-height-l: 58px;
+$podium-cds-button-color-bg-primary: #111111;
+$podium-cds-button-color-bg-primary-inverse: #FFFFFF;
+$podium-cds-button-color-bg-primary-hover: #707072;
+$podium-cds-button-color-bg-primary-hover-inverse: #9E9EA0;
+$podium-cds-button-color-bg-primary-disabled: #E5E5E5;
+$podium-cds-button-color-bg-primary-disabled-inverse: #707072;
+$podium-cds-button-color-bg-secondary: transparent;
+$podium-cds-button-color-bg-secondary-inverse: transparent;
+$podium-cds-button-color-text-primary-disabled: #9E9EA0;
+$podium-cds-button-color-text-primary-disabled-inverse: #4B4B4D;
+$podium-cds-button-color-border-primary: #111111;
+$podium-cds-button-color-border-primary-inverse: #FFFFFF;
+$podium-cds-button-color-border-primary-hover: #707072;
+$podium-cds-button-color-border-primary-hover-inverse: #9E9EA0;
+$podium-cds-button-color-border-primary-disabled: #E5E5E5;
+$podium-cds-button-color-border-primary-disabled-inverse: #707072;
+$podium-cds-button-color-border-secondary: #CACACB;
+$podium-cds-button-color-border-secondary-inverse: #707072;
+$podium-cds-button-color-border-secondary-hover: #111111;
+$podium-cds-button-color-border-secondary-hover-inverse: #FFFFFF;
+$podium-cds-button-color-border-secondary-disabled: #CACACB;
+$podium-cds-button-color-border-secondary-disabled-inverse: #4B4B4D;
+$podium-cds-dialog-bg-blur: 4px;
+$podium-cds-input-color-disabled: #707072;
+$podium-cds-typography-body1: 400 1rem/1.5 'Helvetica Now Text',
+    Helvetica,
+    Arial,
+    sans-serif;
+$podium-cds-typography-body1-strong: 500 1rem/1.5 'Helvetica Now Text Medium',
+    Helvetica,
+    Arial,
+    sans-serif;
+$podium-cds-typography-body2: 400 .875rem/1.5 'Helvetica Now Text',
+    Helvetica,
+    Arial,
+    sans-serif;
+$podium-cds-typography-body2-strong: 500 .875rem/1.5 'Helvetica Now Text Medium',
+    Helvetica,
+    Arial,
+    sans-serif;
+$podium-cds-typography-body3: 400 .75rem/1.5 'Helvetica Now Text',
+    Helvetica,
+    Arial,
+    sans-serif;
+$podium-cds-typography-body3-strong: 500 .75rem/1.5 'Helvetica Now Text Medium',
+    Helvetica,
+    Arial,
+    sans-serif;
+$podium-cds-typography-body4: 400 .625rem/1.5 'Helvetica Now Text',
+    Helvetica,
+    Arial,
+    sans-serif;
+$podium-cds-typography-body4-strong: 500 .625rem/1.5 'Helvetica Now Text Medium',
+    Helvetica,
+    Arial,
+    sans-serif;
+$podium-cds-typography-legal: 400 .875rem/1.5 'Helvetica Now Text',
+    Helvetica,
+    Arial,
+    sans-serif;
