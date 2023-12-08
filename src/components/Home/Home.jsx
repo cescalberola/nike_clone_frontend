@@ -7,7 +7,6 @@ import NikeJordanHome from "../../assets/imgs home/Nike Jordan home.png";
 
 const Home = () => {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
