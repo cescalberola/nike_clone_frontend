@@ -32,6 +32,20 @@ import Tennis from "../../assets/imgs home/Shop by Sport/06Tennis.png";
 import AmFootball from "../../assets/imgs home/Shop by Sport/07AmFootball.png";
 import Baseball from "../../assets/imgs home/Shop by Sport/08Baseball.png";
 import Yoga from "../../assets/imgs home/Shop by Sport/09Yoga.png"
+import AirJordan11GratitudeHG from "../../assets/imgs home/Hottest Gifts/01AirJordan11Gratitude.png";
+import AirJordan11RetroBigKid from "../../assets/imgs home/Hottest Gifts/02AirJordan11RetroBigKid.png";
+import AirJordan11RetroLittleKid from "../../assets/imgs home/Hottest Gifts/03AirJordan11RetroLittleKid.png";
+import AirJordan11RetroBabyKid from "../../assets/imgs home/Hottest Gifts/04AirJordan11RetroBabyKid.png";
+import Jordan11Crib from "../../assets/imgs home/Hottest Gifts/05Jordan11Crib.png";
+import DunkLowWomen from "../../assets/imgs home/Hottest Gifts/06DunkLowWomen.png";
+import DunkLowRetro from "../../assets/imgs home/Hottest Gifts/07DunkLowRetro.png";
+import DunkLowBigKid from "../../assets/imgs home/Hottest Gifts/08DunkLowBigKid.png";
+import DunkLowLittleKid from "../../assets/imgs home/Hottest Gifts/09DunkLowLittleKid.png";
+import DunkLowBaby from "../../assets/imgs home/Hottest Gifts/10DunkLowBaby.png";
+
+
+
+
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -64,6 +78,15 @@ const Home = () => {
     arrows: false,
   };
   const showBySportSettings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3.6,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: false,
+  };
+  const hottestGiftsSettings = {
     infinite: true,
     speed: 500,
     slidesToShow: 3.6,
@@ -224,6 +247,49 @@ const Home = () => {
             </div>
             <div>
               <img src={Yoga} alt="Yoga" />
+            </div>
+          </Slider>
+        </div>
+      </div>
+      <div className="container-hottest-gifts">
+        <p>Hottest Gifts</p>
+        <button onClick={prevSlide}>Previous</button>
+        <button onClick={nextSlide}>Next</button>
+        <div className="hottest-gifts-slider-container">
+          <Slider
+            ref={sliderRef}
+            className="hottest-gifts-home"
+            {...hottestGiftsSettings}
+          >
+            <div>
+              <img src={AirJordan11GratitudeHG} alt="Air Jordan 11 Gratitude HG" />
+            </div>
+            <div>
+              <img src={AirJordan11RetroBigKid} alt="Air Jordan 11 Retro Big Kid" />
+            </div>
+            <div>
+              <img src={AirJordan11RetroLittleKid} alt="Air Jordan 11 Retro Little Kid" />
+            </div>
+            <div>
+              <img src={AirJordan11RetroBabyKid} alt="Air Jordan 11 Retro Baby Kid" />
+            </div>
+            <div>
+              <img src={Jordan11Crib} alt="Jordan 11 Crib" />
+            </div>
+            <div>
+              <img src={DunkLowWomen} alt="Dunk Low Women" />
+            </div>
+            <div>
+              <img src={DunkLowRetro} alt="Dunk Low Retro" />
+            </div>
+            <div>
+              <img src={DunkLowBigKid} alt="Dunk Low Big Kid" />
+            </div>
+            <div>
+              <img src={DunkLowLittleKid} alt="Dunk Low Little Kid" />
+            </div>
+            <div>
+              <img src={DunkLowBaby} alt="Dunk Low Baby" />
             </div>
           </Slider>
         </div>
