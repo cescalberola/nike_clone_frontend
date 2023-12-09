@@ -2,49 +2,49 @@
 @import './dotcom-nav-client.css';
 @import './ncss.en-us.min.css';
 
-// *,
-// :after,
-// :before {
-//   -webkit-box-sizing: inherit;
-//   box-sizing: inherit;
+*,
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 
-//   fieldset,
-//   h1,
-//   h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6,
-//   label,
-//   legend,
-//   li,
-//   p,
-//   span,
-//   strong,
-//   ul {
-//     margin: 0;
-//     padding: 0;
-//     border: 0;
-//     font-size: 100%;
-//     font: inherit;
-//     vertical-align: baseline;
-//   }
+  fieldset,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  label,
+  legend,
+  li,
+  p,
+  span,
+  strong,
+  ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
 
-// }
+}
 
-// #root {
-//   max-width: 1280px;
-//   margin: 0 auto;
-//   padding: 2rem;
-//   text-align: center;
-//   color: $podium-cds-color-black;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: $podium-cds-color-black;
 
-//   font-size: inherit;
-//   line-height: inherit;
-//   font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
-//   color: $podium-cds-color-black;
-//   background-color: $podium-cds-color-white;
-// }
+  font-size: inherit;
+  line-height: inherit;
+  font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+  color: $podium-cds-color-black;
+  background-color: $podium-cds-color-white;
+}
 
 // a {
 //   text-decoration: none;

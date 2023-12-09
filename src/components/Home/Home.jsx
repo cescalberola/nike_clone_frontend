@@ -35,13 +35,13 @@ const Home = () => {
         <h1 className="jordan-gratitude">AIR JORDAN 11 'GRATITUDE'</h1>
         <p>Shop the heritage colorway on 12.9.</p>
         <div className="buttons-jordan-gratitude">
-            <button>Notify Me</button>
-            <button>Shop AJ11 Collection</button>
+          <button className="ncss-btn-primary-dark">Notify Me</button>
+          <button className="ncss-btn-primary-dark">Shop AJ11 Collection</button>
         </div>
       </div>
       <div className="container-trending">
-      <h3>Trending</h3>
-      {/* <Slider className="trending-home" {...settings}>
+        <h3>Trending</h3>
+        {/* <Slider className="trending-home" {...settings}>
       <div>
           <img src={DunkTheHalls} alt="Dunk The Halls" />
         </div>
