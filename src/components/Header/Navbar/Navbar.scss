@@ -108,14 +108,14 @@
 
                                     vertical-align: baseline;
 
-                                    .pre-column-container {
+                                    .pre-columns-container {
                                         max-width: 1344px;
                                         margin-left: auto;
                                         margin-right: auto;
                                         padding-bottom: 15px;
 
                                         .pre-menu-column {
-                                            display: inline-block;
+                                            display: inline-flex;
                                             opacity: 0;
                                             transform: translateY(-10px);
                                             transition: transform .1s, opacity .1s;
@@ -135,6 +135,25 @@
                                             line-height: 1.75;
                                             padding-left: 6px;
                                             padding-right: 6px;
+
+                                            .pre-menu-item {
+                                                text-align: left;
+                                                background: transparent;
+                                                display: block;
+                                                margin-bottom: 6px;
+                                                white-space: normal;
+                                                overflow-wrap: normal;
+                                            }
+
+                                            .pre-menu-item.is-header {
+                                                color: #111;
+                                                margin-bottom: 14px;
+                                                margin-top: 40px;
+                                            }
+
+                                            .pre-menu-column .is-header:first-child {
+                                                margin-top: 0;
+                                            }
                                         }
                                     }
                                 }
