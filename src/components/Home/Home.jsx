@@ -42,9 +42,12 @@ import DunkLowRetro from "../../assets/imgs home/Hottest Gifts/07DunkLowRetro.pn
 import DunkLowBigKid from "../../assets/imgs home/Hottest Gifts/08DunkLowBigKid.png";
 import DunkLowLittleKid from "../../assets/imgs home/Hottest Gifts/09DunkLowLittleKid.png";
 import DunkLowBaby from "../../assets/imgs home/Hottest Gifts/10DunkLowBaby.png";
-
-
-
+import TheBestOfNike from "../../assets/imgs home/Nike Membership/01TheBestOfNike.png";
+import MemberProduct from "../../assets/imgs home/Nike Membership/02MemberProduct.png";
+import MemberRewards from "../../assets/imgs home/Nike Membership/03MemberRewards.png";
+import SportsWellnessApps from "../../assets/imgs home/Nike Membership/04SportsWellnessApps.png";
+import NikeByYou from "../../assets/imgs home/Nike Membership/05NikeByYou.png";
+import Snkrs from "../../assets/imgs home/Nike Membership/06SNKRS.png";
 
 
 const Home = () => {
@@ -90,6 +93,15 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3.6,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: false,
+  };
+  const membershipSettings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -290,6 +302,37 @@ const Home = () => {
             </div>
             <div>
               <img src={DunkLowBaby} alt="Dunk Low Baby" />
+            </div>
+          </Slider>
+        </div>
+      </div>
+      <div className="container-membership">
+        <p>Nike Membership</p>
+        <button onClick={prevSlide}>Previous</button>
+        <button onClick={nextSlide}>Next</button>
+        <div className="membership-slider-container">
+          <Slider
+            ref={sliderRef}
+            className="membership-home"
+            {...membershipSettings}
+          >
+            <div>
+              <img src={TheBestOfNike} alt="The Best Of Nike" />
+            </div>
+            <div>
+              <img src={MemberProduct} alt="Member Product" />
+            </div>
+            <div>
+              <img src={MemberRewards} alt="Member Rewards" />
+            </div>
+            <div>
+              <img src={SportsWellnessApps} alt="Sports Wellness Apps" />
+            </div>
+            <div>
+              <img src={NikeByYou} alt="Nike By You" />
+            </div>
+            <div>
+              <img src={Snkrs} alt="SNKRS" />
             </div>
           </Slider>
         </div>
