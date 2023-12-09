@@ -5,7 +5,7 @@
 }
 
 .home-img img {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -14,7 +14,7 @@ display: flex;
 justify-content: start;
 }
 .container-trending {
-  width: 95%;
+  width: 100%;
 }
 .trending-home img {
   width: 100%;
@@ -28,7 +28,7 @@ justify-content: start;
 
 }
 .img-happening-now img{
-  max-width: 95%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -40,7 +40,7 @@ justify-content: start;
   display: flex;
 }
 .img-gifts-by-price img{
-  width:32%
+  width:33%
 }
 
 .container-featured p{
@@ -49,3 +49,14 @@ justify-content: start;
 .img-featured img{
   width: 50%;
 }
+.container-always-iconic p{
+  display: flex;
+  justify-content: start;
+  }
+  .container-always-iconic {
+    width: 100%;
+  }
+  .always-iconic-home img {
+    width: 100%;
+    height: auto;
+  }

@@ -15,6 +15,14 @@ import Price50 from "../../assets/imgs home/Top Gifts by Price/50.png";
 import Price100 from "../../assets/imgs home/Top Gifts by Price/100.png";
 import AirMaxArrrivals from "../../assets/imgs home/Featured/AirMaxArrrivals.png";
 import UnpackedAlexMorgan from "../../assets/imgs home/Featured/UnpackedAlexMorgan.png";
+import AirJordan1 from "../../assets/imgs home/Always Iconic/01AirJordan1.png";
+import AirForce1 from "../../assets/imgs home/Always Iconic/02AirForce1.png";
+import Dunk from "../../assets/imgs home/Always Iconic/03Dunk.png";
+import AirMax from "../../assets/imgs home/Always Iconic/04AirMax.png";
+import LeBron from "../../assets/imgs home/Always Iconic/05LeBron.png";
+import NikeBlazer from "../../assets/imgs home/Always Iconic/06NikeBlazer.png";
+import Pegasus from "../../assets/imgs home/Always Iconic/07Pegasus.png";
+import Metcon from "../../assets/imgs home/Always Iconic/08Metcon.png";
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -32,6 +40,15 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: false,
+  };
+  const alwaysIconicSettings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3.6,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -114,7 +131,43 @@ const Home = () => {
         <div className="img-featured">
           <img src={AirMaxArrrivals} alt="Air Max Arrrivals" />
           <img src={UnpackedAlexMorgan} alt="Unpacked Alex Morgan" />
-          
+        </div>
+      </div>
+      <div className="container-always-iconic">
+        <p>Always Iconic</p>
+        <button onClick={prevSlide}>Previous</button>
+        <button onClick={nextSlide}>Next</button>
+        <div className="always-iconic-slider-container">
+          <Slider
+            ref={sliderRef}
+            className="always-iconic-home"
+            {...alwaysIconicSettings}
+          >
+            <div>
+              <img src={AirJordan1} alt="Air Jordan" />
+            </div>
+            <div>
+              <img src={AirForce1} alt="Air Force" />
+            </div>
+            <div>
+              <img src={Dunk} alt="Dunk" />
+            </div>
+            <div>
+              <img src={AirMax} alt="Air Max" />
+            </div>
+            <div>
+              <img src={LeBron} alt="Le Bron" />
+            </div>
+            <div>
+              <img src={NikeBlazer} alt="Nike Blazer" />
+            </div>
+            <div>
+              <img src={Pegasus} alt="Pegasus" />
+            </div>
+            <div>
+              <img src={Metcon} alt="Metcon" />
+            </div>
+          </Slider>
         </div>
       </div>
     </>
