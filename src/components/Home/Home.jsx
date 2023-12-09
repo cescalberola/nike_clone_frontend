@@ -23,6 +23,15 @@ import LeBron from "../../assets/imgs home/Always Iconic/05LeBron.png";
 import NikeBlazer from "../../assets/imgs home/Always Iconic/06NikeBlazer.png";
 import Pegasus from "../../assets/imgs home/Always Iconic/07Pegasus.png";
 import Metcon from "../../assets/imgs home/Always Iconic/08Metcon.png";
+import Basket from "../../assets/imgs home/Shop by Sport/01Basket.png";
+import Running from "../../assets/imgs home/Shop by Sport/02Running.png";
+import Training from "../../assets/imgs home/Shop by Sport/03Training.png";
+import Soccer from "../../assets/imgs home/Shop by Sport/04Soccer.png";
+import Golf from "../../assets/imgs home/Shop by Sport/05Golf.png";
+import Tennis from "../../assets/imgs home/Shop by Sport/06Tennis.png";
+import AmFootball from "../../assets/imgs home/Shop by Sport/07AmFootball.png";
+import Baseball from "../../assets/imgs home/Shop by Sport/08Baseball.png";
+import Yoga from "../../assets/imgs home/Shop by Sport/09Yoga.png"
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -46,6 +55,15 @@ const Home = () => {
     arrows: false,
   };
   const alwaysIconicSettings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3.6,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: false,
+  };
+  const showBySportSettings = {
     infinite: true,
     speed: 500,
     slidesToShow: 3.6,
@@ -166,6 +184,46 @@ const Home = () => {
             </div>
             <div>
               <img src={Metcon} alt="Metcon" />
+            </div>
+          </Slider>
+        </div>
+      </div>
+      <div className="container-shop-by-sport">
+        <p>Shop by Sport</p>
+        <button onClick={prevSlide}>Previous</button>
+        <button onClick={nextSlide}>Next</button>
+        <div className="shop-by-sport-slider-container">
+          <Slider
+            ref={sliderRef}
+            className="shop-by-sport-home"
+            {...showBySportSettings}
+          >
+            <div>
+              <img src={Basket} alt="Basket" />
+            </div>
+            <div>
+              <img src={Running} alt="Running" />
+            </div>
+            <div>
+              <img src={Training} alt="Training" />
+            </div>
+            <div>
+              <img src={Soccer} alt="Soccer" />
+            </div>
+            <div>
+              <img src={Golf} alt="Golf" />
+            </div>
+            <div>
+              <img src={Tennis} alt="Tennis" />
+            </div>
+            <div>
+              <img src={AmFootball} alt="Am Football" />
+            </div>
+            <div>
+              <img src={Baseball} alt="Baseball" />
+            </div>
+            <div>
+              <img src={Yoga} alt="Yoga" />
             </div>
           </Slider>
         </div>
