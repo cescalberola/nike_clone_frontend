@@ -1,12 +1,11 @@
 @import './variables';
+@import './import.scss';
 @import './dotcom-nav-client.css';
-@import './ncss.en-us.min.css';
+@import './ncss.en-us.min.scss';
 
 *,
 :after,
 :before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
 
   fieldset,
   h1,
