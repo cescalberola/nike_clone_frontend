@@ -6,8 +6,11 @@ import BrandHeader from './BrandHeader/BrandHeader'
 const Header = () => {
     return (
         <>
-            <BrandHeader />
-            <Navbar />
+            <div className='pre-l-header-container'>
+                <BrandHeader />
+                <Navbar />
+            </div>
+            <div className="pre-scrim" data-pre="Scrim"></div>
         </>
     )
 }

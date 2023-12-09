@@ -1,6 +1,6 @@
 @import './variables';
 @import './import.scss';
-@import './dotcom-nav-client.css';
+@import './dotcom-nav-client.scss';
 @import './ncss.en-us.min.scss';
 
 *,
@@ -32,9 +32,7 @@
 }
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   color: $podium-cds-color-black;
 
