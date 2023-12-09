@@ -3,12 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
-import NikeJordanHome from "../../assets/imgs home/Nike Jordan home.png";
-import DunkTheHalls from "../../assets/imgs home/Trending/Dunk the Halls.png";
-import MostIconicGifts from "../../assets/imgs home/Trending/The Most Iconic Gifts.png";
-import NewestInAJ1 from "../../assets/imgs home/Trending/NewestinAJ1.png";
-import CozyStyle from "../../assets/imgs home/Trending/Cozy Style That's All You.png";
-import WinterRunning from "../../assets/imgs home/Trending/Winter Running Essentials.png";
+import AirJordan11Gratitude from "../../assets/imgs home/AirJordan11Gratitude/AirJordan11Gratitude.png";
 
 const Home = () => {
   const settings = {
@@ -35,7 +30,7 @@ const Home = () => {
       </Slider>
       <div className="home">
         <div className="home-img">
-          <img src={NikeJordanHome} alt="Jordan Home" />
+          <img src={AirJordan11Gratitude} alt="Jordan Home" />
         </div>
         <h1 className="jordan-gratitude">AIR JORDAN 11 'GRATITUDE'</h1>
         <p>Shop the heritage colorway on 12.9.</p>
