@@ -13,6 +13,8 @@ import HappeningNow from "../../assets/imgs home/Happening Now/Happening Now.png
 import Price30 from "../../assets/imgs home/Top Gifts by Price/30.png";
 import Price50 from "../../assets/imgs home/Top Gifts by Price/50.png";
 import Price100 from "../../assets/imgs home/Top Gifts by Price/100.png";
+import AirMaxArrrivals from "../../assets/imgs home/Featured/AirMaxArrrivals.png";
+import UnpackedAlexMorgan from "../../assets/imgs home/Featured/UnpackedAlexMorgan.png";
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -105,6 +107,14 @@ const Home = () => {
           <img src={Price30} alt="30" />
           <img src={Price50} alt="50" />
           <img src={Price100} alt="100" />
+        </div>
+      </div>
+      <div className="container-featured">
+        <p>Featured</p>
+        <div className="img-featured">
+          <img src={AirMaxArrrivals} alt="Air Max Arrrivals" />
+          <img src={UnpackedAlexMorgan} alt="Unpacked Alex Morgan" />
+          
         </div>
       </div>
     </>
