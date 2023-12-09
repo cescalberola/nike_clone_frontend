@@ -1,11 +1,45 @@
 .home-img {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .home-img img {
-    max-width: 90%;
-    height: auto;
-    display: block;
-  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.home-img img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+.container-trending p{
+display: flex;
+justify-content: start;
+}
+.container-trending {
+  width: 95%;
+}
+.trending-home img {
+  width: 100%;
+  height: auto;
+}
+.container-hapenning-now{
+  margin-top: 60px;
+}
+.container-hapenning-now p{
+  display: flex;
+
+}
+.img-happening-now img{
+  max-width: 95%;
+  height: auto;
+  display: block;
+}
+
+.img-gifts-by-price{
+  display: flex;
+}
+.container-gifts-by-price p{
+  display: flex;
+}
+.img-gifts-by-price img{
+  width:32%
+}
+
