@@ -79,23 +79,23 @@
 //   font: $podium-cds-typography-body1-strong
 // }
 
-// .btn-primary-dark {
-//   padding: $podium-cds-button-padding-top-s $podium-cds-button-padding-sides-s;
-//   border-radius: $podium-cds-button-border-radius;
-//   border: $podium-cds-button-border-width solid transparent;
-//   -webkit-box-pack: center;
-//   -ms-flex-pack: center;
-//   justify-content: center;
-//   -webkit-box-align: center;
-//   -ms-flex-align: center;
-//   align-items: center;
-//   background: $podium-cds-button-color-bg-primary;
-//   color: $podium-cds-color-text-primary-inverse;
-// }
+.btn-primary-dark {
+  padding: $podium-cds-button-padding-top-s $podium-cds-button-padding-sides-s;
+  border-radius: $podium-cds-button-border-radius;
+  border: $podium-cds-button-border-width solid transparent;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: $podium-cds-button-color-bg-primary;
+  color: $podium-cds-color-text-primary-inverse;
+}
 
-// .btn-primary-dark:hover {
-//   background: $podium-cds-button-color-bg-primary-hover;
-// }
+.btn-primary-dark:hover {
+  background: $podium-cds-button-color-bg-primary-hover;
+}
 
 // [class*=ncss-col-] {
 //   position: relative;
