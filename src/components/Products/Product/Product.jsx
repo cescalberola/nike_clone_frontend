@@ -1,11 +1,17 @@
-import React from 'react'
+import "./Product.scss";
 
-const Product = () => {
+const Product = ({ product }) => {
+  const image = product.image.map((image) => {
+    return (
+      <img key={product._id} src={"http://localhost:8080/uploads/" + image} />
+    );
+  });
   return (
     <div>
-        {/* tarjeta de cada producto */}
+      <p>{product.description}</p>
+      {image}
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;
