@@ -1,5 +1,4 @@
 @import './variables';
-@import './import.scss';
 @import './dotcom-nav-client.scss';
 @import './ncss.en-us.min.scss';
 
@@ -38,46 +37,10 @@
 
   font-size: inherit;
   line-height: inherit;
-  font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: $podium-cds-color-black;
   background-color: $podium-cds-color-white;
 }
-
-// a {
-//   text-decoration: none;
-//   color: $podium-cds-color-black;
-//   cursor: pointer;
-//   font-weight: 500;
-//   font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
-// }
-
-// ol,
-// ul {
-//   list-style: none;
-//   list-style-type: none;
-
-//   li {
-//     list-style: none;
-//   }
-// }
-
-// svg {
-//   overflow-clip-margin: content-box;
-//   overflow: hidden;
-// }
-
-// div {
-//   margin: 0;
-//   padding: 0;
-//   border: 0;
-//   font-size: 100%;
-//   font: inherit;
-//   vertical-align: baseline;
-// }
-
-// .headline-5 {
-//   font: $podium-cds-typography-body1-strong
-// }
 
 .btn-primary-dark {
   padding: $podium-cds-button-padding-top-s $podium-cds-button-padding-sides-s;
@@ -96,18 +59,3 @@
 .btn-primary-dark:hover {
   background: $podium-cds-button-color-bg-primary-hover;
 }
-
-// [class*=ncss-col-] {
-//   position: relative;
-//   min-height: 1px;
-//   display: none;
-//   font-size: 16px;
-//   line-height: 1.75;
-//   padding-left: 6px;
-//   padding-right: 6px;
-
-//   .ncss-col-sm-2 {
-//     width: 16.666666666666664%;
-//     display: inline-block;
-//   }
-// }

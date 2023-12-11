@@ -3,17 +3,18 @@ import './Login.scss'
 import '../../glyphs.min.css'
 import Nike from '../../assets/logos/Nike.jsx'
 import Jordan from '../../assets/logos/Jordan.jsx'
+import { useDispatch } from 'react-redux'
+import { login } from '../../features/auth/authSlice.js'
 
 const Login = () => {
     const [selectedCountry, setSelectedCountry] = useState('Espana'); // Default to Spain
-    const [username, setUsername] = useState('');
-    const [password, setPasword] = useState('');
 
-    const handleCountryChange = (event) => {
-        const selectedOption = event.target.options[event.target.selectedIndex];
-        const selectedText = selectedOption.text;
-        setSelectedCountry(selectedText);
-    };
+    const [data, setData] = useState({
+        username: '',
+        password: '',
+    })
+    // const [username, setUsername] = useState('');
+    // const [password, setPasword] = useState('');
 
     const countries = [
         { value: 'AF', label: 'Afganistán' },
@@ -76,9 +77,23 @@ const Login = () => {
         { value: 'ZW', label: 'Zimbabue' },
     ];
 
+    const dispatch = useDispatch();
+
+    const handleCountryChange = (event) => {
+        const selectedOption = event.target.options[event.target.selectedIndex];
+        const selectedText = selectedOption.text;
+        setSelectedCountry(selectedText);
+    };
+
+
     // const handleOnChange = (event) => {
     //     setusername = event.target.value
     // }
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        dispatch(login(data));
+    };
 
     return (
         <div className="css-18wonve">
