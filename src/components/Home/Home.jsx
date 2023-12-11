@@ -3,55 +3,53 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
-import AirJordan11Gratitude from "../../assets/imgs home/AirJordan11Gratitude/AirJordan11Gratitude.png";
-import DunkTheHalls from "../../assets/imgs home/Trending/01DunkTheHalls.png";
-import TheMostIconicGifts from "../../assets/imgs home/Trending/02TheMostIconicGifts.png";
-import NewestInAJ1 from "../../assets/imgs home/Trending/03NewestInAJ1.png";
-import CozyStyleThatAllYou from "../../assets/imgs home/Trending/04CozyStyleThatAllYou.png";
-import WinterRunningEssentials from "../../assets/imgs home/Trending/05WinterRunningEssentials.png";
-import HappeningNow from "../../assets/imgs home/Happening Now/Happening Now.png";
-import Price30 from "../../assets/imgs home/Top Gifts by Price/30.png";
-import Price50 from "../../assets/imgs home/Top Gifts by Price/50.png";
-import Price100 from "../../assets/imgs home/Top Gifts by Price/100.png";
-import AirMaxArrrivals from "../../assets/imgs home/Featured/AirMaxArrrivals.png";
-import UnpackedAlexMorgan from "../../assets/imgs home/Featured/UnpackedAlexMorgan.png";
-import AirJordan1 from "../../assets/imgs home/Always Iconic/01AirJordan1.png";
-import AirForce1 from "../../assets/imgs home/Always Iconic/02AirForce1.png";
-import Dunk from "../../assets/imgs home/Always Iconic/03Dunk.png";
-import AirMax from "../../assets/imgs home/Always Iconic/04AirMax.png";
-import LeBron from "../../assets/imgs home/Always Iconic/05LeBron.png";
-import NikeBlazer from "../../assets/imgs home/Always Iconic/06NikeBlazer.png";
-import Pegasus from "../../assets/imgs home/Always Iconic/07Pegasus.png";
-import Metcon from "../../assets/imgs home/Always Iconic/08Metcon.png";
-import Basket from "../../assets/imgs home/Shop by Sport/01Basket.png";
-import Running from "../../assets/imgs home/Shop by Sport/02Running.png";
-import Training from "../../assets/imgs home/Shop by Sport/03Training.png";
-import Soccer from "../../assets/imgs home/Shop by Sport/04Soccer.png";
-import Golf from "../../assets/imgs home/Shop by Sport/05Golf.png";
-import Tennis from "../../assets/imgs home/Shop by Sport/06Tennis.png";
-import AmFootball from "../../assets/imgs home/Shop by Sport/07AmFootball.png";
-import Baseball from "../../assets/imgs home/Shop by Sport/08Baseball.png";
-import Yoga from "../../assets/imgs home/Shop by Sport/09Yoga.png"
-import AirJordan11GratitudeHG from "../../assets/imgs home/Hottest Gifts/01AirJordan11Gratitude.png";
-import AirJordan11RetroBigKid from "../../assets/imgs home/Hottest Gifts/02AirJordan11RetroBigKid.png";
-import AirJordan11RetroLittleKid from "../../assets/imgs home/Hottest Gifts/03AirJordan11RetroLittleKid.png";
-import AirJordan11RetroBabyKid from "../../assets/imgs home/Hottest Gifts/04AirJordan11RetroBabyKid.png";
-import Jordan11Crib from "../../assets/imgs home/Hottest Gifts/05Jordan11Crib.png";
-import DunkLowWomen from "../../assets/imgs home/Hottest Gifts/06DunkLowWomen.png";
-import DunkLowRetro from "../../assets/imgs home/Hottest Gifts/07DunkLowRetro.png";
-import DunkLowBigKid from "../../assets/imgs home/Hottest Gifts/08DunkLowBigKid.png";
-import DunkLowLittleKid from "../../assets/imgs home/Hottest Gifts/09DunkLowLittleKid.png";
-import DunkLowBaby from "../../assets/imgs home/Hottest Gifts/10DunkLowBaby.png";
-import TheBestOfNike from "../../assets/imgs home/Nike Membership/01TheBestOfNike.png";
-import MemberProduct from "../../assets/imgs home/Nike Membership/02MemberProduct.png";
-import MemberRewards from "../../assets/imgs home/Nike Membership/03MemberRewards.png";
-import SportsWellnessApps from "../../assets/imgs home/Nike Membership/04SportsWellnessApps.png";
-import NikeByYou from "../../assets/imgs home/Nike Membership/05NikeByYou.png";
-import Snkrs from "../../assets/imgs home/Nike Membership/06SNKRS.png";
-
 
 const Home = () => {
   const sliderRef = useRef(null);
+
+  const nextSlide = () => {
+    sliderRef.current.slickNext();
+  };
+  const prevSlide = () => {
+    sliderRef.current.slickPrev();
+  };
+  const trendingSliderRef = useRef(null);
+
+  const nextSlideTrending = () => {
+    trendingSliderRef.current.slickNext();
+  };
+  
+  const prevSlideTrending = () => {
+    trendingSliderRef.current.slickPrev();
+  };
+  const alwaysIconicSliderRef = useRef(null);
+
+  const nextSlideAlwaysIconic = () => {
+    alwaysIconicSliderRef.current.slickNext();
+  };
+  
+  const prevSlideAlwaysIconic = () => {
+    alwaysIconicSliderRef.current.slickPrev();
+  };
+  const showBySportSliderRef = useRef(null);
+
+  const nextSlideshowBySport = () => {
+    showBySportSliderRef.current.slickNext();
+  };
+  
+  const prevSlideshowBySport = () => {
+    showBySportSliderRef.current.slickPrev();
+  };
+  const hottestGiftsSliderRef = useRef(null);
+
+  const nextSlidehottestGifts = () => {
+    hottestGiftsSliderRef.current.slickNext();
+  };
+  
+  const prevSlideshottestGifts = () => {
+    hottestGiftsSliderRef.current.slickPrev();
+  };
+  
 
   const bannerSettings = {
     infinite: true,
@@ -92,7 +90,7 @@ const Home = () => {
   const hottestGiftsSettings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3.6,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -107,12 +105,7 @@ const Home = () => {
     autoplaySpeed: 2000,
     arrows: false,
   };
-  const nextSlide = () => {
-    sliderRef.current.slickNext();
-  };
-  const prevSlide = () => {
-    sliderRef.current.slickPrev();
-  };
+
   return (
     <>
       <Slider className="banner-home" {...bannerSettings}>
@@ -128,39 +121,42 @@ const Home = () => {
       </Slider>
       <div className="home">
         <div className="home-img">
-          <img src={AirJordan11Gratitude} alt="Jordan Home" />
+          <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_2266,c_limit/834c7192-3782-46b7-a648-6abb212f20bc/nike-just-do-it.jpg" alt="" />
         </div>
-        <h1 className="jordan-gratitude">AIR JORDAN 11 'GRATITUDE'</h1>
-        <p>Shop the heritage colorway on 12.9.</p>
+        <h1 className="jordan-gratitude">THE MOST ICONIC GIFTS</h1>
+        <p>Some timeless classics, some future favorites—these kicks and more are 100% on their list</p>
         <div className="buttons-jordan-gratitude">
-          <button className="ncss-btn-primary-dark">Notify Me</button>
-          <button className="ncss-btn-primary-dark">Shop AJ11 Collection</button>
+          <button className="ncss-btn-primary-dark">Shop</button>
         </div>
       </div>
       <div className="container-trending">
         <p>Trending</p>
-        <button onClick={prevSlide}>Previous</button>
-        <button onClick={nextSlide}>Next</button>
+        <button className="trending" onClick={prevSlideTrending}>
+          Previous
+        </button>
+        <button className="trending" onClick={nextSlideTrending}>
+          Next
+        </button>
         <div className="trending-slider-container">
           <Slider
-            ref={sliderRef}
+            ref={trendingSliderRef}
             className="trending-home"
             {...trendingSettings}
           >
             <div>
-              <img src={DunkTheHalls} alt="Dunk The Halls" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_653,c_limit/08a905be-557b-47ff-8f6e-6056d7a122ed/nike-just-do-it.jpg" alt="Dunk The Halls" />
             </div>
-            <div>
+            {/* <div>
               <img src={TheMostIconicGifts} alt="Most Iconic Gifts" />
+            </div> */}
+            <div>
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_653,c_limit/ea2229d0-984b-4787-a4d4-783b92782721/nike-just-do-it.jpg" alt="Cozy Style" />
             </div>
             <div>
-              <img src={NewestInAJ1} alt="Newest In AJ1" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_653,c_limit/607f9e67-fbbb-444e-a388-5a10c8bea602/nike-just-do-it.jpg" alt="Newest In AJ1" />
             </div>
             <div>
-              <img src={CozyStyleThatAllYou} alt="Cozy Style" />
-            </div>
-            <div>
-              <img src={WinterRunningEssentials} alt="Winter Running" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_653,c_limit/c7d4e186-efaa-4087-aea9-b80a2311aef7/nike-just-do-it.jpg" alt="Winter Running" />
             </div>
           </Slider>
         </div>
@@ -168,140 +164,152 @@ const Home = () => {
       <div className="container-hapenning-now">
         <p>Happening Now</p>
         <div className="img-happening-now">
-          <img src={HappeningNow} alt="Happening Now" />
+          <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1824,c_limit/13477ed1-8759-4ece-9be9-87b986657dba/nike-just-do-it.jpg" alt="Happening Now" />
         </div>
       </div>
       <div className="container-gifts-by-price">
         <p>Top Gifts by Price</p>
         <div className="img-gifts-by-price">
-          <img src={Price30} alt="30" />
-          <img src={Price50} alt="50" />
-          <img src={Price100} alt="100" />
+          <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_653,c_limit/100c53bd-cb6a-4867-85a6-f17f1276910a/nike-just-do-it.jpg" alt="30" />
+          <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_653,c_limit/caf16b9f-1afd-4883-8321-617c5e059051/nike-just-do-it.jpg" alt="50" />
+          <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_653,c_limit/ae6531c8-76cd-4329-8670-2f2bc6930049/nike-just-do-it.jpg" alt="100" />
+        </div>
+      </div>
+      <div className="container-nike-gifting">
+        <p>Nike Gifting</p>
+        <div className="img-nike-gifting">
+          <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1824,c_limit/6efac23b-5b2d-40c4-b96b-bdc33c967035/nike-just-do-it.jpg" alt="Happening Now" />
         </div>
       </div>
       <div className="container-featured">
         <p>Featured</p>
         <div className="img-featured">
-          <img src={AirMaxArrrivals} alt="Air Max Arrrivals" />
-          <img src={UnpackedAlexMorgan} alt="Unpacked Alex Morgan" />
+          <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_906,c_limit/db992ab5-957b-4e63-b088-c2a8972e2c3a/nike-just-do-it.jpg" alt="Air Max Arrrivals" />
+          <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_906,c_limit/e4eae1d1-659a-4f4f-9c19-5fd96926d3af/nike-just-do-it.png" alt="Unpacked Alex Morgan" />
         </div>
       </div>
       <div className="container-always-iconic">
         <p>Always Iconic</p>
-        <button onClick={prevSlide}>Previous</button>
-        <button onClick={nextSlide}>Next</button>
+        <button className="always-iconic" onClick={prevSlideAlwaysIconic}>
+          Previous
+        </button>
+        <button className="always-iconic" onClick={nextSlideAlwaysIconic}>
+          Next
+        </button>
         <div className="always-iconic-slider-container">
           <Slider
-            ref={sliderRef}
+            ref={alwaysIconicSliderRef}
             className="always-iconic-home"
             {...alwaysIconicSettings}
           >
             <div>
-              <img src={AirJordan1} alt="Air Jordan" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_1286,c_limit/e3cc0df1-9c07-446a-9476-bb7531d6eec5/nike-just-do-it.jpg" alt="Air Jordan" />
             </div>
             <div>
-              <img src={AirForce1} alt="Air Force" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/1659fcc7-1488-4535-a0f7-77cabd841d82/nike-just-do-it.jpg" alt="Air Force" />
             </div>
             <div>
-              <img src={Dunk} alt="Dunk" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/154c2ffc-2867-4c78-9158-0561fc352ae2/nike-just-do-it.jpg" alt="Dunk" />
             </div>
             <div>
-              <img src={AirMax} alt="Air Max" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/7f4f9f2e-582f-40c9-8a16-0a7267d371f9/nike-just-do-it.jpg" alt="Air Max" />
             </div>
             <div>
-              <img src={LeBron} alt="Le Bron" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/5142f158-802c-4cdc-b9fb-9d9b993b5154/nike-just-do-it.jpg" alt="Le Bron" />
             </div>
             <div>
-              <img src={NikeBlazer} alt="Nike Blazer" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/d1a1db53-e1b6-4c80-9e48-81490d9f8f21/nike-just-do-it.jpg" alt="Nike Blazer" />
             </div>
             <div>
-              <img src={Pegasus} alt="Pegasus" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/e59273d2-3575-4c07-b302-a97f69df4b44/nike-just-do-it.jpg" alt="Pegasus" />
             </div>
             <div>
-              <img src={Metcon} alt="Metcon" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/103470c5-dbbb-45e8-95ef-a8b5412bb72c/nike-just-do-it.jpg" alt="Metcon" />
             </div>
           </Slider>
         </div>
       </div>
       <div className="container-shop-by-sport">
         <p>Shop by Sport</p>
-        <button onClick={prevSlide}>Previous</button>
-        <button onClick={nextSlide}>Next</button>
+        <button className="shop-by-sport" onClick={prevSlideshowBySport}>
+          Previous
+        </button>
+        <button className="shop-by-sport" onClick={nextSlideshowBySport}>
+          Next
+        </button>
         <div className="shop-by-sport-slider-container">
           <Slider
-            ref={sliderRef}
+            ref={showBySportSliderRef}
             className="shop-by-sport-home"
             {...showBySportSettings}
           >
             <div>
-              <img src={Basket} alt="Basket" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/d6c40c07-7815-447d-9286-d50ea0e083c2/nike-just-do-it.jpg" alt="Basket" />
             </div>
             <div>
-              <img src={Running} alt="Running" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/499bd184-ee9f-4ecf-b1ae-dfc1b644415d/nike-just-do-it.jpg" alt="Running" />
             </div>
             <div>
-              <img src={Training} alt="Training" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/403e9305-c72d-4af3-9b83-1a7c8240d057/nike-just-do-it.jpg" alt="Training" />
             </div>
             <div>
-              <img src={Soccer} alt="Soccer" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/37fb1919-fa31-4678-9195-a5e3b9d8a005/nike-just-do-it.jpg" alt="Soccer" />
             </div>
             <div>
-              <img src={Golf} alt="Golf" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/ba14910a-6036-4097-a7fa-cf771027e24f/nike-just-do-it.jpg" alt="Golf" />
             </div>
             <div>
-              <img src={Tennis} alt="Tennis" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/a9188b36-3519-4d5f-b5b3-1741367a78f7/nike-just-do-it.jpg" alt="Tennis" />
             </div>
             <div>
-              <img src={AmFootball} alt="Am Football" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/bf00b2da-be0b-4903-8010-5069dd2314d0/nike-just-do-it.jpg" alt="Am Football" />
             </div>
             <div>
-              <img src={Baseball} alt="Baseball" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/196f8a68-c98e-4571-9d53-607cfae1ad8f/nike-just-do-it.jpg" alt="Baseball" />
             </div>
             <div>
-              <img src={Yoga} alt="Yoga" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/97c1837b-7f93-40a8-94cd-7d15cacad048/nike-just-do-it.jpg" alt="Yoga" />
             </div>
           </Slider>
         </div>
       </div>
       <div className="container-hottest-gifts">
         <p>Hottest Gifts</p>
-        <button onClick={prevSlide}>Previous</button>
-        <button onClick={nextSlide}>Next</button>
+        <button className="hottest-gifts" onClick={prevSlideshottestGifts}>
+          Previous
+        </button>
+        <button className="hottest-gifts" onClick={nextSlidehottestGifts}>
+          Next
+        </button>
         <div className="hottest-gifts-slider-container">
           <Slider
-            ref={sliderRef}
+            ref={hottestGiftsSliderRef}
             className="hottest-gifts-home"
             {...hottestGiftsSettings}
           >
             <div>
-              <img src={AirJordan11GratitudeHG} alt="Air Jordan 11 Gratitude HG" />
+              <img
+                src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_653,c_limit/422df1e9-a0b5-4e11-8cff-77990905f14a/air-jordan-11-retro-big-kids-shoes-KK99vE.png"
+                alt="Air Jordan 11 Gratitude HG"
+              />
             </div>
             <div>
-              <img src={AirJordan11RetroBigKid} alt="Air Jordan 11 Retro Big Kid" />
+              <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_653,c_limit/1adab659-4d8b-4eaa-89a1-8cf3de44cd77/jordan-11-crib-bootie-pmz67m.png" alt="Jordan 11 Crib" />
             </div>
             <div>
-              <img src={AirJordan11RetroLittleKid} alt="Air Jordan 11 Retro Little Kid" />
+              <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_653,c_limit/d14fc386-1067-4a72-961e-9f8134680703/dunk-low-womens-shoes-4W2Z5P.png" alt="Dunk Low Women" />
             </div>
             <div>
-              <img src={AirJordan11RetroBabyKid} alt="Air Jordan 11 Retro Baby Kid" />
+              <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_653,c_limit/a3e7dead-1ad2-4c40-996d-93ebc9df0fca/dunk-low-retro-mens-shoes-87q0hf.png" alt="Dunk Low Retro" />
             </div>
             <div>
-              <img src={Jordan11Crib} alt="Jordan 11 Crib" />
+              <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_653,c_limit/56ff13a0-d2e6-49ed-bfd2-43dc2ba0922b/dunk-low-big-kids-shoes-Ss5wx2.png" alt="Dunk Low Big Kid" />
             </div>
             <div>
-              <img src={DunkLowWomen} alt="Dunk Low Women" />
+              <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_653,c_limit/d5a172a4-63de-4a03-b043-06649a0be10c/dunk-low-little-kids-shoes-tSk2Ms.png" alt="Dunk Low Little Kid" />
             </div>
             <div>
-              <img src={DunkLowRetro} alt="Dunk Low Retro" />
-            </div>
-            <div>
-              <img src={DunkLowBigKid} alt="Dunk Low Big Kid" />
-            </div>
-            <div>
-              <img src={DunkLowLittleKid} alt="Dunk Low Little Kid" />
-            </div>
-            <div>
-              <img src={DunkLowBaby} alt="Dunk Low Baby" />
+              <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_653,c_limit/60753fb7-f964-4c3e-810b-f23adab208e5/dunk-low-baby-toddler-shoes-xtt21x.png" alt="Dunk Low Baby" />
             </div>
           </Slider>
         </div>
@@ -317,22 +325,22 @@ const Home = () => {
             {...membershipSettings}
           >
             <div>
-              <img src={TheBestOfNike} alt="The Best Of Nike" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_654,c_limit/058f025c-2161-4804-91c8-5176ea565294/nike-just-do-it.jpg" alt="The Best Of Nike" />
             </div>
             <div>
-              <img src={MemberProduct} alt="Member Product" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_654,c_limit/4c87032a-1756-47dc-b731-966f2d79285e/nike-just-do-it.jpg" alt="Member Product" />
             </div>
             <div>
-              <img src={MemberRewards} alt="Member Rewards" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_654,c_limit/c9176bd9-e727-46ad-8bcb-62312cbfd5d5/nike-just-do-it.jpg" alt="Member Rewards" />
             </div>
             <div>
-              <img src={SportsWellnessApps} alt="Sports Wellness Apps" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_654,c_limit/73de197a-2e67-42aa-b4e6-aeda1883636b/nike-just-do-it.jpg" alt="Sports Wellness Apps" />
             </div>
             <div>
-              <img src={NikeByYou} alt="Nike By You" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_654,c_limit/a3d73dc6-a36a-432c-a845-68bf59c5f876/nike-just-do-it.jpg" alt="Nike By You" />
             </div>
             <div>
-              <img src={Snkrs} alt="SNKRS" />
+              <img src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_654,c_limit/fb8234b8-0aa7-4d44-8f52-6f95578b1b8a/nike-just-do-it.jpg" alt="SNKRS" />
             </div>
           </Slider>
         </div>
