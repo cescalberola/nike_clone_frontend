@@ -7,9 +7,14 @@ const Product = ({ product }) => {
     );
   });
   return (
-    <div>
-      <p>{product.description}</p>
-      {image}
+    <div className="cardsContainer">
+      <div className="card">
+        <p>{product.title}</p>
+        <p>{product.description}</p>
+        {image}
+        <p>${product.price}</p>
+        {/* <button>Add to Bag</button> */}
+      </div>
     </div>
   );
 };
