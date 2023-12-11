@@ -3,12 +3,20 @@ import productsService from "./productsService";
 
 const initialState = {
   products: [],
-  cart:[]
+  cart:[],
+  product:{}
 };
 
 export const getAll = createAsyncThunk("products/getAll", async () => {
   try {
     return await productsService.getAll();
+  } catch (error) {
+    console.error(error);
+  }
+});
+export const getById = createAsyncThunk("products/getById", async (_id) => {
+  try {
+    return await productsService.getById(_id);
   } catch (error) {
     console.error(error);
   }
@@ -31,6 +39,9 @@ export const productsSlice = createSlice({
     })
     .addCase(addCart.fulfilled,(state,action)=>{
       state.cart= [action.payload,...state.cart]
+    })
+    .addCase(getById.fulfilled,(state,action)=>{
+      state.product= action.payload
     })
   },
 });

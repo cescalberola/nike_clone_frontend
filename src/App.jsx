@@ -6,6 +6,7 @@ import Register from "./components/Register/Register";
 import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
 import Products from "./components/Products/Products";
+import ProductPage from "./components/ProductPage/ProductPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/products/:_id" element={<ProductPage />} />
         </Routes>
       </Router>
     </>
