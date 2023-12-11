@@ -1,3 +1,5 @@
+@import './variables';
+
 .pre-acct-dropdown .pre-account-dropdown-menu-item {
     display: block;
     color: #757575
@@ -182,7 +184,7 @@
 
 .pre-cart-jewel {
     top: 11px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+    font-family: $openSans-font-family
 }
 
 @media only screen and (min-width:960px) {
@@ -587,7 +589,7 @@
 }
 
 .footer-link .feed-back-button {
-    font-family: Nike TG, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: $jost-font-family, $openSans-font-family;
     color: #fff;
     font-size: 14px
 }
@@ -2610,7 +2612,7 @@ html.ncss {
 }
 
 .nde1b .nav-brand {
-    font-family: Nike TG, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: $jost-font-family, $openSans-font-family;
     font-weight: 400;
     letter-spacing: .5px
 }
@@ -3122,7 +3124,7 @@ html.ncss {
 }
 
 .nav-brand-alt {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: $openSans-font-family;
     font-weight: 500
 }
 
@@ -3733,7 +3735,7 @@ body[data-overlay] {
 .footer-accordion[data-index="0"] .footer-link>a {
     color: #fff;
     text-transform: uppercase;
-    font-family: Nike TG, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: $jost-font-family, $openSans-font-family;
     font-size: 14px;
     margin-bottom: 12px
 }
