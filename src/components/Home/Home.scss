@@ -1,0 +1,94 @@
+.home-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.home-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.container-trending p {
+  display: flex;
+  justify-content: start;
+}
+.container-trending {
+  width: 100%;
+}
+.trending-home img {
+  width: 100%;
+  height: auto;
+}
+.container-hapenning-now {
+  margin-top: 60px;
+}
+.container-hapenning-now p {
+  display: flex;
+}
+.img-happening-now img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-gifts-by-price {
+  display: flex;
+}
+.container-gifts-by-price p {
+  display: flex;
+}
+.img-gifts-by-price img {
+  width: 33%;
+}
+
+.container-featured p {
+  display: flex;
+}
+.img-featured img {
+  width: 50%;
+}
+.container-always-iconic p {
+  display: flex;
+  justify-content: start;
+}
+.container-always-iconic {
+  width: 100%;
+}
+.always-iconic-home img {
+  width: 100%;
+  height: auto;
+}
+.container-shop-by-sport p {
+  display: flex;
+  justify-content: start;
+}
+.container-shop-by-sport {
+  width: 100%;
+}
+.shop-by-sport-home img {
+  width: 100%;
+  height: auto;
+}
+.container-hottest-gifts p {
+  display: flex;
+  justify-content: start;
+}
+.container-hottest-gifts {
+  width: 100%;
+}
+.hottest-gifts-home img {
+  width: 100%;
+  height: auto;
+}
+.container-membership p {
+  display: flex;
+  justify-content: start;
+}
+.container-membership {
+  width: 100%;
+}
+.membership-home img {
+  width: 100%;
+  height: auto;
+}
