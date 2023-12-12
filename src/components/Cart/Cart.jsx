@@ -1,31 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
+
 
 const Cart = () => {
+const {cart} =useSelector(state=>state.products)
+console.log(cart)
   return (
     <>
-    <Divider orientation="left">Cart</Divider>
-    <List
-      header={<div>Products</div>}
-      footer={
-        <div className="container-buttons">
-          <Button onClick={clearCart}>Clear Cart </Button>
-          {token ?<Button type="primary" onClick={()=>{
-              orderService.createOrder(cart)
-              clearCart()
-              }}>Create Order</Button>:<Link to="/login">Go to login to shops</Link>}
-          
-        </div>
-      }
-      bordered
-      dataSource={data}
-      renderItem={(item) => (
-        <List.Item>
-          <Typography.Text mark>Name product:</Typography.Text> {item}
-        </List.Item>
-      )}
-    />
-  </>
-  )
-}
+   <h1>Cart</h1>
+    </>
+  );
+};
 
-export default Cart
+
+
+
+
+export default (Cart);

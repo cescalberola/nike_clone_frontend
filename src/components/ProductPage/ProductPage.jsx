@@ -7,11 +7,14 @@ import "./ProductPage.scss"
 const ProductPage = () => {
   const dispatch = useDispatch();
   const { _id } = useParams();
-  const { product } = useSelector((state) => state.products);
+  const { product,cart } = useSelector((state) => state.products);
   
   useEffect(() => {
     dispatch(getById(_id));
   }, [_id, dispatch]);
+  useEffect(()=>{
+    localStorage.setItem("cart",JSON.stringify(cart))
+  },[cart])
 
   if (!product) {
     return <p>Cargando</p>;
