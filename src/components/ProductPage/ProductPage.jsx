@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getById } from '../../features/products/productsSlice';
+import { addCart, getById } from '../../features/products/productsSlice';
 import { useParams } from 'react-router-dom';
 import "./ProductPage.scss"
 
@@ -28,7 +28,7 @@ const ProductPage = () => {
         <p>Color: {product.color}</p>
         <p>Select Size: {product.size}</p>
         <p>${product.price}</p>
-        <button className="ncss-btn-primary-dark">Add to cart</button>
+        <button onClick={()=>dispatch(addCart(product))} className="ncss-btn-primary-dark">Add to cart</button>
         <button className="ncss-btn-primary-dark">Favorite</button>
       </div>
     </div>

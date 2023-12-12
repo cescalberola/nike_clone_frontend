@@ -109,13 +109,13 @@ const Home = () => {
     <>
       <Slider className="banner-home" {...bannerSettings}>
         <div>
-          <p>
-            New Styles Added: Extra 25% Off Sign in and use code CELEBRATE to
-            save on select styles.
-          </p>
+          <p>Last-Minute Gifts | Save Up to 50% 🎁</p>
+          <p className="p-sub">No code needed. Shop Now.</p>
+          
         </div>
         <div>
           <p>Cold Weather Gear on Sale Now ❄️ Shop Now. Ends 12.9.</p>
+          <p className="p-sub">No code needed. Shop Now.</p>
         </div>
       </Slider>
       <div className="home">
