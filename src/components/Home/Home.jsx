@@ -111,7 +111,6 @@ const Home = () => {
         <div>
           <p>Last-Minute Gifts | Save Up to 50% 🎁</p>
           <p className="p-sub">No code needed. Shop Now.</p>
-          
         </div>
         <div>
           <p>Cold Weather Gear on Sale Now ❄️ Shop Now. Ends 12.9.</p>
@@ -238,54 +237,54 @@ const Home = () => {
               className="always-iconic-home"
               {...alwaysIconicSettings}
             >
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_1286,c_limit/e3cc0df1-9c07-446a-9476-bb7531d6eec5/nike-just-do-it.jpg"
-                  alt="Air Jordan"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/1659fcc7-1488-4535-a0f7-77cabd841d82/nike-just-do-it.jpg"
-                  alt="Air Force"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/154c2ffc-2867-4c78-9158-0561fc352ae2/nike-just-do-it.jpg"
-                  alt="Dunk"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/7f4f9f2e-582f-40c9-8a16-0a7267d371f9/nike-just-do-it.jpg"
-                  alt="Air Max"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/5142f158-802c-4cdc-b9fb-9d9b993b5154/nike-just-do-it.jpg"
-                  alt="Le Bron"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/d1a1db53-e1b6-4c80-9e48-81490d9f8f21/nike-just-do-it.jpg"
-                  alt="Nike Blazer"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/e59273d2-3575-4c07-b302-a97f69df4b44/nike-just-do-it.jpg"
-                  alt="Pegasus"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1125,c_limit/103470c5-dbbb-45e8-95ef-a8b5412bb72c/nike-just-do-it.jpg"
-                  alt="Metcon"
-                />
-              </div>
+              <a href="http://localhost:5173/products/65786f875608e74065b6fba4">
+                <div>
+                  <img
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-mens-shoes-jBrhbr.png"
+                    alt="Air Force"
+                  />
+                </div>
+              </a>
+              <a href="http://localhost:5173/products/65772b54533e382a7d059d80">
+                <div>
+                  <img
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cee5c042-0313-469e-a461-76f820f28d97/dunk-low-shoes-rv2vSN.png"
+                    alt="Dunk"
+                  />
+                </div>
+              </a>
+              <a href="http://localhost:5173/products/65786c805608e74065b6fb85">
+                <div>
+                  <img
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/w2ldynwtyuspv6r5rffj/air-max-90-mens-shoes-6n3vKB.png"
+                    alt="Air Max"
+                  />
+                </div>
+              </a>
+              <a href="http://localhost:5173/products/65786d635608e74065b6fb91">
+                <div>
+                  <img
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf2bb46-561e-4429-b522-4689057c8ba5/lebron-witness-6-basketball-shoes-HXbMw7.png"
+                    alt="Le Bron"
+                  />
+                </div>
+              </a>
+              <a href="http://localhost:5173/products/657871015608e74065b6fbab">
+                <div>
+                  <img
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/blazer-mid-77-vintage-mens-shoes-nw30B2.png"
+                    alt="Nike Blazer"
+                  />
+                </div>
+              </a>
+              <a href="http://localhost:5173/products/657871e05608e74065b6fbb1">
+                <div>
+                  <img
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d517ab75-204b-4f88-9c99-389f14d7b0d5/pegasus-40-mens-road-running-shoes-mVJdmS.png"
+                    alt="Pegasus"
+                  />
+                </div>
+              </a>
             </Slider>
           </div>
         </div>
