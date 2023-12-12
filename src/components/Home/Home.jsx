@@ -155,9 +155,6 @@ const Home = () => {
                   alt="Dunk The Halls"
                 />
               </div>
-              {/* <div>
-              <img src={TheMostIconicGifts} alt="Most Iconic Gifts" />
-            </div> */}
               <div>
                 <img
                   src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_653,c_limit/ea2229d0-984b-4787-a4d4-783b92782721/nike-just-do-it.jpg"
