@@ -75,7 +75,7 @@ const Home = () => {
   const alwaysIconicSettings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3.6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -84,7 +84,7 @@ const Home = () => {
   const showBySportSettings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3.6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -149,12 +149,12 @@ const Home = () => {
         <div className="container-trending">
           <p>Trending</p>
           <div className="buttons-trending">
-          <button onClick={prevSlideTrending}>
-            <LeftSVG/>
-          </button>
-          <button onClick={nextSlideTrending}>
-            <RightSVG />
-          </button>
+            <button onClick={prevSlideTrending}>
+              <LeftSVG />
+            </button>
+            <button onClick={nextSlideTrending}>
+              <RightSVG />
+            </button>
           </div>
           <div className="trending-slider-container">
             <Slider
@@ -233,151 +233,153 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="container-always-iconic">
-          <p>Always Iconic</p>
-          <button className="always-iconic" onClick={prevSlideAlwaysIconic}>
-            Previous
-          </button>
-          <button className="always-iconic" onClick={nextSlideAlwaysIconic}>
-            Next
-          </button>
-          <div className="always-iconic-slider-container">
-            <Slider
-              ref={alwaysIconicSliderRef}
-              className="always-iconic-home"
-              {...alwaysIconicSettings}
-            >
-              <a href="http://localhost:5173/products/65786f875608e74065b6fba4">
-                <div>
-                  <img
-                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-mens-shoes-jBrhbr.png"
-                    alt="Air Force"
-                  />
-                </div>
-              </a>
-              <a href="http://localhost:5173/products/65772b54533e382a7d059d80">
-                <div>
-                  <img
-                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cee5c042-0313-469e-a461-76f820f28d97/dunk-low-shoes-rv2vSN.png"
-                    alt="Dunk"
-                  />
-                </div>
-              </a>
-              <a href="http://localhost:5173/products/65786c805608e74065b6fb85">
-                <div>
-                  <img
-                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/w2ldynwtyuspv6r5rffj/air-max-90-mens-shoes-6n3vKB.png"
-                    alt="Air Max"
-                  />
-                </div>
-              </a>
-              <a href="http://localhost:5173/products/65786d635608e74065b6fb91">
-                <div>
-                  <img
-                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf2bb46-561e-4429-b522-4689057c8ba5/lebron-witness-6-basketball-shoes-HXbMw7.png"
-                    alt="Le Bron"
-                  />
-                </div>
-              </a>
-              <a href="http://localhost:5173/products/657871015608e74065b6fbab">
-                <div>
-                  <img
-                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/blazer-mid-77-vintage-mens-shoes-nw30B2.png"
-                    alt="Nike Blazer"
-                  />
-                </div>
-              </a>
-              <a href="http://localhost:5173/products/657871e05608e74065b6fbb1">
-                <div>
-                  <img
-                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d517ab75-204b-4f88-9c99-389f14d7b0d5/pegasus-40-mens-road-running-shoes-mVJdmS.png"
-                    alt="Pegasus"
-                  />
-                </div>
-              </a>
-            </Slider>
-          </div>
+      </div>
+      <div className="container-always-iconic">
+        <p>Always Iconic</p>
+        <button className="always-iconic" onClick={prevSlideAlwaysIconic}>
+          Previous
+        </button>
+        <button className="always-iconic" onClick={nextSlideAlwaysIconic}>
+          Next
+        </button>
+        <div className="always-iconic-slider-container">
+          <Slider
+            ref={alwaysIconicSliderRef}
+            className="always-iconic-home"
+            {...alwaysIconicSettings}
+          >
+            <a href="http://localhost:5173/products/65786f875608e74065b6fba4">
+              <div>
+                <img
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-mens-shoes-jBrhbr.png"
+                  alt="Air Force"
+                />
+              </div>
+            </a>
+            <a href="http://localhost:5173/products/65772b54533e382a7d059d80">
+              <div>
+                <img
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cee5c042-0313-469e-a461-76f820f28d97/dunk-low-shoes-rv2vSN.png"
+                  alt="Dunk"
+                />
+              </div>
+            </a>
+            <a href="http://localhost:5173/products/65786c805608e74065b6fb85">
+              <div>
+                <img
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/w2ldynwtyuspv6r5rffj/air-max-90-mens-shoes-6n3vKB.png"
+                  alt="Air Max"
+                />
+              </div>
+            </a>
+            <a href="http://localhost:5173/products/65786d635608e74065b6fb91">
+              <div>
+                <img
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf2bb46-561e-4429-b522-4689057c8ba5/lebron-witness-6-basketball-shoes-HXbMw7.png"
+                  alt="Le Bron"
+                />
+              </div>
+            </a>
+            <a href="http://localhost:5173/products/657871015608e74065b6fbab">
+              <div>
+                <img
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/blazer-mid-77-vintage-mens-shoes-nw30B2.png"
+                  alt="Nike Blazer"
+                />
+              </div>
+            </a>
+            <a href="http://localhost:5173/products/657871e05608e74065b6fbb1">
+              <div>
+                <img
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d517ab75-204b-4f88-9c99-389f14d7b0d5/pegasus-40-mens-road-running-shoes-mVJdmS.png"
+                  alt="Pegasus"
+                />
+              </div>
+            </a>
+          </Slider>
         </div>
-        <div className="container-shop-by-sport">
-          <p>Shop by Sport</p>
-          <button className="shop-by-sport" onClick={prevSlideshowBySport}>
-            Previous
-          </button>
-          <button className="shop-by-sport" onClick={nextSlideshowBySport}>
-            Next
-          </button>
-          <div className="shop-by-sport-slider-container">
-            <Slider
-              ref={showBySportSliderRef}
-              className="shop-by-sport-home"
-              {...showBySportSettings}
-            >
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/d6c40c07-7815-447d-9286-d50ea0e083c2/nike-just-do-it.jpg"
-                  alt="Basket"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/499bd184-ee9f-4ecf-b1ae-dfc1b644415d/nike-just-do-it.jpg"
-                  alt="Running"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/403e9305-c72d-4af3-9b83-1a7c8240d057/nike-just-do-it.jpg"
-                  alt="Training"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/37fb1919-fa31-4678-9195-a5e3b9d8a005/nike-just-do-it.jpg"
-                  alt="Soccer"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/ba14910a-6036-4097-a7fa-cf771027e24f/nike-just-do-it.jpg"
-                  alt="Golf"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/a9188b36-3519-4d5f-b5b3-1741367a78f7/nike-just-do-it.jpg"
-                  alt="Tennis"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/bf00b2da-be0b-4903-8010-5069dd2314d0/nike-just-do-it.jpg"
-                  alt="Am Football"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/196f8a68-c98e-4571-9d53-607cfae1ad8f/nike-just-do-it.jpg"
-                  alt="Baseball"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/97c1837b-7f93-40a8-94cd-7d15cacad048/nike-just-do-it.jpg"
-                  alt="Yoga"
-                />
-              </div>
-            </Slider>
-          </div>
+      </div>
+      <div className="container-shop-by-sport">
+        <p>Shop by Sport</p>
+        <button className="shop-by-sport" onClick={prevSlideshowBySport}>
+          Previous
+        </button>
+        <button className="shop-by-sport" onClick={nextSlideshowBySport}>
+          Next
+        </button>
+        <div className="shop-by-sport-slider-container">
+          <Slider
+            ref={showBySportSliderRef}
+            className="shop-by-sport-home"
+            {...showBySportSettings}
+          >
+            <div>
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/d6c40c07-7815-447d-9286-d50ea0e083c2/nike-just-do-it.jpg"
+                alt="Basket"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/499bd184-ee9f-4ecf-b1ae-dfc1b644415d/nike-just-do-it.jpg"
+                alt="Running"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/403e9305-c72d-4af3-9b83-1a7c8240d057/nike-just-do-it.jpg"
+                alt="Training"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/37fb1919-fa31-4678-9195-a5e3b9d8a005/nike-just-do-it.jpg"
+                alt="Soccer"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/ba14910a-6036-4097-a7fa-cf771027e24f/nike-just-do-it.jpg"
+                alt="Golf"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/a9188b36-3519-4d5f-b5b3-1741367a78f7/nike-just-do-it.jpg"
+                alt="Tennis"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/bf00b2da-be0b-4903-8010-5069dd2314d0/nike-just-do-it.jpg"
+                alt="Am Football"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/196f8a68-c98e-4571-9d53-607cfae1ad8f/nike-just-do-it.jpg"
+                alt="Baseball"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/97c1837b-7f93-40a8-94cd-7d15cacad048/nike-just-do-it.jpg"
+                alt="Yoga"
+              />
+            </div>
+          </Slider>
         </div>
+      </div>
+      <div className="content-home-padding">
         <div className="container-hottest-gifts">
           <p>Hottest Gifts</p>
           <div className="buttons-hottest-gifts">
-          <button className="hottest-gifts" onClick={prevSlideshottestGifts}>
-          <LeftSVG/>
-          </button>
-          <button className="hottest-gifts" onClick={nextSlidehottestGifts}>
-          <RightSVG/>
-          </button>
+            <button className="hottest-gifts" onClick={prevSlideshottestGifts}>
+              <LeftSVG />
+            </button>
+            <button className="hottest-gifts" onClick={nextSlidehottestGifts}>
+              <RightSVG />
+            </button>
           </div>
           <div className="hottest-gifts-slider-container">
             <Slider
@@ -433,8 +435,12 @@ const Home = () => {
         <div className="container-membership">
           <p>Nike Membership</p>
           <div className="buttons-membership">
-          <button onClick={prevSlide}><LeftSVG/></button>
-          <button onClick={nextSlide}><RightSVG/></button>
+            <button onClick={prevSlide}>
+              <LeftSVG />
+            </button>
+            <button onClick={nextSlide}>
+              <RightSVG />
+            </button>
           </div>
           <div className="membership-slider-container">
             <Slider
