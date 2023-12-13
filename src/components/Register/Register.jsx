@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Register.scss'
-import { useDispatch } from 'react-redux';
-import { register } from '../../features/auth/authSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Register = () => {
+    const { username } = useParams()
     const [data, setData] = useState({
+        username: username,
         zipCode: "",
         firstName: "",
         lastName: "",
@@ -14,9 +16,11 @@ const Register = () => {
         updates: false,
         policy: false,
     });
-
-    const dispatch = useDispatch();
-
+    useEffect(() => {
+        if (!username) {
+            navigate(`/lookup`)
+        }
+    }, [])
     const handleInputChange = (event) => {
         setData({
             ...data,
@@ -25,7 +29,8 @@ const Register = () => {
     }
     const handleSubmit = async (event) => {
         event.preventDefault();
-        !data.policy ? console.log('most agree policy') : dispatch(register(data));
+        console.log(data)
+        // !data.policy ? console.log('most agree policy') : dispatch(register(data));
     };
 
 

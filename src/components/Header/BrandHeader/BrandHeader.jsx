@@ -182,7 +182,7 @@ const BrandHeader = () => {
                                     {/* </a> */}
                                 </Link>
                                 <span className="ml1-sm mr1-sm body-4">|</span>
-                                <Link to={'/login'} className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm">
+                                <Link to={'/lookup'} className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm">
                                     {/* <button data-var="loginBtn" data-type="click_navMembership" data-path="sign in" className="nav-btn p0-sm d-sm-b body-4 u-bold ml2-sm mr2-sm" data-pre="ILink"> */}
                                     <span id="hf_title_signin_membership">Sign In</span>
                                     {/* </button> */}
