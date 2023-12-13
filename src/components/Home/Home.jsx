@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
 import { Link } from "react-router-dom";
-import "../../f00ae4c5bdca7b589b8a.css"
+import "../../f00ae4c5bdca7b589b8a.css";
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -130,10 +130,12 @@ const Home = () => {
             alt=""
           />
         </div>
-        <h3 className="si35-ISy _1MF91zHG text-color-primary-dark responsive-display-2-1 jordan-gratitude">THE MOST<br></br>ICONIC GIFTS</h3>
+        <h3 className="si35-ISy _1MF91zHG text-color-primary-dark responsive-display-2-1 jordan-gratitude">
+          THE MOST<br></br>ICONIC GIFTS
+        </h3>
         <p>
-          Some timeless classics, some future favorites—these kicks and <br></br> more are
-          100% on their list
+          Some timeless classics, some future favorites—these kicks and{" "}
+          <br></br> more are 100% on their list
         </p>
         <div className="buttons-jordan-gratitude">
           <Link to={"/products"}>
@@ -187,15 +189,16 @@ const Home = () => {
             </Slider>
           </div>
         </div>
-        <div className="container-hapenning-now">
+        <div class="container-hapenning-now">
           <p>Happening Now</p>
-          <div className="img-happening-now">
+          <div class="img-happening-now">
             <img
               src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1824,c_limit/13477ed1-8759-4ece-9be9-87b986657dba/nike-just-do-it.jpg"
               alt="Happening Now"
             />
           </div>
         </div>
+
         <div className="container-gifts-by-price">
           <p>Top Gifts by Price</p>
           <div className="img-gifts-by-price">
