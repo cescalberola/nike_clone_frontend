@@ -6,6 +6,7 @@ import "./Home.scss";
 import { Link } from "react-router-dom";
 import "../../f00ae4c5bdca7b589b8a.css";
 import RightSVG from "../../assets/svg/RightSVG";
+import LeftSVG from "../../assets/svg/LeftSVG";
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -148,7 +149,7 @@ const Home = () => {
         <div className="container-trending">
           <p>Trending</p>
           <button className="trending" onClick={prevSlideTrending}>
-            Previous
+            <LeftSVG/>
           </button>
           <button className="trending" onClick={nextSlideTrending}>
             <RightSVG />
