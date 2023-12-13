@@ -2,13 +2,13 @@ import "./App.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import LookUp from "./components/LookUp/LookUp";
-import Register from "./components/Register/Register";
+import Login from "./components/LookUp/Login/Login";
+import Register from "./components/LookUp/Register/Register";
 import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Products from "./components/Products/Products";
 import ProductPage from "./components/ProductPage/ProductPage";
-import Login from "./components/LookUp/Login/Login";
 import Cart from "./components/Cart/Cart";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/products/:_id" element={<ProductPage />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </>
   );

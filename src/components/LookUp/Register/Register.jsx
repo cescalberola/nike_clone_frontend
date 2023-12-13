@@ -2,11 +2,16 @@ import React, { useEffect, useState } from 'react'
 import './Register.scss'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
+import { register, reset } from '../../../features/auth/authSlice';
 
 const Register = () => {
     const { username } = useParams()
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const { isSuccess, message, isError } = useSelector((state) => state.auth);
+
     const [data, setData] = useState({
-        username: username,
+        email: username,
         zipCode: "",
         firstName: "",
         lastName: "",
@@ -16,23 +21,41 @@ const Register = () => {
         updates: false,
         policy: false,
     });
+
+    const [note, setNote] = useState('')
+
     useEffect(() => {
-        if (!username) {
-            navigate(`/lookup`)
+        if (isSuccess) {
+            setNote(message)
+            navigate(`/login/${data.email}`)
         }
-    }, [])
+        if (isError) {
+            setNote(message)
+        }
+        dispatch(reset())
+    }, [isSuccess, message, isError]);
+
     const handleInputChange = (event) => {
         setData({
             ...data,
             [event.target.name]: event.target.value,
         });
     }
+
+    const handleCheckboxChange = (event) => {
+        const { name, checked } = event.target;
+
+        setData({
+            ...data,
+            [name]: checked,
+        });
+    };
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         console.log(data)
-        // !data.policy ? console.log('most agree policy') : dispatch(register(data));
+        dispatch(register(data));
     };
-
 
     return (
         <>
@@ -50,13 +73,14 @@ const Register = () => {
                     </select>
                     <input type="date" value={data.dateOfBirth} onChange={handleInputChange} name='dateOfBirth' id='dateOfBirth' min="1920-01-01" max="2024-12-31" />
                     <div className='checkboxes'>
-                        <input type="checkbox" value={data.updates} onChange={handleInputChange} name='updates' id='updates' />
+                        <input type="checkbox" value={data.updates} onChange={handleCheckboxChange} name='updates' id='updates' checked={data.updates} />
                         <label htmlFor="updates">Get Updates</label>
                     </div>
                     <div className='checkboxes'>
-                        <input type="checkbox" value={data.policy} onChange={handleInputChange} name='policy' id='policy' />
+                        <input type="checkbox" value={data.policy} onChange={handleCheckboxChange} name='policy' id='policy' checked={data.policy} />
                         <label htmlFor="policy">I Agree</label>
                     </div>
+                    <p>{note}</p>
                     <button className="btn-primary-dark" type='submit'>Register</button>
                 </form>
             </div>

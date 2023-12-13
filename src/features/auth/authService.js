@@ -8,8 +8,8 @@ const checkEmail = async (email) => {
     // console.log(res)
     return res.data;
 };
-const register = async (userData) => {
-    const res = await axios.post(API_URL + "/register", userData);
+const register = async (data) => {
+    const res = await axios.post(API_URL + "/register", data);
     return res.data;
 };
 const login = async (userData) => {
