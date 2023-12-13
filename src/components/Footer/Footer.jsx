@@ -9,19 +9,19 @@ const Footer = () => {
           <div
             class="ncss-col-sm-12 ncss-col-md-9 va-sm-t"
             data-pre="FooterMenu"
-          >
+            >
             <div class="hf-accordion-group ncss-row" data-pre="AccordionGroup">
               <div
                 class="hf-accordion footer-accordion ncss-col-sm-12 ncss-col-md-4 ncss-col-lg-3 va-sm-t is-open-md"
                 data-index="0"
                 data-maxheight="400"
                 data-pre="Accordion"
-              >
+                >
                 <p class="hf-accordion-header">
                   <button
                     data-var="toggleBtn"
                     class="hf-accordion-button bg-transparent nav-uppercase nav-brand p4-sm"
-                  >
+                    >
                     <span></span>
                     <i class="hf-accordion-icon g72-plus" data-var="icon"></i>
                   </button>
