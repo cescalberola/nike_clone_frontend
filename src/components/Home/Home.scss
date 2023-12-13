@@ -1,8 +1,14 @@
 .buttons-trending {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   gap: 10px;
   margin-bottom: 30px;
+}
+.buttons-trending p {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
 }
 
 .buttons-trending button {
@@ -160,6 +166,20 @@
   width: 50%;
   padding: 5px;
 }
+.container-always-iconic {
+  position: relative;
+}
+
+.buttons-always-iconic {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  right: 8%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
 
 .container-always-iconic p {
   display: flex;
@@ -168,13 +188,27 @@
   margin-bottom: 10px;
   margin-left: 80px;
 }
-.container-always-iconic {
-  width: 100%;
-}
 .always-iconic-home img {
   width: 100%;
   height: auto;
   padding: 5px;
+}
+.buttons-always-iconic {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.buttons-always-iconic button {
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttons-always-iconic button:hover {
+  background-color: #908f8f; 
 }
 .container-shop-by-sport p {
   display: flex;
