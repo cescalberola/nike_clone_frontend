@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
 import { Link } from "react-router-dom";
+import "../../f00ae4c5bdca7b589b8a.css"
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -129,7 +130,7 @@ const Home = () => {
             alt=""
           />
         </div>
-        <h1 className="jordan-gratitude">THE MOST ICONIC GIFTS</h1>
+        <h3 className="si35-ISy _1MF91zHG text-color-primary-dark responsive-display-2-1 jordan-gratitude">THE MOST<br></br>ICONIC GIFTS</h3>
         <p>
           Some timeless classics, some future favorites—these kicks and more are
           100% on their list
@@ -160,24 +161,28 @@ const Home = () => {
                   src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_653,c_limit/08a905be-557b-47ff-8f6e-6056d7a122ed/nike-just-do-it.jpg"
                   alt="Dunk The Halls"
                 />
+                <h3>Dunk the Halls</h3>
               </div>
               <div>
                 <img
                   src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_653,c_limit/ea2229d0-984b-4787-a4d4-783b92782721/nike-just-do-it.jpg"
                   alt="Cozy Style"
                 />
+                <h3>Cozy Style That’s All You</h3>
               </div>
               <div>
                 <img
                   src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_653,c_limit/607f9e67-fbbb-444e-a388-5a10c8bea602/nike-just-do-it.jpg"
                   alt="Newest In AJ1"
                 />
+                <h3>Newest in AJ1</h3>
               </div>
               <div>
                 <img
                   src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_653,c_limit/c7d4e186-efaa-4087-aea9-b80a2311aef7/nike-just-do-it.jpg"
                   alt="Winter Running"
                 />
+                <h3>Winter Running Essentials</h3>
               </div>
             </Slider>
           </div>
@@ -205,15 +210,6 @@ const Home = () => {
             <img
               src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_653,c_limit/ae6531c8-76cd-4329-8670-2f2bc6930049/nike-just-do-it.jpg"
               alt="100"
-            />
-          </div>
-        </div>
-        <div className="container-nike-gifting">
-          <p>Nike Gifting</p>
-          <div className="img-nike-gifting">
-            <img
-              src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1824,c_limit/6efac23b-5b2d-40c4-b96b-bdc33c967035/nike-just-do-it.jpg"
-              alt="Happening Now"
             />
           </div>
         </div>
