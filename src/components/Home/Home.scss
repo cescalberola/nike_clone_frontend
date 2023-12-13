@@ -113,3 +113,16 @@ text-decoration: underline
   width: 100%;
   height: auto;
 }
+
+.ncss-btn-primary-dark {
+  width: 150px;
+  max-width: 10%;
+
+}
+
+@media screen and (max-width: 767px) {
+  .ncss-btn-primary-dark {
+    width: auto;
+    max-width: 20%
+  }
+}
