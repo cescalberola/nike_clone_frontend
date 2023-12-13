@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -130,7 +131,9 @@ const Home = () => {
           100% on their list
         </p>
         <div className="buttons-jordan-gratitude">
-          <button className="ncss-btn-primary-dark">Shop</button>
+          <Link to={"/products"}>
+            <button className="ncss-btn-primary-dark">Shop</button>
+          </Link>
         </div>
       </div>
       <div className="content-home-padding">
