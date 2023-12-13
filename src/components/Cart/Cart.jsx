@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./Cart.scss";
-import { clearCart } from "../../features/products/productsSlice";
+import { clearCart, removeProduct } from "../../features/products/productsSlice";
 
 const Cart = () => {
   const { cart } = useSelector((state) => state.products);
@@ -25,6 +25,13 @@ const Cart = () => {
       return grouped;
     }, []);
     return groupedCart;
+  };
+
+  const handleRemoveProduct = (productId) => {
+    dispatch(removeProduct(productId));
+    const currentCart = JSON.parse(localStorage.getItem("cart")) || [];
+    const updatedCart = currentCart.filter((product) => product._id !== productId);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
   return (
@@ -54,6 +61,11 @@ const Cart = () => {
                     <p className="cart-product-quantity">
                       Quantity: {groupedProduct.quantity}
                     </p>
+                    <button className="nds-btn css-6kj7vn btn-primary-dark btn-md removeButton"
+                      onClick={() => handleRemoveProduct(groupedProduct._id)}
+                    >
+                      Remove
+                    </button>
                   </div>
                 </div>
               </div>

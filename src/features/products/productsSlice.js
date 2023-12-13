@@ -37,6 +37,16 @@ export const clearCart = createAsyncThunk("products/clearCart", async () => {
     console.error(error);
   }
 });
+export const removeProduct = createAsyncThunk(
+  "products/removeProduct",
+  async (productId) => {
+    try {
+      return productId;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+);
 
 export const productsSlice = createSlice({
   name: "products",
@@ -55,6 +65,11 @@ export const productsSlice = createSlice({
       })
       .addCase(clearCart.fulfilled, (state, action) => {
         state.cart = null;
+      })
+      .addCase(removeProduct.fulfilled, (state, action) => {
+        state.cart = state.cart.filter(
+          (product) => product._id !== action.payload
+        );
       });
   },
 });
