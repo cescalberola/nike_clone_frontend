@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import "../../f00ae4c5bdca7b589b8a.css";
+import RightSVG from "../../assets/svg/RightSVG";
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -150,7 +151,7 @@ const Home = () => {
             Previous
           </button>
           <button className="trending" onClick={nextSlideTrending}>
-            Next
+            <RightSVG />
           </button>
           <div className="trending-slider-container">
             <Slider
@@ -189,9 +190,9 @@ const Home = () => {
             </Slider>
           </div>
         </div>
-        <div class="container-hapenning-now">
+        <div className="container-hapenning-now">
           <p>Happening Now</p>
-          <div class="img-happening-now">
+          <div className="img-happening-now">
             <img
               src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1824,c_limit/13477ed1-8759-4ece-9be9-87b986657dba/nike-just-do-it.jpg"
               alt="Happening Now"
