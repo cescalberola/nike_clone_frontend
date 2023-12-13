@@ -5,6 +5,7 @@ import LookUp from "./components/LookUp/LookUp";
 import Register from "./components/Register/Register";
 import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import Products from "./components/Products/Products";
 import ProductPage from "./components/ProductPage/ProductPage";
 import Login from "./components/LookUp/Login/Login";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/products/:_id" element={<ProductPage />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );
