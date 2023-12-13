@@ -3,97 +3,97 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer class="l-footer bg-black u-full-width nde1b" data-version="4.64.3">
-      <div class="ncss-container nav-fixed-fluid prl5-md pt5-sm pt10-md pb0-md prl10-lg">
-        <div class="l-footer-body ncss-row mb4-sm">
+    <footer className="l-footer bg-black u-full-width nde1b" data-version="4.64.3">
+      <div className ="ncss-container nav-fixed-fluid prl5-md pt5-sm pt10-md pb0-md prl10-lg">
+        <div className ="l-footer-body ncss-row mb4-sm">
           <div
-            class="ncss-col-sm-12 ncss-col-md-9 va-sm-t"
+            className="ncss-col-sm-12 ncss-col-md-9 va-sm-t"
             data-pre="FooterMenu"
             >
-            <div class="hf-accordion-group ncss-row" data-pre="AccordionGroup">
+            <div className ="hf-accordion-group ncss-row" data-pre="AccordionGroup">
               <div
-                class="hf-accordion footer-accordion ncss-col-sm-12 ncss-col-md-4 ncss-col-lg-3 va-sm-t is-open-md"
+                className="hf-accordion footer-accordion ncss-col-sm-12 ncss-col-md-4 ncss-col-lg-3 va-sm-t is-open-md"
                 data-index="0"
                 data-maxheight="400"
                 data-pre="Accordion"
                 >
-                <p class="hf-accordion-header">
+                <p className ="hf-accordion-header">
                   <button
                     data-var="toggleBtn"
-                    class="hf-accordion-button bg-transparent nav-uppercase nav-brand p4-sm"
+                    className="hf-accordion-button bg-transparent nav-uppercase nav-brand p4-sm"
                     >
                     <span></span>
-                    <i class="hf-accordion-icon g72-plus" data-var="icon"></i>
+                    <i className ="hf-accordion-icon g72-plus" data-var="icon"></i>
                   </button>
                 </p>
-                <div class="hf-accordion-body" data-var="body">
+                <div className ="hf-accordion-body" data-var="body">
                   <ul>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="gift cards"
                         href="https://www.nike.com/gift-cards"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         GIFT CARDS
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="find a store"
                         href="https://www.nike.com/retail"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         FIND A STORE
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="become a member"
                         href="https://www.nike.com/register"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         BECOME A MEMBER
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         data-type="click_navFooter"
                         data-path="nike x nba"
                         href="https://www.nike.com/nikexnba"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         NIKE X NBA
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="nike journal"
                         href="https://www.nike.com/stories"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         NIKE JOURNAL
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <button
                         target="_self"
                         data-type="click_navFooter"
                         data-path="site feedback"
                         href="#site-feedback"
-                        class="nav-btn p0-sm feed-back-button"
+                        className="nav-btn p0-sm feed-back-button"
                         data-pre="ILink"
                       >
                         SEND US FEEDBACK
@@ -103,114 +103,114 @@ const Footer = () => {
                 </div>
               </div>
               <div
-                class="hf-accordion footer-accordion ncss-col-sm-12 ncss-col-md-4 ncss-col-lg-3 va-sm-t is-open-md"
+                className="hf-accordion footer-accordion ncss-col-sm-12 ncss-col-md-4 ncss-col-lg-3 va-sm-t is-open-md"
                 data-index="1"
                 data-maxheight="400"
                 data-pre="Accordion"
               >
-                <p class="hf-accordion-header">
+                <p className ="hf-accordion-header">
                   <button
                     data-var="toggleBtn"
-                    class="hf-accordion-button bg-transparent nav-uppercase nav-brand p4-sm"
+                    className="hf-accordion-button bg-transparent nav-uppercase nav-brand p4-sm"
                   >
                     <span>Get Help</span>
-                    <i class="hf-accordion-icon g72-plus" data-var="icon"></i>
+                    <i className ="hf-accordion-icon g72-plus" data-var="icon"></i>
                   </button>
                 </p>
-                <div class="hf-accordion-body" data-var="body">
+                <div className ="hf-accordion-body" data-var="body">
                   <ul>
-                    <li class="footer-link footer-link-header d-sm-h d-md-b">
+                    <li className="footer-link footer-link-header d-sm-h d-md-b">
                       <a
                         language="en"
                         aria-label="main-footer, main-footer, Get Help"
                         data-type="click_navFooter"
                         data-path="get help"
                         href="https://www.nike.com/help"
-                        class="nav-uppercase nav-brand"
+                        className="nav-uppercase nav-brand"
                         data-pre="ILink"
                       >
                         Get Help
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="get help:order status"
                         href="https://www.nike.com/orders/details/"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Order Status
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="get help:shipping and delivery"
                         href="https://www.nike.com/help/a/shipping-delivery"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Shipping and Delivery
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="get help:returns"
                         href="https://www.nike.com/help/a/returns-policy"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Returns
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="get help:order cancellation"
                         href="https://www.nike.com/help/a/change-cancel-order"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Order Cancellation
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="get help:payment options"
                         href="https://www.nike.com/help/a/payment-options"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Payment Options
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="get help:gift card balance"
                         href="https://www.nike.com/orders/gift-card-lookup"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Gift Card Balance
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="get help:contact us"
                         href="https://www.nike.com/help/#contact"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Contact Us
@@ -220,90 +220,90 @@ const Footer = () => {
                 </div>
               </div>
               <div
-                class="hf-accordion footer-accordion ncss-col-sm-12 ncss-col-md-4 ncss-col-lg-3 va-sm-t is-open-md"
+                className="hf-accordion footer-accordion ncss-col-sm-12 ncss-col-md-4 ncss-col-lg-3 va-sm-t is-open-md"
                 data-index="2"
                 data-maxheight="400"
                 data-pre="Accordion"
               >
-                <p class="hf-accordion-header">
+                <p className ="hf-accordion-header">
                   <button
                     data-var="toggleBtn"
-                    class="hf-accordion-button bg-transparent nav-uppercase nav-brand p4-sm"
+                    className="hf-accordion-button bg-transparent nav-uppercase nav-brand p4-sm"
                   >
                     <span>About Nike</span>
-                    <i class="hf-accordion-icon g72-plus" data-var="icon"></i>
+                    <i className ="hf-accordion-icon g72-plus" data-var="icon"></i>
                   </button>
                 </p>
-                <div class="hf-accordion-body" data-var="body">
+                <div className ="hf-accordion-body" data-var="body">
                   <ul>
-                    <li class="footer-link footer-link-header d-sm-h d-md-b">
+                    <li className="footer-link footer-link-header d-sm-h d-md-b">
                       <a
                         language="en"
                         aria-label="main-footer, About Nike"
                         data-type="click_navFooter"
                         data-path="about nike"
                         href="http://about.nike.com/"
-                        class="nav-uppercase nav-brand"
+                        className="nav-uppercase nav-brand"
                         data-pre="ILink"
                       >
                         About Nike
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="about nike:news"
                         href="http://news.nike.com/"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         News
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="about nike:careers"
                         href="https://jobs.nike.com/"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Careers
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="about nike:investors"
                         href="http://investors.nike.com/"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Investors
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="about nike:purpose"
                         href="https://purpose.nike.com/"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Purpose
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="about nike:sustainability"
                         href="https://www.nike.com/sustainability"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Sustainability
@@ -313,90 +313,90 @@ const Footer = () => {
                 </div>
               </div>
               <div
-                class="hf-accordion footer-accordion ncss-col-sm-12 ncss-col-md-4 ncss-col-lg-3 va-sm-t is-open-md"
+                className="hf-accordion footer-accordion ncss-col-sm-12 ncss-col-md-4 ncss-col-lg-3 va-sm-t is-open-md"
                 data-index="3"
                 data-maxheight="400"
                 data-pre="Accordion"
               >
-                <p class="hf-accordion-header">
+                <p className ="hf-accordion-header">
                   <button
                     data-var="toggleBtn"
-                    class="hf-accordion-button bg-transparent nav-uppercase nav-brand p4-sm"
+                    className="hf-accordion-button bg-transparent nav-uppercase nav-brand p4-sm"
                   >
                     <span>Promotions &amp; Discounts</span>
-                    <i class="hf-accordion-icon g72-plus" data-var="icon"></i>
+                    <i className ="hf-accordion-icon g72-plus" data-var="icon"></i>
                   </button>
                 </p>
-                <div class="hf-accordion-body" data-var="body">
+                <div className ="hf-accordion-body" data-var="body">
                   <ul>
-                    <li class="footer-link footer-link-header d-sm-h d-md-b">
+                    <li className="footer-link footer-link-header d-sm-h d-md-b">
                       <a
                         language="en"
                         aria-label="main-footer, Promotions &amp; Discounts"
                         data-type="click_navFooter"
                         data-path="promotions discounts"
                         href="https://www.nike.com/promo-code"
-                        class="nav-uppercase nav-brand"
+                        className="nav-uppercase nav-brand"
                         data-pre="ILink"
                       >
                         Promotions &amp; Discounts
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="promotions discounts:student"
                         href="https://www.nike.com/help/a/student-discount"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Student
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="promotions discounts:military"
                         href="https://www.nike.com/help/a/military-discount"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Military
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="promotions discounts:teacher"
                         href="https://www.nike.com/help/a/teacher-discount"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Teacher
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="promotions discounts:first responders medical professionals"
                         href="https://www.nike.com/help/a/first-responder-discount"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         First Responders &amp; Medical Professionals
                       </a>
                     </li>
-                    <li class="footer-link">
+                    <li className="footer-link">
                       <a
                         target="_self"
                         data-type="click_navFooter"
                         data-path="promotions discounts:birthday"
                         href="https://www.nike.com/help/a/birthday-terms-promo"
-                        class="fs12-nav-sm"
+                        className="fs12-nav-sm"
                         data-pre="ILink"
                       >
                         Birthday
@@ -408,11 +408,11 @@ const Footer = () => {
             </div>
           </div>
           <div
-            class="l-social-menu ncss-col-sm-12 ncss-col-md-3 va-sm-t mt4-sm mt0-md pl6-sm pl0-md"
+            className="l-social-menu ncss-col-sm-12 ncss-col-md-3 va-sm-t mt4-sm mt0-md pl6-sm pl0-md"
             data-pre="SocialMediaMenu"
           >
-            <ul class="social-links pl3-sm">
-              <li class="d-sm-ib fs28-nav-sm lh28-nav-sm ml0-sm mr4-sm ml4-md mr0-md">
+            <ul className="social-links pl3-sm">
+              <li className="d-sm-ib fs28-nav-sm lh28-nav-sm ml0-sm mr4-sm ml4-md mr0-md">
                 <a
                   target="_blank"
                   aria-label="Twitter"
@@ -420,11 +420,11 @@ const Footer = () => {
                   data-type="click_navFooter"
                   data-path="social:twitter"
                   href="https://twitter.com/Nike"
-                  class="social-link footer-link"
+                  className="social-link footer-link"
                   data-pre="ILink"
                 >
                   <svg
-                    class="social-link-icon"
+                    className="social-link-icon"
                     width="30px"
                     fill="#111"
                     height="30px"
@@ -434,7 +434,7 @@ const Footer = () => {
                   </svg>
                 </a>
               </li>
-              <li class="d-sm-ib fs28-nav-sm lh28-nav-sm ml0-sm mr4-sm ml4-md mr0-md">
+              <li className="d-sm-ib fs28-nav-sm lh28-nav-sm ml0-sm mr4-sm ml4-md mr0-md">
                 <a
                   target="_blank"
                   aria-label="Facebook"
@@ -442,11 +442,11 @@ const Footer = () => {
                   data-type="click_navFooter"
                   data-path="social:facebook"
                   href="https://www.facebook.com/nike"
-                  class="social-link footer-link"
+                  className="social-link footer-link"
                   data-pre="ILink"
                 >
                   <svg
-                    class="social-link-icon"
+                    className="social-link-icon"
                     width="30px"
                     fill="#111"
                     height="30px"
@@ -456,7 +456,7 @@ const Footer = () => {
                   </svg>
                 </a>
               </li>
-              <li class="d-sm-ib fs28-nav-sm lh28-nav-sm ml0-sm mr4-sm ml4-md mr0-md">
+              <li className="d-sm-ib fs28-nav-sm lh28-nav-sm ml0-sm mr4-sm ml4-md mr0-md">
                 <a
                   target="_blank"
                   aria-label="Youtube"
@@ -464,11 +464,11 @@ const Footer = () => {
                   data-type="click_navFooter"
                   data-path="social:youtube"
                   href="https://www.youtube.com/user/nike"
-                  class="social-link footer-link"
+                  className="social-link footer-link"
                   data-pre="ILink"
                 >
                   <svg
-                    class="social-link-icon"
+                    className="social-link-icon"
                     width="30px"
                     fill="#111"
                     height="30px"
@@ -478,7 +478,7 @@ const Footer = () => {
                   </svg>
                 </a>
               </li>
-              <li class="d-sm-ib fs28-nav-sm lh28-nav-sm ml0-sm mr4-sm ml4-md mr0-md">
+              <li className="d-sm-ib fs28-nav-sm lh28-nav-sm ml0-sm mr4-sm ml4-md mr0-md">
                 <a
                   target="_blank"
                   aria-label="Instagram "
@@ -486,11 +486,11 @@ const Footer = () => {
                   data-type="click_navFooter"
                   data-path="social:instagram"
                   href="https://instagram.com/nike"
-                  class="social-link footer-link"
+                  className="social-link footer-link"
                   data-pre="ILink"
                 >
                   <svg
-                    class="social-link-icon"
+                    className="social-link-icon"
                     width="30px"
                     fill="#111"
                     height="30px"
@@ -503,15 +503,15 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class="l-sub-footer ncss-row" data-pre="SubFooter">
-          <div class="ncss-col-sm-12 ncss-col-md-6 pt3-sm pl5-sm pl2-md">
-            <div class="d-md-flx flx-dir-r flx-ai-md-fe">
+        <div className ="l-sub-footer ncss-row" data-pre="SubFooter">
+          <div className ="ncss-col-sm-12 ncss-col-md-6 pt3-sm pl5-sm pl2-md">
+            <div className ="d-md-flx flx-dir-r flx-ai-md-fe">
               <a
                 aria-label="Selected Location: United States"
                 title="Selected Location: United States"
                 data-pre="ILink"
                 href="//www.nike.com/language_tunnel"
-                class="fs12-nav-sm nav-color-white country-pin"
+                className="fs12-nav-sm nav-color-white country-pin"
               >
                 <svg
                   aria-hidden="true"
@@ -524,26 +524,26 @@ const Footer = () => {
                 >
                   <path
                     fill="currentColor"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M4.5 9.001a7.5 7.5 0 1115 0c0 1.205-.385 2.576-.934 3.928-.555 1.364-1.302 2.767-2.08 4.055a39.918 39.918 0 01-2.307 3.405c-.688.905-1.316 1.632-1.711 1.947a.75.75 0 01-.936 0c-.395-.315-1.023-1.042-1.711-1.947a39.916 39.916 0 01-2.306-3.405c-.78-1.288-1.526-2.691-2.08-4.056-.55-1.351-.935-2.722-.935-3.927zM12 12.25a3.25 3.25 0 100-6.5 3.25 3.25 0 000 6.5z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
-                <span class="country-pin-label">United States</span>
+                <span className="country-pin-label">United States</span>
               </a>
-              <div class="fs12-nav-sm d-sm-b d-md-ib pb6-sm pt5-sm pb0-md ml4-md sub-footer-copyright">
+              <div className ="fs12-nav-sm d-sm-b d-md-ib pb6-sm pt5-sm pb0-md ml4-md sub-footer-copyright">
                 <span id="hf_header_label_copyright">
                   © 2023 Nike, Inc. All Rights Reserved
                 </span>
               </div>
             </div>
           </div>
-          <div class="ncss-col-sm-12 ncss-col-md-6 pb3-sm pb0-md pl5-sm pl0-md">
-            <ul class="sub-footer-menu">
-              <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
+          <div className ="ncss-col-sm-12 ncss-col-md-6 pb3-sm pb0-md pl5-sm pl0-md">
+            <ul className="sub-footer-menu">
+              <li className="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
                 <div
                   id="SubFooterDropdown-0"
-                  class="pre-dropdown-menu sub-footer-menu-dropdown"
+                  className="pre-dropdown-menu sub-footer-menu-dropdown"
                   data-pre="DropdownMenu"
                 >
                   <button
@@ -553,169 +553,169 @@ const Footer = () => {
                     aria-label="Guides"
                     data-type="click_navFooter"
                     data-path="guides"
-                    class="nav-btn p0-sm sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
+                    className="nav-btn p0-sm sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
                     data-pre="ILink"
                   >
                     Guides
                   </button>
                   <div
                     id="SubFooterDropdown-0-Menu"
-                    class="hf-dropdown-menu-box-container"
+                    className="hf-dropdown-menu-box-container"
                     data-var="content"
                   >
-                    <div class="hf-dropdown-menu-box">
-                      <ul class="ncss-row">
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                    <div className ="hf-dropdown-menu-box">
+                      <ul className="ncss-row">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike Adapt"
                             data-type="click_navFooter"
                             data-path="guides:nike adapt"
                             href="https://www.nike.com/adapt"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike Adapt
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike Air"
                             data-type="click_navFooter"
                             data-path="guides:nike air"
                             href="https://www.nike.com/air"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike Air
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike Air Force 1"
                             data-type="click_navFooter"
                             data-path="guides:nike air force 1"
                             href="https://www.nike.com/air-force-1"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike Air Force 1
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike Air Max"
                             data-type="click_navFooter"
                             data-path="guides:nike air max"
                             href="https://www.nike.com/air-max"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike Air Max
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike FlyEase"
                             data-type="click_navFooter"
                             data-path="guides:nike flyease"
                             href="https://www.nike.com/flyease"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike FlyEase
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike Flyknit"
                             data-type="click_navFooter"
                             data-path="guides:nike flyknit"
                             href="https://www.nike.com/flyknit"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike Flyknit
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike Flyleather"
                             data-type="click_navFooter"
                             data-path="guides:nike flyleather"
                             href="https://www.nike.com/flyleather"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike Flyleather
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike Free"
                             data-type="click_navFooter"
                             data-path="guides:nike free"
                             href="https://www.nike.com/free"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike Free
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike Joyride"
                             data-type="click_navFooter"
                             data-path="guides:nike joyride"
                             href="https://www.nike.com/joyride"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike Joyride
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike React"
                             data-type="click_navFooter"
                             data-path="guides:nike react"
                             href="https://www.nike.com/react"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike React
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike Vaporfly"
                             data-type="click_navFooter"
                             data-path="guides:nike vaporfly"
                             href="https://www.nike.com/running/vaporfly"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike Vaporfly
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Nike ZoomX"
                             data-type="click_navFooter"
                             data-path="guides:nike zoomx"
                             href="https://www.nike.com/zoomx"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Nike ZoomX
                           </a>
                         </li>
-                        <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
+                        <li className="ncss-col-sm-4 va-sm-m lh12-nav-sm">
                           <a
                             aria-label="bottom-footer, Guides, Space Hippie"
                             data-type="click_navFooter"
                             data-path="guides:space hippie"
                             href="https://www.nike.com/space-hippie"
-                            class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                            className="sub-footer-submenu-link footer-link fs12-nav-sm"
                             data-pre="ILink"
                           >
                             Space Hippie
@@ -726,71 +726,71 @@ const Footer = () => {
                   </div>
                 </div>
               </li>
-              <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
+              <li className="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
                 <a
                   target="_blank"
                   aria-label="Terms of Sale"
                   data-type="click_navFooter"
                   data-path="terms of sale"
                   href="https://agreementservice.svs.nike.com/us/en_us/rest/agreement?agreementType=termsOfSale&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=US&amp;language=en&amp;requestType=redirect"
-                  class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
+                  className="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
                   data-pre="ILink"
                 >
                   Terms of Sale
                 </a>
               </li>
-              <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
+              <li className="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
                 <a
                   target="_blank"
                   aria-label="Terms of Use"
                   data-type="click_navFooter"
                   data-path="terms of use"
                   href="https://agreementservice.svs.nike.com/us/en_us/rest/agreement?agreementType=termsOfUse&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=US&amp;language=en&amp;requestType=redirect"
-                  class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
+                  className="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
                   data-pre="ILink"
                 >
                   Terms of Use
                 </a>
               </li>
-              <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
+              <li className="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
                 <a
                   target="_blank"
                   aria-label="Nike Privacy Policy"
                   data-type="click_navFooter"
                   data-path="nike privacy policy"
                   href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=US&amp;language=en&amp;requestType=redirect"
-                  class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
+                  className="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
                   data-pre="ILink"
                 >
                   Nike Privacy Policy
                 </a>
               </li>
-              <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
+              <li className="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
                 <a
                   target="_self"
                   aria-label="Your Privacy Choices"
                   data-type="click_navFooter"
                   data-path="your privacy choices"
                   href="https://www.nike.com/guest/settings/do-not-share-my-data"
-                  class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
+                  className="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
                   data-pre="ILink"
                 >
                   <img
                     alt="Your Privacy Choices"
-                    class="d-sm-ib mr1-sm"
+                    className="d-sm-ib mr1-sm"
                     src="https://static.nike.com/a/images/w_960,c_limit/81a78fa9-0756-42ac-adb0-33c0245bf27a/image.png"
                   />
                   Your Privacy Choices
                 </a>
               </li>
-              <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
+              <li className="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
                 <a
                   target="_self"
                   aria-label="CA Supply Chains Act"
                   data-type="click_navFooter"
                   data-path="ca supply chains act"
                   href="https://purpose.nike.com/nike-statement-on-forced-labor"
-                  class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
+                  className="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm"
                   data-pre="ILink"
                 >
                   CA Supply Chains Act
