@@ -111,11 +111,15 @@ const Home = () => {
       <Slider className="banner-home" {...bannerSettings}>
         <div>
           <p>Last-Minute Gifts | Save Up to 50% 🎁</p>
-          <p className="p-sub">No code needed. Shop Now.</p>
+          <p className="p-sub">
+            No code needed. <Link to={"/products"}> Shop Now.</Link>
+          </p>
         </div>
         <div>
           <p>Cold Weather Gear on Sale Now ❄️ Shop Now. Ends 12.9.</p>
-          <p className="p-sub">No code needed. Shop Now.</p>
+          <p className="p-sub">
+            No code needed. <Link to={"/products"}> Shop Now.</Link>
+          </p>
         </div>
       </Slider>
       <div className="home">
