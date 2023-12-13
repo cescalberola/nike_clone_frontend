@@ -1252,7 +1252,7 @@ const Navbar = () => {
                         </svg>
                     </a>
                     <div id="nav-cart" className="pre-acct-cart mr2-sm mr0-lg d-sm-ib" data-pre="Cart">
-                        <a data-var="anchor" title="Bag Items: 1" aria-label="Bag Items: 1" rel="nofollow" data-type="click_navCart" data-path="cart" href="https://www.nike.com/cart" className="icon-btn ripple d-sm-b" data-pre="ILink">
+                        <a data-var="anchor" title="Bag Items: 1" aria-label="Bag Items: 1" rel="nofollow" data-type="click_navCart" data-path="cart" href="http://localhost:5173/cart" className="icon-btn ripple d-sm-b" data-pre="ILink">
                             <div className="">
                                 <svg aria-hidden="true" className="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
                                     <path stroke="currentColor"
@@ -1262,7 +1262,7 @@ const Navbar = () => {
                                 </svg>
                                 <span className="pre-jewel pre-cart-jewel text-color-primary-dark"
                                     style={{ visibility: "visible" }}
-                                    data-var="jewel">1</span>
+                                    data-var="jewel"></span>
                             </div>
                         </a>
                     </div>
