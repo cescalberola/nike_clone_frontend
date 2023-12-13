@@ -180,6 +180,20 @@
   justify-content: space-between;
   z-index: 1;
 }
+.container-shop-by-sport {
+  position: relative;
+}
+
+.buttons-shop-by-sport {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  right: 8%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
 
 .container-always-iconic p {
   display: flex;
@@ -200,7 +214,7 @@
 }
 
 .buttons-always-iconic button {
-  background-color: #ffffff;
+  background-color: #f7f5f5;
   border-radius: 50%;
   border: none;
   padding: 10px;
@@ -210,6 +224,23 @@
 .buttons-always-iconic button:hover {
   background-color: #908f8f; 
 }
+.buttons-shop-by-sport {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.buttons-shop-by-sport button {
+  background-color: #f7f5f5;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttons-shop-by-sport button:hover {
+  background-color: #908f8f; 
+}
 .container-shop-by-sport p {
   display: flex;
   justify-content: start;
@@ -217,9 +248,7 @@
   margin-bottom: 10px;
   margin-left: 80px;
 }
-.container-shop-by-sport {
-  width: 100%;
-}
+
 .shop-by-sport-home img {
   width: 100%;
   height: auto;

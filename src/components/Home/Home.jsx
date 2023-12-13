@@ -299,18 +299,21 @@ const Home = () => {
       </div>
       <div className="container-shop-by-sport">
         <p>Shop by Sport</p>
+        <div class="buttons-shop-by-sport">
         <button className="shop-by-sport" onClick={prevSlideshowBySport}>
-          Previous
+        <LeftSVG />
         </button>
         <button className="shop-by-sport" onClick={nextSlideshowBySport}>
-          Next
+        <RightSVG />
         </button>
+        </div>
         <div className="shop-by-sport-slider-container">
           <Slider
             ref={showBySportSliderRef}
             className="shop-by-sport-home"
             {...showBySportSettings}
           >
+            
             <div>
               <img
                 src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/d6c40c07-7815-447d-9286-d50ea0e083c2/nike-just-do-it.jpg"
