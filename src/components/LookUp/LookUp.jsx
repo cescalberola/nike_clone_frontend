@@ -1,20 +1,21 @@
-import React, { useState } from 'react'
-import './Login.scss'
+import React, { useEffect, useState } from 'react'
+import './LookUp.scss'
 import '../../glyphs.min.css'
-import Nike from '../../assets/logos/Nike.jsx'
-import Jordan from '../../assets/logos/Jordan.jsx'
-import { useDispatch } from 'react-redux'
-import { login } from '../../features/auth/authSlice.js'
+import { useDispatch, useSelector } from 'react-redux'
+import { checkEmail, resetRegister } from '../../features/auth/authSlice.js'
+import LookUpHeader from './LookUpHeader.jsx'
+import { useNavigate } from 'react-router-dom'
 
-const Login = () => {
-    const [selectedCountry, setSelectedCountry] = useState('Espana'); // Default to Spain
-
+const LookUp = () => {
     const [data, setData] = useState({
+        country: 'Espana',
         username: '',
         password: '',
     })
-    // const [username, setUsername] = useState('');
-    // const [password, setPasword] = useState('');
+
+    const navigate = useNavigate()
+    const dispatch = useDispatch();
+    const { registered, notRegistered } = useSelector(state => state.auth)
 
     const countries = [
         { value: 'AF', label: 'Afganistán' },
@@ -77,44 +78,51 @@ const Login = () => {
         { value: 'ZW', label: 'Zimbabue' },
     ];
 
-    const dispatch = useDispatch();
-
     const handleCountryChange = (event) => {
-        const selectedOption = event.target.options[event.target.selectedIndex];
-        const selectedText = selectedOption.text;
-        setSelectedCountry(selectedText);
+        setData({
+            ...data,
+            country: event.target.options[event.target.selectedIndex].text,
+        })
     };
 
+    const handleOnChange = (event) => {
+        setData({
+            ...data,
+            [event.target.name]: event.target.value
+        })
+    }
+    useEffect(() => {
+        if (registered) {
+            navigate(`/login/${data.username}`)
+            // console.log(true)
+        }
+        if (notRegistered) {
+            navigate(`/register/${data.username}`)
+            // console.log(false)
+        }
+        dispatch(resetRegister())
 
-    // const handleOnChange = (event) => {
-    //     setusername = event.target.value
-    // }
-
-    const onSubmit = (e) => {
+    }, [registered, notRegistered])
+    const handleOnSubmit = (e) => {
         e.preventDefault();
-        dispatch(login(data));
+        // console.log(data.username)
+        dispatch(checkEmail(data.username))
     };
 
     return (
         <div className="css-18wonve">
             <div style={{ outline: "none" }} tabIndex="-1" className='css-18wonveDiv'>
                 <div className="css-mkjsdf">
-                    <header tabIndex="0" aria-label="Introduce tu dirección de correo electrónico para unirte o iniciar sesión. group">
-                        <div className="css-131faqr">
-                            <Nike fill={"currentColor"} width={"48px"} height={"48px"} />
-                            <Jordan fill={"currentColor"} width={"48px"} height={"48px"} />
-                        </div>
-                        <h1 aria-label="Introduce tu dirección de correo electrónico para unirte o iniciar sesión." className="css-1ogxbr3">Introduce tu dirección de correo electrónico para unirte o iniciar sesión.</h1>
-                    </header>
+                    <LookUpHeader h1="Introduce tu dirección de correo electrónico para unirte o iniciar sesión." />
                     <div role="region" className="css-1qzlyy1">
-                        <form action="#" method="post">
+                        <form onSubmit={handleOnSubmit}>
                             <div className="css-vxgrp0">
                                 <div className="css-1u49mdr">
-                                    <span data-testid="selected-country-label" className="css-1cq8889">{selectedCountry}</span>
+                                    <span data-testid="selected-country-label" className="css-1cq8889">{data.country}</span>
                                     <div className="css-nohim6">
                                         <label htmlFor="country" className="css-t4rufh">Cambiar</label>
                                         <select name="country" id="country" autoComplete="off" aria-label="Cambiar país/región" className="css-7o1x1z"
-                                            value={selectedCountry}
+                                            value={data.country}
                                             onChange={handleCountryChange}
                                         >
                                             {countries.map(country => (
@@ -127,13 +135,10 @@ const Login = () => {
                                 </div>
                                 <div className="css-8atqhb css-5p7ysv e192pr2z0 nds-input-container">
                                     <div className="nds-input-layout-control">
-                                        <input type="text" name="credential" id="username" className="nds-input-text-field css-wxfak7 e1fiih290" autoComplete="username" aria-describedby="username-input-aria-description" aria-required="false" aria-invalid="false" value={username} onChange={e => setUsername(e.target.value)} />
+                                        <input type="text" name="username" id="username" className="nds-input-text-field css-wxfak7 e1fiih290" autoComplete="username" aria-describedby="username-input-aria-description" aria-required="false" aria-invalid="false" value={data.username} onChange={handleOnChange} />
                                         <span id="username-input-aria-description"
                                             style={{ position: 'absolute', left: '-2000px', fontSize: '0px', width: '0px', height: '0px', overflow: 'hidden', visibility: 'hidden' }}>
                                         </span>
-                                        {/* <label htmlFor="username" className="nds-input-label css-15zk0wt eyw2uzc0" data-testid="label-element">
-                                            <span>Correo electrónico</span>
-                                        </label> */}
                                         <fieldset className="nds-input-fieldset css-1eif5ff e1jmt8s30" aria-hidden="true">
                                             <legend>Correo electrónico</legend>
                                         </fieldset>
@@ -141,7 +146,7 @@ const Login = () => {
                                     <div className="textfield-support-container">
                                     </div>
                                 </div>
-                                <input data-testid="hidden-input" type="password" id="password" autoComplete="current-password" name="password" aria-hidden="true" tabIndex="-1" hidden="" className="css-1hyfx7x" value={password} onChange={e => setPasword(e.target.value)} />
+                                <input data-testid="hidden-input" type="password" id="password" autoComplete="current-password" name="password" aria-hidden="true" tabIndex="-1" hidden="" className="css-1hyfx7x" value={data.password} onChange={handleOnChange} />
                                 <div style={{ width: "100%" }}>
                                     <div className="css-m196z">
                                         <div className="css-zinu7o">Al continuar, aceptas los <a target="_blank" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&amp;country=ES&amp;language=es&amp;requestType=redirect&amp;uxId=4fd2d5e7db76e0f85a6bb56721bd51df" rel="noopener noreferrer" className="css-0">Términos de uso</a> de Nike y confirmas que has leído la <a target="_blank" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&amp;country=ES&amp;language=es&amp;requestType=redirect&amp;uxId=4fd2d5e7db76e0f85a6bb56721bd51df" rel="noopener noreferrer" className="css-0">Política de privacidad</a> de Nike.</div>
@@ -161,4 +166,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default LookUp

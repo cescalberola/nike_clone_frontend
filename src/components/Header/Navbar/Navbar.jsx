@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Navbar.scss'
 import Nike from '../../../assets/logos/Nike'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
     return (
