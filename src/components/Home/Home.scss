@@ -1,21 +1,72 @@
-// @import "../../f00ae4c5bdca7b589b8a.css";
+.buttons-trending {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 30px;
+}
 
-.trending-home img{
+.buttons-trending button {
+  background-color: #cfcece;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttons-trending button:hover {
+  background-color: #afafaf; 
+}
+.buttons-hottest-gifts {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.buttons-hottest-gifts button {
+  background-color: #cfcece;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttons-hottest-gifts button:hover {
+  background-color: #afafaf; 
+}
+.buttons-membership {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.buttons-membership button {
+  background-color: #cfcece;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttons-membership button:hover {
+  background-color: #afafaf; 
+}
+.trending-home img {
   padding: 7px;
 }
-.trending-home h3{
+.trending-home h3 {
   text-align: start;
   margin-left: 10px;
-
 }
-.banner-home{
+.banner-home {
   background: #f5f5f5;
 }
-.banner-home .p-sub{
-font-size: 12px;
-text-decoration: underline
+.banner-home .p-sub {
+  font-size: 12px;
+  text-decoration: underline;
 }
-.content-home-padding{
+.content-home-padding {
   padding: 5%;
 }
 .home-img {
@@ -52,7 +103,6 @@ text-decoration: underline
   text-align: center;
   color: rgb(1, 1, 1);
   padding: 20px;
-
 }
 
 .text-overlay h3,
@@ -79,7 +129,6 @@ text-decoration: underline
 }
 .container-nike-gifting p {
   display: flex;
-  
 }
 .img-nike-gifting img {
   max-width: 100%;
@@ -89,11 +138,9 @@ text-decoration: underline
 
 .img-gifts-by-price {
   display: flex;
-
 }
 .img-gifts-by-price img {
   padding: 5px;
-
 }
 .container-gifts-by-price p {
   display: flex;
@@ -174,11 +221,10 @@ text-decoration: underline
 .ncss-btn-primary-dark {
   width: 150px;
   max-width: 10%;
-
 }
 @media screen and (max-width: 767px) {
   .ncss-btn-primary-dark {
     width: auto;
-    max-width: 20%
+    max-width: 20%;
   }
 }

@@ -148,12 +148,14 @@ const Home = () => {
       <div className="content-home-padding">
         <div className="container-trending">
           <p>Trending</p>
-          <button className="trending" onClick={prevSlideTrending}>
+          <div className="buttons-trending">
+          <button onClick={prevSlideTrending}>
             <LeftSVG/>
           </button>
-          <button className="trending" onClick={nextSlideTrending}>
+          <button onClick={nextSlideTrending}>
             <RightSVG />
           </button>
+          </div>
           <div className="trending-slider-container">
             <Slider
               ref={trendingSliderRef}
@@ -369,12 +371,14 @@ const Home = () => {
         </div>
         <div className="container-hottest-gifts">
           <p>Hottest Gifts</p>
+          <div className="buttons-hottest-gifts">
           <button className="hottest-gifts" onClick={prevSlideshottestGifts}>
-            Previous
+          <LeftSVG/>
           </button>
           <button className="hottest-gifts" onClick={nextSlidehottestGifts}>
-            Next
+          <RightSVG/>
           </button>
+          </div>
           <div className="hottest-gifts-slider-container">
             <Slider
               ref={hottestGiftsSliderRef}
@@ -428,8 +432,10 @@ const Home = () => {
         </div>
         <div className="container-membership">
           <p>Nike Membership</p>
-          <button onClick={prevSlide}>Previous</button>
-          <button onClick={nextSlide}>Next</button>
+          <div className="buttons-membership">
+          <button onClick={prevSlide}><LeftSVG/></button>
+          <button onClick={nextSlide}><RightSVG/></button>
+          </div>
           <div className="membership-slider-container">
             <Slider
               ref={sliderRef}
