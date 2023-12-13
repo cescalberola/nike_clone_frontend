@@ -64,7 +64,7 @@ const Home = () => {
   const trendingSettings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3.1,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -132,7 +132,7 @@ const Home = () => {
         </div>
         <h3 className="si35-ISy _1MF91zHG text-color-primary-dark responsive-display-2-1 jordan-gratitude">THE MOST<br></br>ICONIC GIFTS</h3>
         <p>
-          Some timeless classics, some future favorites—these kicks and more are
+          Some timeless classics, some future favorites—these kicks and <br></br> more are
           100% on their list
         </p>
         <div className="buttons-jordan-gratitude">

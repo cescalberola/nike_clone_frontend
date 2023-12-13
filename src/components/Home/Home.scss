@@ -1,10 +1,12 @@
 // @import "../../f00ae4c5bdca7b589b8a.css";
 
 .trending-home img{
-  padding: 10px;
+  padding: 7px;
 }
 .trending-home h3{
   text-align: start;
+  margin-left: 10px;
+
 }
 .banner-home{
   background: #f5f5f5;
@@ -14,14 +16,13 @@ font-size: 12px;
 text-decoration: underline
 }
 .content-home-padding{
-  padding: 7%;
+  padding: 5%;
 }
 .home-img {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
-
 .home-img img {
   max-width: 100%;
   height: auto;
@@ -43,6 +44,8 @@ text-decoration: underline
 }
 .container-hapenning-now p {
   display: flex;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 .img-happening-now img {
   max-width: 100%;
@@ -54,6 +57,7 @@ text-decoration: underline
 }
 .container-nike-gifting p {
   display: flex;
+  
 }
 .img-nike-gifting img {
   max-width: 100%;
@@ -63,23 +67,36 @@ text-decoration: underline
 
 .img-gifts-by-price {
   display: flex;
+
+}
+.img-gifts-by-price img {
+  padding: 5px;
+
 }
 .container-gifts-by-price p {
   display: flex;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 .img-gifts-by-price img {
-  width: 33%;
+  width: 33.4%;
 }
 
 .container-featured p {
   display: flex;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 .img-featured img {
   width: 50%;
+  padding: 5px;
 }
+
 .container-always-iconic p {
   display: flex;
   justify-content: start;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 .container-always-iconic {
   width: 100%;
@@ -87,10 +104,13 @@ text-decoration: underline
 .always-iconic-home img {
   width: 100%;
   height: auto;
+  padding: 5px;
 }
 .container-shop-by-sport p {
   display: flex;
   justify-content: start;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 .container-shop-by-sport {
   width: 100%;
@@ -98,10 +118,13 @@ text-decoration: underline
 .shop-by-sport-home img {
   width: 100%;
   height: auto;
+  padding: 5px;
 }
 .container-hottest-gifts p {
   display: flex;
   justify-content: start;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 .container-hottest-gifts {
   width: 100%;
@@ -109,10 +132,13 @@ text-decoration: underline
 .hottest-gifts-home img {
   width: 100%;
   height: auto;
+  padding: 5px;
 }
 .container-membership p {
   display: flex;
   justify-content: start;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 .container-membership {
   width: 100%;
@@ -120,6 +146,7 @@ text-decoration: underline
 .membership-home img {
   width: 100%;
   height: auto;
+  padding: 5px;
 }
 
 .ncss-btn-primary-dark {
@@ -127,9 +154,6 @@ text-decoration: underline
   max-width: 10%;
 
 }
-
-
-
 @media screen and (max-width: 767px) {
   .ncss-btn-primary-dark {
     width: auto;
