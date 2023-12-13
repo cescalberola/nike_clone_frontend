@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Jordan from '../../../assets/logos/Jordan';
 import Converse from '../../../assets/logos/Converse';
+import { useSelector } from 'react-redux';
 
 const BrandHeader = () => {
+
+    const { user, token } = useSelector(state => state.auth)
+
     return (
         <div className='sub-navbar'>
             <div className="pre-l-brand-header d-sm-h d-lg-b z3" data-pre="BrandHeader">
@@ -100,95 +104,104 @@ const BrandHeader = () => {
                             </div>
                             <span className="ml1-sm mr1-sm body-4">|</span>
                         </div>
-                        <div className="d-lg-h" data-var="accountDropdown">
-                            <div className="pre-acct-dropdown d-sm-ib" data-pre="AccountDropdown">
-                                <div id="AccountMenu" className="pre-dropdown-menu" data-pre="DropdownMenu">
-                                    <a aria-label="Account" aria-expanded="false" aria-controls="AccountMenu-Menu" data-var="ctrl" data-type="click_navAccount" data-path="myAccount:greeting" href="https://www.nike.com/member/profile/" className="pre-acct-avatar d-sm-h d-lg-ib" data-pre="ILink">
-                                        <div className="pre-avatar" data-pre="Avatar">
-                                            <div className="d-sm-flx flx-ai-sm-c">
-                                                <p className="pre-avatar-name flx-order-sm-1 flx-order-lg--1 body-4 u-bold" data-var="userName" aria-label="Account">Account</p>
-                                                <div className="icon-btn ripple">
-                                                    <svg aria-hidden="true" className="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none" data-var="glyph"
-                                                        style={{ display: 'inline-block' }}
-                                                    >
-                                                        <path fill="currentColor" d="M12 3a4.5 4.5 0 00-4.5 4.5H9a3 3 0 013-3V3zM7.5 7.5A4.5 4.5 0 0012 12v-1.5a3 3 0 01-3-3H7.5zM12 12a4.5 4.5 0 004.5-4.5H15a3 3 0 01-3 3V12zm4.5-4.5A4.5 4.5 0 0012 3v1.5a3 3 0 013 3h1.5zM4.5 21v-3H3v3h1.5zm0-3a3 3 0 013-3v-1.5A4.5 4.5 0 003 18h1.5zm3-3h9v-1.5h-9V15zm9 0a3 3 0 013 3H21a4.5 4.5 0 00-4.5-4.5V15zm3 3v3H21v-3h-1.5z">
-                                                        </path>
-                                                    </svg>
-                                                    <img alt="Avatar" src="" className="pre-avatar-image va-sm-m"
-                                                        style={{ display: 'none' }}
-                                                        data-var="img" />
+                        {user && token ? (
+                            <div className="d-lg-flx" data-var="accountDropdown">
+                                <div className="pre-acct-dropdown d-sm-ib" data-pre="AccountDropdown">
+                                    <div id="AccountMenu" className="pre-dropdown-menu" data-pre="DropdownMenu">
+                                        <a aria-label="Account" aria-expanded="false" aria-controls="AccountMenu-Menu" data-var="ctrl" data-type="click_navAccount" data-path="myAccount:greeting" href="https://www.nike.com/member/profile/" className="pre-acct-avatar d-sm-h d-lg-ib" data-pre="ILink">
+                                            <div className="pre-avatar" data-pre="Avatar">
+                                                <div className="d-sm-flx flx-ai-sm-c">
+                                                    <p className="pre-avatar-name flx-order-sm-1 flx-order-lg--1 body-4 u-bold" data-var="userName" aria-label="Account">Hi, {user.firstName}</p>
+                                                    <div className="icon-btn ripple">
+                                                        {user.avatar ? (
+                                                            <img alt="Avatar" src="" className="pre-avatar-image va-sm-m"
+                                                                style={{ display: 'none' }}
+                                                                data-var="img" />
+                                                        ) : (
+                                                            <svg aria-hidden="true" className="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none" data-var="glyph"
+                                                                style={{ display: 'inline-block' }}
+                                                            >
+                                                                <path fill="currentColor" d="M12 3a4.5 4.5 0 00-4.5 4.5H9a3 3 0 013-3V3zM7.5 7.5A4.5 4.5 0 0012 12v-1.5a3 3 0 01-3-3H7.5zM12 12a4.5 4.5 0 004.5-4.5H15a3 3 0 01-3 3V12zm4.5-4.5A4.5 4.5 0 0012 3v1.5a3 3 0 013 3h1.5zM4.5 21v-3H3v3h1.5zm0-3a3 3 0 013-3v-1.5A4.5 4.5 0 003 18h1.5zm3-3h9v-1.5h-9V15zm9 0a3 3 0 013 3H21a4.5 4.5 0 00-4.5-4.5V15zm3 3v3H21v-3h-1.5z">
+                                                                </path>
+                                                            </svg>
+                                                        )}
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                    <div id="AccountMenu-Menu" className="pre-dropdown-menu-box" data-var="content">
-                                        <div className="pre-dropdown-menu-content">
-                                            <nav className="pre-acct-menu pl4-sm pr6-sm pt6-sm pb6-sm">
-                                                <a role="option" aria-selected="false" target="_self"
-                                                    tabIndex="-1"
-                                                    data-type="click_navAccount" data-path="myAccount:my account" href="https://www.nike.com/member/profile/" className="account-dropdown-menu-header d-sm-b mb3-sm" data-pre="ILink">Account</a>
-                                                <ul>
-                                                    <li>
-                                                        <a role="option" aria-selected="false" target="_self"
-                                                            tabIndex="-1"
-                                                            data-type="click_navAccount" data-path="myAccount:profile" href="https://www.nike.com/member/profile/" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Profile</a>
-                                                    </li>
-                                                    <li>
-                                                        <a role="option" aria-selected="false" target="_self"
-                                                            tabIndex="-1"
-                                                            data-type="click_navAccount" data-path="myAccount:orders" href="https://www.nike.com/orders" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Orders</a>
-                                                    </li>
-                                                    <li>
-                                                        <a role="option" aria-selected="false" target="_self"
-                                                            tabIndex="-1"
-                                                            data-type="click_navAccount" data-path="myAccount:favorites" href="https://www.nike.com/favorites" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Favorites</a>
-                                                    </li>
-                                                    <li>
-                                                        <a role="option" aria-selected="false" target="_self"
-                                                            tabIndex="-1"
-                                                            data-type="click_navAccount" data-path="myAccount:inbox" href="https://www.nike.com/member/inbox" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">
-                                                            <div className="notification-label">Inbox<div className="hf-inbox-notification-dot" data-pre="InboxNotificationDot">
-                                                            </div>
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a role="option" aria-selected="false" target="_self"
-                                                            tabIndex="-1"
-                                                            data-type="click_navAccount" data-path="myAccount:experiences" href="https://www.nike.com/experiences" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Experiences</a>
-                                                    </li>
-                                                    <li>
-                                                        <a role="option" aria-selected="false" target="_self"
-                                                            tabIndex="-1"
-                                                            data-type="click_navAccount" data-path="myAccount:account settings" href="https://www.nike.com/member/settings" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Account Settings</a>
-                                                    </li>
-                                                    <li>
-                                                        <button role="option" aria-selected="false"
-                                                            tabIndex="-1"
-                                                            data-type="click_navAccount" data-path="myAccount:log out" className="nav-btn p0-sm pre-account-dropdown-menu-item body-3 u-bold is-static" data-pre="ILink">Log Out</button>
-                                                    </li>
-                                                </ul>
-                                            </nav>
+                                        </a>
+                                        <div id="AccountMenu-Menu" className="pre-dropdown-menu-box" data-var="content">
+                                            <div className="pre-dropdown-menu-content">
+                                                <nav className="pre-acct-menu pl4-sm pr6-sm pt6-sm pb6-sm">
+                                                    <a role="option" aria-selected="false" target="_self"
+                                                        tabIndex="-1"
+                                                        data-type="click_navAccount" data-path="myAccount:my account" href="https://www.nike.com/member/profile/" className="account-dropdown-menu-header d-sm-b mb3-sm" data-pre="ILink">Account</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a role="option" aria-selected="false" target="_self"
+                                                                tabIndex="-1"
+                                                                data-type="click_navAccount" data-path="myAccount:profile" href="https://www.nike.com/member/profile/" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Profile</a>
+                                                        </li>
+                                                        <li>
+                                                            <a role="option" aria-selected="false" target="_self"
+                                                                tabIndex="-1"
+                                                                data-type="click_navAccount" data-path="myAccount:orders" href="https://www.nike.com/orders" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Orders</a>
+                                                        </li>
+                                                        <li>
+                                                            <a role="option" aria-selected="false" target="_self"
+                                                                tabIndex="-1"
+                                                                data-type="click_navAccount" data-path="myAccount:favorites" href="https://www.nike.com/favorites" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Favorites</a>
+                                                        </li>
+                                                        <li>
+                                                            <a role="option" aria-selected="false" target="_self"
+                                                                tabIndex="-1"
+                                                                data-type="click_navAccount" data-path="myAccount:inbox" href="https://www.nike.com/member/inbox" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">
+                                                                <div className="notification-label">Inbox<div className="hf-inbox-notification-dot" data-pre="InboxNotificationDot">
+                                                                </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a role="option" aria-selected="false" target="_self"
+                                                                tabIndex="-1"
+                                                                data-type="click_navAccount" data-path="myAccount:experiences" href="https://www.nike.com/experiences" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Experiences</a>
+                                                        </li>
+                                                        <li>
+                                                            <a role="option" aria-selected="false" target="_self"
+                                                                tabIndex="-1"
+                                                                data-type="click_navAccount" data-path="myAccount:account settings" href="https://www.nike.com/member/settings" className="pre-account-dropdown-menu-item body-3 u-bold" data-pre="ILink">Account Settings</a>
+                                                        </li>
+                                                        <li>
+                                                            <button role="option" aria-selected="false"
+                                                                tabIndex="-1"
+                                                                data-type="click_navAccount" data-path="myAccount:log out" className="nav-btn p0-sm pre-account-dropdown-menu-item body-3 u-bold is-static" data-pre="ILink">Log Out</button>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="d-lg-flx" data-var="desktopLoginButtons">
-                            <div className="pre-login-btns d-lg-flx flx-ai-lg-c" data-pre="DesktopLoginButtons">
-                                <Link to={'/register'} className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm">
-                                    {/* <a data-type="click_navMembership" data-path="join us" href="https://www.nike.com/membership" className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm" data-pre="ILink"> */}
-                                    <span id="hf_title_joinus_membership">Join Us</span>
-                                    {/* </a> */}
-                                </Link>
-                                <span className="ml1-sm mr1-sm body-4">|</span>
-                                <Link to={'/lookup'} className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm">
-                                    {/* <button data-var="loginBtn" data-type="click_navMembership" data-path="sign in" className="nav-btn p0-sm d-sm-b body-4 u-bold ml2-sm mr2-sm" data-pre="ILink"> */}
-                                    <span id="hf_title_signin_membership">Sign In</span>
-                                    {/* </button> */}
-                                </Link>
+                        ) : (
+                            <div className="d-lg-flx" data-var="desktopLoginButtons">
+                                <div className="pre-login-btns d-lg-flx flx-ai-lg-c" data-pre="DesktopLoginButtons">
+                                    <Link to={'/lookup'} className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm">
+                                        {/* <a data-type="click_navMembership" data-path="join us" href="https://www.nike.com/membership" className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm" data-pre="ILink"> */}
+                                        <span id="hf_title_joinus_membership">Join Us</span>
+                                        {/* </a> */}
+                                    </Link>
+                                    <span className="ml1-sm mr1-sm body-4">|</span>
+                                    <Link to={'/lookup'} className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm">
+                                        {/* <button data-var="loginBtn" data-type="click_navMembership" data-path="sign in" className="nav-btn p0-sm d-sm-b body-4 u-bold ml2-sm mr2-sm" data-pre="ILink"> */}
+                                        <span id="hf_title_signin_membership">Sign In</span>
+                                        {/* </button> */}
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
+                        )
+                        }
+
+
                     </div>
                 </div>
             </div>

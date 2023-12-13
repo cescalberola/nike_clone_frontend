@@ -48,7 +48,7 @@ const LookUp = () => {
         { value: 'BA', label: 'Bosnia y Herzegovina' },
         { value: 'BW', label: 'Botsuana' },
         { value: 'BR', label: 'Brasil' },
-        { value: 'BN', label: 'Brunei Darussalam' },
+        { value: 'BN', label: 'Brunéi' },
         { value: 'BG', label: 'Bulgaria' },
         { value: 'BF', label: 'Burkina Faso' },
         { value: 'BI', label: 'Burundi' },
@@ -94,18 +94,15 @@ const LookUp = () => {
     useEffect(() => {
         if (registered) {
             navigate(`/login/${data.username}`)
-            // console.log(true)
         }
         if (notRegistered) {
             navigate(`/register/${data.username}`)
-            // console.log(false)
         }
         dispatch(resetRegister())
 
     }, [registered, notRegistered])
     const handleOnSubmit = (e) => {
         e.preventDefault();
-        // console.log(data.username)
         dispatch(checkEmail(data.username))
     };
 
@@ -113,7 +110,7 @@ const LookUp = () => {
         <div className="css-18wonve">
             <div style={{ outline: "none" }} tabIndex="-1" className='css-18wonveDiv'>
                 <div className="css-mkjsdf">
-                    <LookUpHeader h1="Introduce tu dirección de correo electrónico para unirte o iniciar sesión." />
+                    <LookUpHeader h1="Enter your email to join us or sign in." />
                     <div role="region" className="css-1qzlyy1">
                         <form onSubmit={handleOnSubmit}>
                             <div className="css-vxgrp0">
@@ -140,7 +137,7 @@ const LookUp = () => {
                                             style={{ position: 'absolute', left: '-2000px', fontSize: '0px', width: '0px', height: '0px', overflow: 'hidden', visibility: 'hidden' }}>
                                         </span>
                                         <fieldset className="nds-input-fieldset css-1eif5ff e1jmt8s30" aria-hidden="true">
-                                            <legend>Correo electrónico</legend>
+                                            <legend>Email</legend>
                                         </fieldset>
                                     </div>
                                     <div className="textfield-support-container">
@@ -149,11 +146,11 @@ const LookUp = () => {
                                 <input data-testid="hidden-input" type="password" id="password" autoComplete="current-password" name="password" aria-hidden="true" tabIndex="-1" hidden="" className="css-1hyfx7x" value={data.password} onChange={handleOnChange} />
                                 <div style={{ width: "100%" }}>
                                     <div className="css-m196z">
-                                        <div className="css-zinu7o">Al continuar, aceptas los <a target="_blank" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&amp;country=ES&amp;language=es&amp;requestType=redirect&amp;uxId=4fd2d5e7db76e0f85a6bb56721bd51df" rel="noopener noreferrer" className="css-0">Términos de uso</a> de Nike y confirmas que has leído la <a target="_blank" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&amp;country=ES&amp;language=es&amp;requestType=redirect&amp;uxId=4fd2d5e7db76e0f85a6bb56721bd51df" rel="noopener noreferrer" className="css-0">Política de privacidad</a> de Nike.</div>
+                                        <div className="css-zinu7o">By Continuing, you agree to Nike's <a target="_blank" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&amp;country=ES&amp;language=es&amp;requestType=redirect&amp;uxId=4fd2d5e7db76e0f85a6bb56721bd51df" rel="noopener noreferrer" className="css-0">Terms of Use</a> and you confirm you have read Nike's <a target="_blank" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&amp;country=ES&amp;language=es&amp;requestType=redirect&amp;uxId=4fd2d5e7db76e0f85a6bb56721bd51df" rel="noopener noreferrer" className="css-0">Privacy Policy</a></div>
                                     </div>
                                 </div>
                                 <div className="css-1cuic7g">
-                                    <button aria-label="continue" className="nds-btn css-6kj7vn btn-primary-dark  btn-md" type="submit">Continuar<span className="ripple">
+                                    <button aria-label="continue" className="nds-btn css-6kj7vn btn-primary-dark  btn-md" type="submit">Continue<span className="ripple">
                                     </span>
                                     </button>
                                 </div>

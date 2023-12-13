@@ -42,9 +42,7 @@ export const authSlice = createSlice({
                 } else {
                     state.notRegistered = true
                 }
-                console.log(action.payload.registered)
                 state.status = 'succeeded';
-                // Handle the action.payload as needed, e.g., setUser(action.payload)
             })
             .addCase(checkEmail.rejected, (state, action) => {
                 state.status = 'failed';
