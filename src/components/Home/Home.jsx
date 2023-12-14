@@ -223,7 +223,7 @@ const Home = () => {
             className="always-iconic-home"
             {...alwaysIconicSettings}
           >
-            <a href="http://localhost:5173/products/65786f875608e74065b6fba4">
+            <a href="https://main.d2ii295w9q60ox.amplifyapp.com/products/65786f875608e74065b6fba4">
               <div>
                 <img
                   src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-mens-shoes-jBrhbr.png"
@@ -231,7 +231,7 @@ const Home = () => {
                 />
               </div>
             </a>
-            <a href="http://localhost:5173/products/65772b54533e382a7d059d80">
+            <a href="https://main.d2ii295w9q60ox.amplifyapp.com/products/65772b54533e382a7d059d80">
               <div>
                 <img
                   src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cee5c042-0313-469e-a461-76f820f28d97/dunk-low-shoes-rv2vSN.png"
@@ -239,7 +239,7 @@ const Home = () => {
                 />
               </div>
             </a>
-            <a href="http://localhost:5173/products/65786c805608e74065b6fb85">
+            <a href="https://main.d2ii295w9q60ox.amplifyapp.com/products/65786c805608e74065b6fb85">
               <div>
                 <img
                   src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/w2ldynwtyuspv6r5rffj/air-max-90-mens-shoes-6n3vKB.png"
@@ -247,7 +247,7 @@ const Home = () => {
                 />
               </div>
             </a>
-            <a href="http://localhost:5173/products/65786d635608e74065b6fb91">
+            <a href="https://main.d2ii295w9q60ox.amplifyapp.com/products/65786d635608e74065b6fb91">
               <div>
                 <img
                   src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bf2bb46-561e-4429-b522-4689057c8ba5/lebron-witness-6-basketball-shoes-HXbMw7.png"
@@ -255,7 +255,7 @@ const Home = () => {
                 />
               </div>
             </a>
-            <a href="http://localhost:5173/products/657871015608e74065b6fbab">
+            <a href="https://main.d2ii295w9q60ox.amplifyapp.com/products/657871015608e74065b6fbab">
               <div>
                 <img
                   src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/blazer-mid-77-vintage-mens-shoes-nw30B2.png"
@@ -263,7 +263,7 @@ const Home = () => {
                 />
               </div>
             </a>
-            <a href="http://localhost:5173/products/657871e05608e74065b6fbb1">
+            <a href="https://main.d2ii295w9q60ox.amplifyapp.com/products/657871e05608e74065b6fbb1">
               <div>
                 <img
                   src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d517ab75-204b-4f88-9c99-389f14d7b0d5/pegasus-40-mens-road-running-shoes-mVJdmS.png"
