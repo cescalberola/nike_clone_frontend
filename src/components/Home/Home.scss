@@ -4,11 +4,12 @@
   gap: 10px;
   margin-bottom: 30px;
 }
+
 .buttons-trending p {
   display: flex;
   align-items: center;
   justify-content: start;
-  
+
 }
 
 .buttons-trending button {
@@ -20,8 +21,9 @@
 }
 
 .buttons-trending button:hover {
-  background-color: #afafaf; 
+  background-color: #afafaf;
 }
+
 .buttons-hottest-gifts {
   display: flex;
   justify-content: flex-end;
@@ -38,8 +40,9 @@
 }
 
 .buttons-hottest-gifts button:hover {
-  background-color: #afafaf; 
+  background-color: #afafaf;
 }
+
 .buttons-membership {
   display: flex;
   justify-content: flex-end;
@@ -56,46 +59,48 @@
 }
 
 .buttons-membership button:hover {
-  background-color: #afafaf; 
+  background-color: #afafaf;
 }
+
 .trending-home img {
   padding: 7px;
 }
+
 .trending-home h3 {
   text-align: start;
   margin-left: 10px;
 }
-.banner-home {
-  background: #f5f5f5;
-}
-.banner-home .p-sub {
-  font-size: 12px;
-  text-decoration: underline;
-}
+
 .content-home-padding {
   padding: 5%;
 }
+
 .home-img {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .home-img img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
 .container-trending p {
   display: flex;
   justify-content: start;
 }
+
 .container-trending {
   width: 100%;
 }
+
 .trending-home img {
   width: 100%;
   height: auto;
 }
+
 .img-happening-now {
   position: relative;
   display: inline-block;
@@ -120,22 +125,27 @@
 .container-hapenning-now {
   margin-top: 60px;
 }
+
 .container-hapenning-now p {
   display: flex;
   margin-top: 90px;
   margin-bottom: 30px;
 }
+
 .img-happening-now img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
 .container-nike-gifting {
   margin-top: 60px;
 }
+
 .container-nike-gifting p {
   display: flex;
 }
+
 .img-nike-gifting img {
   max-width: 100%;
   height: auto;
@@ -145,14 +155,17 @@
 .img-gifts-by-price {
   display: flex;
 }
+
 .img-gifts-by-price img {
   padding: 5px;
 }
+
 .container-gifts-by-price p {
   display: flex;
   margin-top: 90px;
   margin-bottom: 30px;
 }
+
 .img-gifts-by-price img {
   width: 33.4%;
 }
@@ -162,10 +175,12 @@
   margin-top: 90px;
   margin-bottom: 30px;
 }
+
 .img-featured img {
   width: 50%;
   padding: 5px;
 }
+
 .container-always-iconic {
   position: relative;
 }
@@ -180,6 +195,7 @@
   justify-content: space-between;
   z-index: 1;
 }
+
 .container-shop-by-sport {
   position: relative;
 }
@@ -202,11 +218,13 @@
   margin-bottom: 10px;
   margin-left: 80px;
 }
+
 .always-iconic-home img {
   width: 100%;
   height: auto;
   padding: 5px;
 }
+
 .buttons-always-iconic {
   display: flex;
   gap: 10px;
@@ -222,8 +240,9 @@
 }
 
 .buttons-always-iconic button:hover {
-  background-color: #908f8f; 
+  background-color: #908f8f;
 }
+
 .buttons-shop-by-sport {
   display: flex;
   gap: 10px;
@@ -239,8 +258,9 @@
 }
 
 .buttons-shop-by-sport button:hover {
-  background-color: #908f8f; 
+  background-color: #908f8f;
 }
+
 .container-shop-by-sport p {
   display: flex;
   justify-content: start;
@@ -254,29 +274,35 @@
   height: auto;
   padding: 5px;
 }
+
 .container-hottest-gifts p {
   display: flex;
   justify-content: start;
   margin-top: 80px;
   margin-bottom: 10px;
 }
+
 .container-hottest-gifts {
   width: 100%;
 }
+
 .hottest-gifts-home img {
   width: 100%;
   height: auto;
   padding: 5px;
 }
+
 .container-membership p {
   display: flex;
   justify-content: start;
   margin-top: 80px;
   margin-bottom: 10px;
 }
+
 .container-membership {
   width: 100%;
 }
+
 .membership-home img {
   width: 100%;
   height: auto;
@@ -287,6 +313,7 @@
   width: 150px;
   max-width: 10%;
 }
+
 @media screen and (max-width: 767px) {
   .ncss-btn-primary-dark {
     width: auto;
