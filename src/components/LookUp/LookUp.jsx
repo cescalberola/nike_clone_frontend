@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 const LookUp = () => {
     const [data, setData] = useState({
         country: 'Espana',
-        username: '',
+        email: '',
         password: '',
     })
 
@@ -93,17 +93,17 @@ const LookUp = () => {
     }
     useEffect(() => {
         if (registered) {
-            navigate(`/login/${data.username}`)
+            navigate(`/login/${data.email}`)
         }
         if (notRegistered) {
-            navigate(`/register/${data.username}`)
+            navigate(`/register/${data.email}`)
         }
         dispatch(resetRegister())
 
     }, [registered, notRegistered])
     const handleOnSubmit = (e) => {
         e.preventDefault();
-        dispatch(checkEmail(data.username))
+        dispatch(checkEmail(data.email))
     };
 
     return (
@@ -132,7 +132,7 @@ const LookUp = () => {
                                 </div>
                                 <div className="css-8atqhb css-5p7ysv e192pr2z0 nds-input-container">
                                     <div className="nds-input-layout-control">
-                                        <input type="text" name="username" id="username" className="nds-input-text-field css-wxfak7 e1fiih290" autoComplete="username" aria-describedby="username-input-aria-description" aria-required="false" aria-invalid="false" value={data.username} onChange={handleOnChange} />
+                                        <input type="text" name="email" id="email" className="nds-input-text-field css-wxfak7 e1fiih290" autoComplete="email" aria-describedby="username-input-aria-description" aria-required="false" aria-invalid="false" value={data.email} onChange={handleOnChange} />
                                         <span id="username-input-aria-description"
                                             style={{ position: 'absolute', left: '-2000px', fontSize: '0px', width: '0px', height: '0px', overflow: 'hidden', visibility: 'hidden' }}>
                                         </span>

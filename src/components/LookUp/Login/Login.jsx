@@ -2,18 +2,18 @@ import React, { useEffect, useState } from 'react'
 import '../LookUp.scss'
 import '../../../glyphs.min.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import LookUpHeader from '../LookUpHeader.jsx'
 import { login } from '../../../features/auth/authSlice.js'
 
 const Login = () => {
-    const { username } = useParams()
+    const { email } = useParams()
 
     const { user, token } = useSelector(state => state.auth)
 
     const [data, setData] = useState({
         // country: 'Espana',
-        email: username,
+        email: email,
         password: '',
     })
     const navigate = useNavigate()
@@ -49,7 +49,7 @@ const Login = () => {
                                 <div className="css-1u49mdr">
                                     <span data-testid="selected-country-label" className="css-1cq8889">{data.email}</span>
                                     <div className="css-nohim6">
-                                        <div className="css-zinu7o"><a target="_blank" href="#" className="css-0">Edit</a></div>
+                                        <div className="css-zinu7o"><Link to={'/lookup'} target="_blank" className="css-0">Edit</Link></div>
                                     </div>
                                 </div>
                                 <div className="css-8atqhb css-5p7ysv e192pr2z0 nds-input-container">

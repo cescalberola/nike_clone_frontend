@@ -111,7 +111,7 @@ const BrandHeader = () => {
                                         <a aria-label="Account" aria-expanded="false" aria-controls="AccountMenu-Menu" data-var="ctrl" data-type="click_navAccount" data-path="myAccount:greeting" href="https://www.nike.com/member/profile/" className="pre-acct-avatar d-sm-h d-lg-ib" data-pre="ILink">
                                             <div className="pre-avatar" data-pre="Avatar">
                                                 <div className="d-sm-flx flx-ai-sm-c">
-                                                    <p className="pre-avatar-name flx-order-sm-1 flx-order-lg--1 body-4 u-bold" data-var="userName" aria-label="Account">Hi, {user.firstName}</p>
+                                                    <p className="pre-avatar-name flx-order-sm-1 flx-order-lg--1 body-4 u-bold" data-var="email" aria-label="Account">Hi, {user.firstName}</p>
                                                     <div className="icon-btn ripple">
                                                         {user.avatar ? (
                                                             <img alt="Avatar" src="" className="pre-avatar-image va-sm-m"
