@@ -17,9 +17,11 @@
   margin-bottom: 20px;
 }
 
-.product-image-cart img {
-  width: 350px;
-  margin: 40px;
+.product-image-cart {
+  img {
+    width: 170px;
+    margin: 40px;
+  }
 }
 
 .cart-item {
@@ -78,8 +80,10 @@
 }
 
 @media screen and (max-width: 800px) {
-  .product-image-cart img {
-    width: 170px;
-    margin: 40px;
+  .product-image-cart {
+    img {
+      width: 170px;
+      margin-left: 5%;
+    }
   }
 }
