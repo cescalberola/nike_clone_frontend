@@ -1,21 +1,5 @@
 @import '../../../variables';
 
-// .css-18wonve {
-//     font-family: $openSans-font-family;
-//     height: 100%;
-//     text-align: start;
-
-// .css-18wonveDiv {
-//     height: 100vh;
-//     display: -webkit-box;
-//     display: -webkit-flex;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -webkit-box-pack: center;
-//     -webkit-justify-content: center;
-//     -ms-flex-pack: center;
-//     justify-content: center;
-
 .css-1g30k5b {
     max-width: 460px;
     margin: 0px 36px;
@@ -77,7 +61,6 @@
             left: $podium-cds-size-spacing-s;
             top: 16px;
             user-select: none;
-            // line-height: $podium-cds-typography-body-2-height;
             transform: scale(1);
             transform-origin: left center;
             will-change: transform;
@@ -86,7 +69,6 @@
             transition-timing-function: $podium-cds-transition-timing-function-ease;
             color: $podium-cds-color-text-secondary;
             pointer-events: none;
-            // padding: 0 $podium-cds-size-spacing-xs;
         }
 
         fieldset {
@@ -139,15 +121,14 @@
     align-items: center;
     background-color: transparent;
     font-size: 24px;
-    width: var(--podium-cds-size-icon-m);
-    height: var(--podium-cds-size-icon-m);
-    margin-inline-end: var(--podium-cds-size-spacing-m);
+    width: $podium-cds-size-icon-m;
+    height: $podium-cds-size-icon-m;
+    margin-inline-end: $podium-cds-size-spacing-m;
     border: 0px;
     overflow: visible;
 }
 
 .css-1qmkbv8 {
-    // position: absolute;
     cursor: pointer;
     background-color: unset;
     border: none;
@@ -213,7 +194,6 @@
             left: $podium-cds-size-spacing-s;
             top: 16px;
             user-select: none;
-            // line-height: $podium-cds-typography-body-2-height;
             transform: scale(1);
             transform-origin: left center;
             will-change: transform;
@@ -348,103 +328,6 @@
                 }
             }
 
-            // .css-5p7ysv {
-            //     width: 100%;
-            //     box-sizing: border-box;
-            //     font: $podium-cds-typography-body1;
-            //     overflow: visible;
-            //     position: relative;
-            //     min-height: $podium-cds-size-form-input-container-height;
-
-            //     .nds-input-layout-control {
-            //         display: flex;
-            //         -webkit-box-pack: start;
-            //         justify-content: flex-start;
-            //         background-color: transparent;
-            //         -webkit-box-align: center;
-            //         align-items: center;
-            //         position: relative;
-            //         width: 100%;
-            //         height: $podium-cds-size-form-input-field-height;
-            //         top: $podium-cds-size-spacing-s;
-            //         border-radius: $podium-cds-size-border-radius-m;
-
-            //         .css-1x735yy {
-            //             border: 0px;
-            //             margin: 0px;
-            //             padding-top: $podium-cds-size-spacing-grid-gutter;
-            //             padding-inline-end: $podium-cds-size-spacing-grid-gutter;
-            //             padding-bottom: $podium-cds-size-spacing-grid-gutter;
-            //             padding-inline-start: $podium-cds-size-spacing-grid-gutter-l;
-            //             width: 100%;
-            //             box-sizing: border-box;
-            //             font: $podium-cds-typography-body1;
-            //             color: $podium-cds-color-text-primary;
-            //             background-color: transparent;
-            //             height: $podium-cds-size-form-input-field-height;
-            //             border-radius: $podium-cds-size-border-radius-m;
-            //         }
-
-            //         input:-webkit-autofill~label {
-            //             // line-height: 16px;
-            //             top: $podium-cds-size-spacing-m;
-            //         }
-
-            //         input {
-            //             width: 100%;
-            //             height: 100%;
-            //         }
-
-            //         label {
-            //             pointer-events: none;
-            //         }
-
-            //         .css-5juldo {
-            //             position: absolute;
-            //             left: $podium-cds-size-spacing-s;
-            //             top: 16px;
-            //             user-select: none;
-            //             line-height: 16px;
-            //             transform: scale(0.75) translateY(-32px);
-            //             transform-origin: left center;
-            //             will-change: transform;
-            //             transition-property: transform;
-            //             transition-duration: $podium-cds-transition-duration-normal;
-            //             transition-timing-function: $podium-cds-transition-timing-function-ease;
-            //             color: $podium-cds-color-text-secondary;
-            //             pointer-events: none;
-            //             padding: 0 $podium-cds-size-spacing-xs;
-            //         }
-
-            //         fieldset {
-            //             position: absolute;
-            //             box-sizing: border-box;
-            //             left: 0px;
-            //             bottom: 0px;
-            //             width: 100%;
-            //             height: 100%;
-            //             border-color: $podium-cds-color-border-primary;
-            //             border-style: solid;
-            //             border-width: $podium-cds-size-border-width-s;
-            //             border-radius: $podium-cds-size-border-radius-m;
-            //             padding: 0px;
-            //             margin: 0px;
-            //             pointer-events: none;
-            //         }
-
-            //         .css-1eif5ff {
-            //             text-align: start;
-            //         }
-            //     }
-
-            //     .textfield-support-container {
-            //         position: relative;
-            //         margin-top: $podium-cds-size-spacing-s;
-            //         display: flex;
-            //         padding: $podium-cds-size-spacing-xs $podium-cds-size-spacing-grid-gutter-l 0 $podium-cds-size-spacing-grid-gutter-l;
-            //     }
-            // }
-
             .css-m196z {
                 width: 80%;
                 margin: 24px 0px;
@@ -510,10 +393,6 @@
     }
 }
 
-// }
-
-// }
-
 [class*=g72] {
     font-family: nike-glyphs;
     display: inline-block;
@@ -544,7 +423,6 @@
     padding-top: $podium-cds-size-spacing-grid-gutter;
     padding-inline-end: $podium-cds-size-spacing-m;
     padding-bottom: $podium-cds-size-spacing-grid-gutter;
-    padding-inline-start: $podium-cds-size-spacing-grid-gutter-l;
     width: 100%;
     box-sizing: border-box;
     font: $podium-cds-typography-body1;
@@ -552,6 +430,191 @@
     background-color: transparent;
     height: $podium-cds-size-form-input-field-height;
     border-radius: $podium-cds-size-border-radius-m;
+}
+
+.css-1sv225p {
+    width: 100%;
+    box-sizing: border-box;
+    font: $podium-cds-typography-body1;
+    overflow: visible;
+    position: relative;
+    min-height: $podium-cds-size-form-input-container-height;
+
+    .nds-input-layout-control {
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        background-color: transparent;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: $podium-cds-size-form-input-field-height;
+        top: $podium-cds-size-spacing-s;
+        border-radius: $podium-cds-size-border-radius-m;
+
+        .css-1c9zkn0[type="date"] {
+            opacity: 0;
+            transition-property: opacity;
+            transition-duration: $podium-cds-transition-duration-fast;
+        }
+
+        .css-1c9zkn0 {
+            border: 0px;
+            margin: 0px;
+            width: 100%;
+            box-sizing: border-box;
+            font: $podium-cds-typography-body1;
+            color: $podium-cds-color-text-primary;
+            background-color: transparent;
+            height: $podium-cds-size-form-input-field-height;
+            border-radius: $podium-cds-size-border-radius-m;
+        }
+    }
+
+    .nds-trailing-icon-container {
+        position: absolute;
+        right: 0px;
+        pointer-events: none;
+        width: $podium-cds-size-icon-m;
+        height: $podium-cds-size-icon-m;
+    }
+
+    fieldset {
+        position: absolute;
+        box-sizing: border-box;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        border-color: $podium-cds-color-border-primary;
+        border-style: solid;
+        border-width: $podium-cds-size-border-width-s;
+        border-radius: $podium-cds-size-border-radius-m;
+        padding: 0px;
+        margin: 0px;
+        pointer-events: none;
+    }
+
+    .textfield-support-container {
+        position: relative;
+        margin-top: $podium-cds-size-spacing-s;
+        display: flex;
+        padding: $podium-cds-size-spacing-xs $podium-cds-size-spacing-grid-gutter-l 0 $podium-cds-size-spacing-grid-gutter-l;
+    }
+
+    .nds-input-support-text {
+        color: $podium-cds-color-text-secondary;
+    }
+
+    .css-15h1hlh {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        font: $podium-cds-typography-body3;
+        text-align: left;
+        color: $podium-cds-color-text-secondary;
+    }
+
+    .css-1sv225p {
+        label {
+            pointer-events: none;
+        }
+    }
+
+    .css-15zk0wt {
+        position: absolute;
+        left: $podium-cds-size-spacing-s;
+        top: 16px;
+        user-select: none;
+        transform: scale(1);
+        transform-origin: left center;
+        will-change: transform;
+        transition-property: transform;
+        transition-duration: $podium-cds-transition-duration-normal;
+        transition-timing-function: $podium-cds-transition-timing-function-ease;
+        color: $podium-cds-color-text-secondary;
+        pointer-events: none;
+        padding: 0 $podium-cds-size-spacing-xs;
+    }
+}
+
+.css-1if9n40 {
+    margin: 24px 0px 7px;
+    display: flex;
+    align-items: flex-start;
+
+    .eokc0d80 {
+        margin-left: 0px;
+    }
+
+}
+
+.nds-checkbox-label {
+    padding-left: 30px;
+}
+
+.css-a78bb1 {
+    position: relative;
+    box-sizing: border-box;
+    color: $podium-cds-color-text-primary;
+    font: $podium-cds-typography-body1;
+    display: flex;
+    margin-inline-start: $podium-cds-size-spacing-m;
+    align-items: flex-start;
+
+    input[type="checkbox"] {
+        position: absolute;
+        height: $podium-cds-size-icon-m;
+        width: $podium-cds-size-icon-m;
+        margin: 0px;
+
+    }
+}
+
+.css-a78bb1 input[type="checkbox"]:not(:hover)~.nds-checkbox-icon .checkbox-box.circle,
+.css-a78bb1 input[type="checkbox"]:not(:focus)~.nds-checkbox-icon .checkbox-box.circle {
+    box-shadow: none;
+    transition-property: box-shadow;
+    transition-duration: $podium-cds-transition-duration-normal;
+    transition-timing-function: $podium-cds-transition-timing-function-ease;
+}
+
+.css-a78bb1 input[type="checkbox"]~.nds-checkbox-icon .checkbox-box.circle {
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.css-a78bb1 input[type="checkbox"]~.nds-checkbox-icon .checkbox-box {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: transparent;
+    height: 20px;
+    width: 20px;
+    border: 1.5px solid $podium-cds-color-border-primary;
+    border-radius: 4px;
+}
+
+.css-1inw02m {
+    width: 100%;
+    margin: 24px 0px;
+    display: flex;
+    align-items: flex-start;
+
+    .eokc0d80 {
+        margin-left: 0px;
+    }
+}
+
+.css-a78bb1 {
+    position: relative;
+    box-sizing: border-box;
+    color: $podium-cds-color-text-primary;
+    font: $podium-cds-typography-body1;
+    display: flex;
+    margin-inline-start: $podium-cds-size-spacing-m;
+    align-items: flex-start;
 }
 
 .css-pjd5pq {
