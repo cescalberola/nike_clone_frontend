@@ -33,7 +33,7 @@ Additionally, for deployment, we use the following tools:
 - **Frontend:** Deployed on Amazon Web Services (AWS).
 
 <p align="center">
-  <img src="./src/assets/Qr.jpeg" width="150">
+  <img src="./src/assets/Qr.jpeg" width="200">
 </p>
 
 In summary, our project represents a comprehensive effort to recreate the functionality and user experience of the renowned Nike website, incorporating modern technologies and agile development practices to ensure an optimal result.
