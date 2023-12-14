@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
@@ -54,15 +53,6 @@ const Home = () => {
     hottestGiftsSliderRef.current.slickPrev();
   };
 
-  const bannerSettings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-  };
   const trendingSettings = {
     infinite: true,
     speed: 500,
@@ -111,20 +101,6 @@ const Home = () => {
 
   return (
     <>
-      <Slider className="banner-home" {...bannerSettings}>
-        <div>
-          <p>Last-Minute Gifts | Save Up to 50% 🎁</p>
-          <p className="p-sub">
-            No code needed. <Link to={"/products"}> Shop Now.</Link>
-          </p>
-        </div>
-        <div>
-          <p>Cold Weather Gear on Sale Now ❄️ Shop Now. Ends 12.9.</p>
-          <p className="p-sub">
-            No code needed. <Link to={"/products"}> Shop Now.</Link>
-          </p>
-        </div>
-      </Slider>
       <div className="home">
         <div className="home-img">
           <img
@@ -147,7 +123,7 @@ const Home = () => {
       </div>
       <div className="content-home-padding">
         <div className="container-trending">
-        <p>Trending</p>
+          <p>Trending</p>
           <div className="buttons-trending">
             <button onClick={prevSlideTrending}>
               <LeftSVG />
@@ -235,11 +211,11 @@ const Home = () => {
         </div>
       </div>
       <div className="container-always-iconic">
-  <p>Always Iconic</p>
-  <div className="buttons-always-iconic">
-    <button className="always-iconic" onClick={prevSlideAlwaysIconic}><LeftSVG /></button>
-    <button className="always-iconic" onClick={nextSlideAlwaysIconic}><RightSVG /></button>
-  </div>
+        <p>Always Iconic</p>
+        <div className="buttons-always-iconic">
+          <button className="always-iconic" onClick={prevSlideAlwaysIconic}><LeftSVG /></button>
+          <button className="always-iconic" onClick={nextSlideAlwaysIconic}><RightSVG /></button>
+        </div>
         <div className="always-iconic-slider-container">
           <Slider
             ref={alwaysIconicSliderRef}
@@ -300,12 +276,12 @@ const Home = () => {
       <div className="container-shop-by-sport">
         <p>Shop by Sport</p>
         <div className="buttons-shop-by-sport">
-        <button className="shop-by-sport" onClick={prevSlideshowBySport}>
-        <LeftSVG />
-        </button>
-        <button className="shop-by-sport" onClick={nextSlideshowBySport}>
-        <RightSVG />
-        </button>
+          <button className="shop-by-sport" onClick={prevSlideshowBySport}>
+            <LeftSVG />
+          </button>
+          <button className="shop-by-sport" onClick={nextSlideshowBySport}>
+            <RightSVG />
+          </button>
         </div>
         <div className="shop-by-sport-slider-container">
           <Slider
@@ -313,7 +289,7 @@ const Home = () => {
             className="shop-by-sport-home"
             {...showBySportSettings}
           >
-            
+
             <div>
               <img
                 src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_922,c_limit/d6c40c07-7815-447d-9286-d50ea0e083c2/nike-just-do-it.jpg"
