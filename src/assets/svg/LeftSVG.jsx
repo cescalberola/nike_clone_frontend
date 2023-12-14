@@ -3,7 +3,7 @@ import React from "react";
 const LeftSVG = ({ fill, width, height, className }) => {
   return (
     <svg
-      ariaHidden="true"
+      aria-hidden="true"
       focusable="false"
       viewBox="0 0 24 24"
       role="img"
