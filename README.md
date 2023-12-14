@@ -36,8 +36,7 @@ In summary, our project represents a comprehensive effort to recreate the functi
 ## Preview Workflow
 
 <p align="center">
-  <img src="src/assets/ecommerce_rentalscooter.gif" width="600">
-  <img src="src/assets/mockup-mobile.gif" width="150">
+  <img src="src/assets/gif readme/Nike_gif1.gif" width="600">
 </p>
 
 <p align="center">
