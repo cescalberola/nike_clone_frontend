@@ -1,11 +1,17 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./Cart.scss";
-import { clearCart, removeProduct } from "../../features/products/productsSlice";
+import {
+  clearCart,
+  removeProduct,
+} from "../../features/products/productsSlice";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { cart } = useSelector((state) => state.products);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const deleteCart = async () => {
     localStorage.removeItem("cart");
     dispatch(clearCart());
@@ -30,8 +36,17 @@ const Cart = () => {
   const handleRemoveProduct = (productId) => {
     dispatch(removeProduct(productId));
     const currentCart = JSON.parse(localStorage.getItem("cart")) || [];
-    const updatedCart = currentCart.filter((product) => product._id !== productId);
+    const updatedCart = currentCart.filter(
+      (product) => product._id !== productId
+    );
     localStorage.setItem("cart", JSON.stringify(updatedCart));
+  };
+
+  const handleGoCheckout = async () => {
+    setTimeout(() => {
+      navigate("/checkout");
+      localStorage.removeItem("cart")
+    }, 0o500);
   };
 
   return (
@@ -46,7 +61,10 @@ const Cart = () => {
                     {groupedProduct.image?.map((img, imgIndex) => (
                       <img
                         key={imgIndex}
-                        src={"https://nike-clone-backend-dev-sbrt.4.us-1.fl0.io/uploads/" + img}
+                        src={
+                          "https://nike-clone-backend-dev-sbrt.4.us-1.fl0.io/uploads/" +
+                          img
+                        }
                         alt={groupedProduct.title}
                       />
                     ))}
@@ -61,7 +79,8 @@ const Cart = () => {
                     <p className="cart-product-quantity">
                       Quantity: {groupedProduct.quantity}
                     </p>
-                    <button className="nds-btn css-6kj7vn btn-primary-dark btn-md removeButton"
+                    <button
+                      className="nds-btn css-6kj7vn btn-primary-dark btn-md removeButton"
                       onClick={() => handleRemoveProduct(groupedProduct._id)}
                     >
                       Remove
@@ -73,7 +92,10 @@ const Cart = () => {
             <p className="total">Total: ${calculateTotal()}</p>
             {cart?.length > 0 && (
               <div className="checkout">
-                <button className="nds-btn css-6kj7vn btn-primary-dark btn-md checkout-btn buttonsCart">
+                <button
+                  className="nds-btn css-6kj7vn btn-primary-dark btn-md checkout-btn buttonsCart"
+                  onClick={handleGoCheckout}
+                >
                   Checkout
                 </button>
                 <button
