@@ -148,7 +148,7 @@ const Home = () => {
       <div className="content-home-padding">
         <div className="container-trending">
         <p>Trending</p>
-          <div class="buttons-trending">
+          <div className="buttons-trending">
             <button onClick={prevSlideTrending}>
               <LeftSVG />
             </button>
@@ -234,11 +234,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div class="container-always-iconic">
+      <div className="container-always-iconic">
   <p>Always Iconic</p>
-  <div class="buttons-always-iconic">
-    <button class="always-iconic" onClick={prevSlideAlwaysIconic}><LeftSVG /></button>
-    <button class="always-iconic" onClick={nextSlideAlwaysIconic}><RightSVG /></button>
+  <div className="buttons-always-iconic">
+    <button className="always-iconic" onClick={prevSlideAlwaysIconic}><LeftSVG /></button>
+    <button className="always-iconic" onClick={nextSlideAlwaysIconic}><RightSVG /></button>
   </div>
         <div className="always-iconic-slider-container">
           <Slider
@@ -299,7 +299,7 @@ const Home = () => {
       </div>
       <div className="container-shop-by-sport">
         <p>Shop by Sport</p>
-        <div class="buttons-shop-by-sport">
+        <div className="buttons-shop-by-sport">
         <button className="shop-by-sport" onClick={prevSlideshowBySport}>
         <LeftSVG />
         </button>
