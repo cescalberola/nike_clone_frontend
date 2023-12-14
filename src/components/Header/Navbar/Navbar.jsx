@@ -1240,7 +1240,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pre-acct-btn-group pt2-sm pt3-lg d-sm-ib ta-sm-r flx-gro-sm-1 flx-gro-lg-0" data-pre="HeaderButtonGroup">
+                <div className="pre-acct-btn-group pt2-sm pt3-lg d-sm-flx ta-sm-r flx-gro-sm-1 flx-gro-lg-0" data-pre="HeaderButtonGroup">
                     <a aria-label="Favorites" title="Favorites" data-var="favoritesLink" data-type="click_navShortcut" data-path="favorites" href="https://www.nike.com/favorites" className="pre-btn-header ripple mr3-sm d-sm-h d-lg-ib" data-pre="ILink">
                         <svg aria-hidden="true" className="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
                             <path stroke="currentColor"

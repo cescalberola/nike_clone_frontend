@@ -108,7 +108,9 @@ const BrandHeader = () => {
                             <div className="d-lg-flx" data-var="accountDropdown">
                                 <div className="pre-acct-dropdown d-sm-ib" data-pre="AccountDropdown">
                                     <div id="AccountMenu" className="pre-dropdown-menu" data-pre="DropdownMenu">
-                                        <a aria-label="Account" aria-expanded="false" aria-controls="AccountMenu-Menu" data-var="ctrl" data-type="click_navAccount" data-path="myAccount:greeting" href="https://www.nike.com/member/profile/" className="pre-acct-avatar d-sm-h d-lg-ib" data-pre="ILink">
+                                        <a aria-label="Account" aria-expanded="false" aria-controls="AccountMenu-Menu" data-var="ctrl" data-type="click_navAccount" data-path="myAccount:greeting"
+                                            // href="https://www.nike.com/member/profile/" 
+                                            className="pre-acct-avatar d-sm-h d-lg-ib" data-pre="ILink" onClick={console.log('logout')}>
                                             <div className="pre-avatar" data-pre="Avatar">
                                                 <div className="d-sm-flx flx-ai-sm-c">
                                                     <p className="pre-avatar-name flx-order-sm-1 flx-order-lg--1 body-4 u-bold" data-var="email" aria-label="Account">Hi, {user.firstName}</p>
