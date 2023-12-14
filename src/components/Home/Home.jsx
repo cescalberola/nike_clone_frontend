@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import "../../f00ae4c5bdca7b589b8a.css";
 import RightSVG from "../../assets/svg/RightSVG";
 import LeftSVG from "../../assets/svg/LeftSVG";
+import Slider from "react-slick";
 
 const Home = () => {
   const sliderRef = useRef(null);
