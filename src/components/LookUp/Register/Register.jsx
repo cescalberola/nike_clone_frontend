@@ -56,7 +56,7 @@ const Register = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(data)
+        // console.log(data)
         dispatch(register(data));
     };
 
@@ -72,7 +72,7 @@ const Register = () => {
                         </div>
                         </div>
                         <div role="region" className="css-1qzlyy1">
-                            <form action="#" method="post">
+                            <form onSubmit={handleSubmit}>
                                 <div className="css-vxgrp0">
                                     <div className="css-5ourb5">
                                         <div className="css-1am57kc css-5p7ysv e192pr2z0 nds-input-container input-suffix">
@@ -229,7 +229,7 @@ const Register = () => {
                                     </div>
                                     <div className="css-1if9n40">
                                         <div className="css-a78bb1 eokc0d80 nds-checkbox-container light">
-                                            <input type="checkbox" className="nds-checkbox" name="marketingOptIn" id="marketingOptIn" aria-describedby="a11y-label-details-marketingOptIn" onChange={handleCheckboxChange} value={data.marketingOptIn} privacyTerms />
+                                            <input type="checkbox" className="nds-checkbox" name="marketingOptIn" id="marketingOptIn" aria-describedby="a11y-label-details-marketingOptIn" onChange={handleCheckboxChange} value={data.marketingOptIn} checked={data.marketingOptIn} />
                                             <div className="nds-checkbox-icon">
                                                 <span aria-hidden="true" className="checkbox-box circle">
                                                 </span>

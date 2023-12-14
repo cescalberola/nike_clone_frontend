@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 const LookUp = () => {
     const [data, setData] = useState({
-        country: 'Espana',
+        country: 'Spain',
         email: '',
         password: '',
     })
