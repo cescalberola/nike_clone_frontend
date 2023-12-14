@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/users";
-// const API_URL = "https://nike-clone-backend-dev-sbrt.4.us-1.fl0.io/users";
+const API_URL = "https://nike-clone-backend-dev-sbrt.4.us-1.fl0.io/users";
 
 
 const checkEmail = async (email) => {

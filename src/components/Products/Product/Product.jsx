@@ -8,7 +8,7 @@ const Product = ({ product }) => {
         loading="eager"
         sizes=""
         key={product._id}
-        src={"http://localhost:8080/uploads/" + image}
+        src={"https://nike-clone-backend-dev-sbrt.4.us-1.fl0.io/uploads/" + image}
         alt={product.title}
       />
     );

@@ -33,7 +33,7 @@ const ProductPage = () => {
     <div className="product-page">
       <div className="product-image">
         {product.image?.map((img) => (
-          <img key={product._id} src={"http://localhost:8080/uploads/" + img} />
+          <img key={product._id} src={"https://nike-clone-backend-dev-sbrt.4.us-1.fl0.io/uploads/" + img} />
         ))}
       </div>
       <div className="product-info">

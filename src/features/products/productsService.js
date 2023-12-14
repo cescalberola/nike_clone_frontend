@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/products";
+const API_URL = "https://nike-clone-backend-dev-sbrt.4.us-1.fl0.io/products";
 
 const getAll = async () => {
   const res = await axios.get(API_URL);

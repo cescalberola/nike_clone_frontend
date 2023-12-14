@@ -46,7 +46,7 @@ const Cart = () => {
                     {groupedProduct.image?.map((img, imgIndex) => (
                       <img
                         key={imgIndex}
-                        src={"http://localhost:8080/uploads/" + img}
+                        src={"https://nike-clone-backend-dev-sbrt.4.us-1.fl0.io/uploads/" + img}
                         alt={groupedProduct.title}
                       />
                     ))}
