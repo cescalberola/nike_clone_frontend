@@ -1,31 +1,31 @@
-# Project: Clone of the Nike Page
+# 🚀 Project: Clone of the Nike Page
 
 ## Project description
 
 Our backend project combines the application of knowledge in Node.js + Express technologies, along with MongoDB/Mongoose. After an exhaustive analysis of the project's needs, we set out to develop a REST API that would cover the following functionalities:
 
-- User registration using Bcrypt for password security.
-- Implementation of a user authentication system through login, token generation and middleware for security.
-- Ability to create, read, update and delete data (CRUD).
+- 🛡️ User registration using Bcrypt for password security.
+- 🔐 Implementation of a user authentication system through login, token generation, and middleware for security.
+- ✏️ Ability to create, read, update, and delete data (CRUD).
 
 The backend of our application is now available in production and meets the expected standards.
 
-## Key Project Requirements
+## 🔑 Key Project Requirements
 
 In the development of this project, we met certain fundamental requirements:
 
-- We use a branch-based approach in Git. At the end, we leave two branches: generally 'master' or 'main' and 'develop'.
-- We pay special attention to creating a detailed and well-structured README.
+- 🔀 We use a branch-based approach in Git. At the end, we leave two branches: generally 'master' or 'main' and 'develop'.
+- 📋 We pay special attention to creating a detailed and well-structured README.
 
 ## Project Details
 
 Our goal was to recreate the official Nike website (nike.com), for which we used React for the frontend and MongoDB for the backend. These are some of the features and outstanding elements that we have incorporated:
 
-- We develop a complete user and product management system, using multer and middleware for a robust experience.
-- We implemented administrator roles, in addition to authentication functions such as login/logout and a registration process that includes email confirmation.
-- We offer the possibility for users to review products.
-- We adopt a mobile-first design approach to ensure usability on different devices.
-- We manage the entire workflow using the Agile methodology through the Trello application.
+- 👩‍💻 We develop a complete user and product management system, using multer and middleware for a robust experience.
+- 👑 We implemented administrator roles, in addition to authentication functions such as login/logout and a registration process that includes email confirmation.
+- 🌟 We offer the possibility for users to review products.
+- 📱 We adopt a mobile-first design approach to ensure usability on different devices.
+- 🔄 We manage the entire workflow using the Agile methodology through the Trello application.
 
 Additionally, for deployment, we use the following tools:
 
@@ -33,6 +33,7 @@ Additionally, for deployment, we use the following tools:
 - **Frontend:** Deployed on Amazon Web Services (AWS).
 
 In summary, our project represents a comprehensive effort to recreate the functionality and user experience of the renowned Nike website, incorporating modern technologies and agile development practices to ensure an optimal result.
+
 ## Preview Workflow
 
 <p align="center">
