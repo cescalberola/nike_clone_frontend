@@ -29,7 +29,7 @@ const Navbar = () => {
                                     className="nav-btn p0-sm pre-link pre-account-link" data-pre="ILink">
                                     <div className="pre-avatar" data-pre="Avatar">
                                         <div className="d-sm-flx flx-ai-sm-c">
-                                            <p className="pre-avatar-name flx-order-sm-1 flx-order-lg--1 body-4 u-bold" data-var="userName" aria-label="Account">Account</p>
+                                            <p className="pre-avatar-name flx-order-sm-1 flx-order-lg--1 body-4 u-bold" data-var="email" aria-label="Account">Account</p>
                                             <div className="icon-btn ripple">
                                                 <svg aria-hidden="true" className="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none" data-var="glyph"
                                                     style={{ display: 'inline-block' }}

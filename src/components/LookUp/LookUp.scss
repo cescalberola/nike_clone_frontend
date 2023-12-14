@@ -6,7 +6,8 @@
     text-align: start;
 
     .css-18wonveDiv {
-        height: 100%;
+        // height: 100%;
+        height: 100vh;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -21,41 +22,6 @@
             min-width: 250px;
             margin: 0px 36px;
             width: 100%;
-
-            .css-131faqr {
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-flex-direction: row;
-                -ms-flex-direction: row;
-                flex-direction: row;
-                -webkit-box-pack: start;
-                -webkit-justify-content: flex-start;
-                -ms-flex-pack: start;
-                justify-content: flex-start;
-                -webkit-align-items: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                height: 100px;
-                gap: 10px;
-
-                .css-15onk5w {
-                    font-size: 22.5px;
-                    margin: auto 0;
-                }
-
-            }
-
-            .css-1ogxbr3 {
-                color: #000000;
-                font-size: 28px;
-                font-weight: normal;
-                line-height: 32px;
-                margin-top: 0;
-                margin-bottom: 12px;
-            }
 
             .css-1qzlyy1 {
                 position: relative;
@@ -109,102 +75,7 @@
                         }
                     }
 
-                    .css-5p7ysv {
-                        width: 100%;
-                        box-sizing: border-box;
-                        font: $podium-cds-typography-body1;
-                        overflow: visible;
-                        position: relative;
-                        min-height: $podium-cds-size-form-input-container-height;
 
-                        .nds-input-layout-control {
-                            display: flex;
-                            -webkit-box-pack: start;
-                            justify-content: flex-start;
-                            background-color: transparent;
-                            -webkit-box-align: center;
-                            align-items: center;
-                            position: relative;
-                            width: 100%;
-                            height: $podium-cds-size-form-input-field-height;
-                            top: $podium-cds-size-spacing-s;
-                            border-radius: $podium-cds-size-border-radius-m;
-
-                            .css-1x735yy {
-                                border: 0px;
-                                margin: 0px;
-                                padding-top: $podium-cds-size-spacing-grid-gutter;
-                                padding-inline-end: $podium-cds-size-spacing-grid-gutter;
-                                padding-bottom: $podium-cds-size-spacing-grid-gutter;
-                                padding-inline-start: $podium-cds-size-spacing-grid-gutter-l;
-                                width: 100%;
-                                box-sizing: border-box;
-                                font: $podium-cds-typography-body1;
-                                color: $podium-cds-color-text-primary;
-                                background-color: transparent;
-                                height: $podium-cds-size-form-input-field-height;
-                                border-radius: $podium-cds-size-border-radius-m;
-                            }
-
-                            input:-webkit-autofill~label {
-                                // line-height: 16px;
-                                top: $podium-cds-size-spacing-m;
-                            }
-
-                            input {
-                                width: 100%;
-                                height: 100%;
-                            }
-
-                            label {
-                                pointer-events: none;
-                            }
-
-                            .css-5juldo {
-                                position: absolute;
-                                left: $podium-cds-size-spacing-s;
-                                top: 16px;
-                                user-select: none;
-                                line-height: 16px;
-                                transform: scale(0.75) translateY(-32px);
-                                transform-origin: left center;
-                                will-change: transform;
-                                transition-property: transform;
-                                transition-duration: $podium-cds-transition-duration-normal;
-                                transition-timing-function: $podium-cds-transition-timing-function-ease;
-                                color: $podium-cds-color-text-secondary;
-                                pointer-events: none;
-                                padding: 0 $podium-cds-size-spacing-xs;
-                            }
-
-                            fieldset {
-                                position: absolute;
-                                box-sizing: border-box;
-                                left: 0px;
-                                bottom: 0px;
-                                width: 100%;
-                                height: 100%;
-                                border-color: $podium-cds-color-border-primary;
-                                border-style: solid;
-                                border-width: $podium-cds-size-border-width-s;
-                                border-radius: $podium-cds-size-border-radius-m;
-                                padding: 0px;
-                                margin: 0px;
-                                pointer-events: none;
-                            }
-
-                            .css-1eif5ff {
-                                text-align: start;
-                            }
-                        }
-
-                        .textfield-support-container {
-                            position: relative;
-                            margin-top: $podium-cds-size-spacing-s;
-                            display: flex;
-                            padding: $podium-cds-size-spacing-xs $podium-cds-size-spacing-grid-gutter-l 0 $podium-cds-size-spacing-grid-gutter-l;
-                        }
-                    }
 
                     .css-m196z {
                         width: 80%;
@@ -286,4 +157,101 @@
     text-transform: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.css-5p7ysv {
+    width: 100%;
+    box-sizing: border-box;
+    font: $podium-cds-typography-body1;
+    overflow: visible;
+    position: relative;
+    min-height: $podium-cds-size-form-input-container-height;
+
+    .nds-input-layout-control {
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        background-color: transparent;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: $podium-cds-size-form-input-field-height;
+        top: $podium-cds-size-spacing-s;
+        border-radius: $podium-cds-size-border-radius-m;
+
+        .css-1x735yy {
+            border: 0px;
+            margin: 0px;
+            padding-top: $podium-cds-size-spacing-grid-gutter;
+            padding-inline-end: $podium-cds-size-spacing-grid-gutter;
+            padding-bottom: $podium-cds-size-spacing-grid-gutter;
+            padding-inline-start: $podium-cds-size-spacing-grid-gutter-l;
+            width: 100%;
+            box-sizing: border-box;
+            font: $podium-cds-typography-body1;
+            color: $podium-cds-color-text-primary;
+            background-color: transparent;
+            height: $podium-cds-size-form-input-field-height;
+            border-radius: $podium-cds-size-border-radius-m;
+        }
+
+        input:-webkit-autofill~label {
+            // line-height: 16px;
+            top: $podium-cds-size-spacing-m;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+        }
+
+        label {
+            pointer-events: none;
+        }
+
+        .css-5juldo {
+            position: absolute;
+            left: $podium-cds-size-spacing-s;
+            top: 16px;
+            user-select: none;
+            line-height: 16px;
+            transform: scale(0.75) translateY(-32px);
+            transform-origin: left center;
+            will-change: transform;
+            transition-property: transform;
+            transition-duration: $podium-cds-transition-duration-normal;
+            transition-timing-function: $podium-cds-transition-timing-function-ease;
+            color: $podium-cds-color-text-secondary;
+            pointer-events: none;
+            padding: 0 $podium-cds-size-spacing-xs;
+        }
+
+        fieldset {
+            position: absolute;
+            box-sizing: border-box;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 100%;
+            border-color: $podium-cds-color-border-primary;
+            border-style: solid;
+            border-width: $podium-cds-size-border-width-s;
+            border-radius: $podium-cds-size-border-radius-m;
+            padding: 0px;
+            margin: 0px;
+            pointer-events: none;
+        }
+
+        .css-1eif5ff {
+            text-align: start;
+        }
+    }
+
+    .textfield-support-container {
+        position: relative;
+        margin-top: $podium-cds-size-spacing-s;
+        display: flex;
+        padding: $podium-cds-size-spacing-xs $podium-cds-size-spacing-grid-gutter-l 0 $podium-cds-size-spacing-grid-gutter-l;
+    }
 }

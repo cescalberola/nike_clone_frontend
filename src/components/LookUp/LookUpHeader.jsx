@@ -1,6 +1,7 @@
 import React from 'react'
 import Nike from '../../assets/logos/Nike.jsx'
 import Jordan from '../../assets/logos/Jordan.jsx'
+import './LookUpHeader.scss'
 
 const LookUpHeader = ({ h1 }) => {
     return (
@@ -14,4 +15,4 @@ const LookUpHeader = ({ h1 }) => {
     )
 }
 
-export default LookUpHeader
+export default LookUpHeader;
