@@ -12,7 +12,6 @@ const Login = () => {
     const { user, token } = useSelector(state => state.auth)
 
     const [data, setData] = useState({
-        // country: 'Espana',
         email: email,
         password: '',
     })

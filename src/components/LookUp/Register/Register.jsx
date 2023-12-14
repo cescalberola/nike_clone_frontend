@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './Register.scss'
-// import '../LookUp.scss'
 import '../../../ncss.en-us.min.scss'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate, useParams } from 'react-router-dom';
@@ -56,7 +55,6 @@ const Register = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        // console.log(data)
         dispatch(register(data));
     };
 
@@ -175,13 +173,15 @@ const Register = () => {
                                     <div className="css-1x6kkl1 e1i9v64g0 nds-dropdown-container">
                                         <div className="nds-select-layout-control">
                                             <label htmlFor="l7r-shopping-preference" className="nds-dropdown-label css-15zk0wt eyw2uzc0" data-testid="label-element">
-                                                <span>Shopping Preference</span>
+                                                <span>{data.shoppingPreference || "Shopping Preference"}</span>
                                             </label>
                                             <div className="nds-dropdown-select-container css-1jjxzuj erx5h8s0">
-                                                <select name="shoppingPreference" id="l7r-shopping-preference" autoComplete="off" className="nds-dropdown-select-container css-1jjxzuj erx5h8s0" aria-required="false" aria-invalid="false" aria-describedby="l7r-shopping-preference-select-aria-description">
-                                                    <option hidden="" data-testid="hidden-option" disabled="" value="" aria-hidden="true">Shopping Preference</option>
-                                                    <option value="MENS">Men</option>
-                                                    <option value="WOMENS">Woman</option>
+                                                <select value={data.shoppingPreference} onChange={handleInputChange} name="shoppingPreference" id="shoppingPreference" autoComplete="off"
+                                                    className="nds-dropdown-select-container css-1jjxzuj erx5h8s0"
+                                                    aria-required="false" aria-invalid="false" aria-describedby="l7r-shopping-preference-select-aria-description" >
+                                                    <option hidden="" data-testid="hidden-option" disabled aria-hidden="true" defaultValue>Shopping Preference</option>
+                                                    <option value="Men">Men</option>
+                                                    <option value="Woman">Woman</option>
                                                 </select>
                                                 <div className="value-display" aria-hidden="true">
                                                     <span data-testid="dropdown-value-display">
@@ -194,9 +194,6 @@ const Register = () => {
                                                 <span id="l7r-shopping-preference-select-aria-description" style={{ position: "absolute", left: "-2000px", fontSize: "0px", width: "0px", height: "0px", overflow: "hidden", visibility: "hidden" }} >
                                                 </span>
                                             </div>
-                                            <fieldset className="css-1eif5ff e1jmt8s30" aria-hidden="true">
-                                                <legend>Shopping Preference</legend>
-                                            </fieldset>
                                         </div>
                                         <div className="dropdown-support-container">
                                         </div>
@@ -204,11 +201,8 @@ const Register = () => {
                                     <div className="nds-datepicker er6rhxo0 css-1sv225p e192pr2z0 nds-input-container input-suffix">
                                         <div className="nds-input-layout-control">
                                             <input type="date" name="birthDay" id="l7r-date-of-birth-input" className="nds-input-text-field css-1c9zkn0 e1fiih290" autoComplete="bday" aria-describedby="l7r-date-of-birth-input-input-aria-description" aria-required="false" aria-invalid="false" max="2023-12-31" value={data.birthDay} onChange={handleInputChange} />
-                                            <span id="l7r-date-of-birth-input-input-aria-description" style={{ position: "absolute", left: "-2000px", fontSize: "0px", width: "0px", height: "0px", overflow: "hidden", visibility: "hidden" }} >
-                                                <span>Get a Nike Member Reward on your birthday.</span>
-                                            </span>
                                             <label htmlFor="l7r-date-of-birth-input" className="nds-input-label css-15zk0wt eyw2uzc0" data-testid="label-element">
-                                                <span>Date of Birth</span>
+                                                <span>{data.birthDay || "Date of Birth"}</span>
                                             </label>
                                             <span className="nds-input-trailing-icon css-yshjmt e1723x6b0 nds-trailing-icon-container">
                                                 <svg aria-hidden="false" focusable="false" viewBox="0 0 24 24" role="button" width="24px" height="24px" fill="none">
@@ -220,7 +214,6 @@ const Register = () => {
                                                 </svg>
                                             </span>
                                             <fieldset className="nds-input-fieldset css-1eif5ff e1jmt8s30" aria-hidden="true">
-                                                <legend>Date of Birth</legend>
                                             </fieldset>
                                         </div>
                                         <div className="textfield-support-container">
@@ -230,26 +223,6 @@ const Register = () => {
                                     <div className="css-1if9n40">
                                         <div className="css-a78bb1 eokc0d80 nds-checkbox-container light">
                                             <input type="checkbox" className="nds-checkbox" name="marketingOptIn" id="marketingOptIn" aria-describedby="a11y-label-details-marketingOptIn" onChange={handleCheckboxChange} value={data.marketingOptIn} checked={data.marketingOptIn} />
-                                            <div className="nds-checkbox-icon">
-                                                <span aria-hidden="true" className="checkbox-box circle">
-                                                </span>
-                                                <span aria-hidden="true" className="checkbox-box">
-                                                </span>
-                                                <span aria-hidden="true" className="checkbox-box-icon-container">
-                                                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px">
-                                                        <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                                                            <g transform="translate(2.000000, 2.000000)">
-                                                                <rect x="0" y="0" width="20" height="20" rx="10">
-                                                                </rect>
-                                                                <rect className="checkicon-fill" x="0" y="0" width="20" height="20" rx="5">
-                                                                </rect>
-                                                                <path className="checkicon-check" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6.00134645 9.81868355 9.12119517 13.003429 14.9964286 7">
-                                                                </path>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </span>
-                                            </div>
                                             <label htmlFor="marketingOptIn" className="nds-checkbox-label">Sign up for emails to get updates from Nike on products offers and your Member benefits.</label>
                                         </div>
                                     </div>
@@ -257,26 +230,6 @@ const Register = () => {
                                         <div className="css-1inw02m">
                                             <div className="css-a78bb1 eokc0d80 nds-checkbox-container light">
                                                 <input type="checkbox" className="nds-checkbox" name="privacyTerms" id="privacyTerms" aria-describedby="a11y-label-details-privacyTerms" aria-label="I Agree to Nike's Terms of Use and I confirm I have read Nike's Privacy Policy." onChange={handleCheckboxChange} value={data.privacyTerms} checked={data.privacyTerms} />
-                                                <div className="nds-checkbox-icon">
-                                                    <span aria-hidden="true" className="checkbox-box circle">
-                                                    </span>
-                                                    <span aria-hidden="true" className="checkbox-box">
-                                                    </span>
-                                                    <span aria-hidden="true" className="checkbox-box-icon-container">
-                                                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px">
-                                                            <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                                                                <g transform="translate(2.000000, 2.000000)">
-                                                                    <rect x="0" y="0" width="20" height="20" rx="10">
-                                                                    </rect>
-                                                                    <rect className="checkicon-fill" x="0" y="0" width="20" height="20" rx="5">
-                                                                    </rect>
-                                                                    <path className="checkicon-check" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6.00134645 9.81868355 9.12119517 13.003429 14.9964286 7">
-                                                                    </path>
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>
-                                                </div>
                                                 <label htmlFor="privacyTerms" className="nds-checkbox-label">I Agree to Nike's <a target="_blank" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&amp;country=ES&amp;language=es&amp;requestType=redirect&amp;uxId=4fd2d5e7db76e0f85a6bb56721bd51df" rel="noopener noreferrer" className="css-0">Terms of Use</a> and I confirm I have read Nike's <a target="_blank" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&amp;country=ES&amp;language=es&amp;requestType=redirect&amp;uxId=4fd2d5e7db76e0f85a6bb56721bd51df" rel="noopener noreferrer" className="css-0">Privacy Policy</a>.</label>
                                             </div>
                                         </div>
@@ -293,34 +246,6 @@ const Register = () => {
                 </div >
             </div >
         </>
-
-        // <>
-        //     <div className='register-container'>
-        //         <h2>Register</h2>
-        //         <form onSubmit={handleSubmit}>
-        //             <input type="text" value={data.zipCode} onChange={handleInputChange} name='zipCode' id='zipCode' placeholder='Code' />
-        //             <input type="text" value={data.firstName} onChange={handleInputChange} name='firstName' id='firstName' placeholder='First Name' />
-        //             <input type="text" value={data.lastName} onChange={handleInputChange} name='lastName' id='lastName' placeholder='Last Name' />
-        //             <input type="password" value={data.password} onChange={handleInputChange} name='password' id='password' placeholder='Pasword' />
-        //             <select value={data.shoppingPreference} onChange={handleInputChange} name="shoppingPreference" id="shoppingPreference">
-        //                 <option value='' disabled defaultValue>Shopping Preference</option>
-        //                 <option value="male">Male</option>
-        //                 <option value="female">Female</option>
-        //             </select>
-        //             <input type="date" value={data.dateOfBirth} onChange={handleInputChange} name='dateOfBirth' id='dateOfBirth' min="1920-01-01" max="2024-12-31" />
-        //             <div className='checkboxes'>
-        //                 <input type="checkbox" value={data.updates} onChange={handleCheckboxChange} name='updates' id='updates' checked={data.updates} />
-        //                 <label htmlhtmlFor="updates">Get Updates</label>
-        //             </div>
-        //             <div className='checkboxes'>
-        //                 <input type="checkbox" value={data.policy} onChange={handleCheckboxChange} name='policy' id='policy' checked={data.policy} />
-        //                 <label htmlhtmlFor="policy">I Agree</label>
-        //             </div>
-        //             <p>{note}</p>
-        //             <button className="btn-primary-dark" type='submit'>Register</button>
-        //         </form>
-        //     </div>
-        // </>
     )
 }
 

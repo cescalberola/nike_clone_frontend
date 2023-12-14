@@ -2,11 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Jordan from '../../../assets/logos/Jordan';
 import Converse from '../../../assets/logos/Converse';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { logout } from '../../../features/auth/authSlice';
 
 const BrandHeader = () => {
 
     const { user, token } = useSelector(state => state.auth)
+
+    const dispatch = useDispatch()
 
     return (
         <div className='sub-navbar'>
@@ -109,8 +112,7 @@ const BrandHeader = () => {
                                 <div className="pre-acct-dropdown d-sm-ib" data-pre="AccountDropdown">
                                     <div id="AccountMenu" className="pre-dropdown-menu" data-pre="DropdownMenu">
                                         <a aria-label="Account" aria-expanded="false" aria-controls="AccountMenu-Menu" data-var="ctrl" data-type="click_navAccount" data-path="myAccount:greeting"
-                                            // href="https://www.nike.com/member/profile/" 
-                                            className="pre-acct-avatar d-sm-h d-lg-ib" data-pre="ILink" onClick={console.log('logout')}>
+                                            className="pre-acct-avatar d-sm-h d-lg-ib" data-pre="ILink" onClick={() => dispatch(logout())}>
                                             <div className="pre-avatar" data-pre="Avatar">
                                                 <div className="d-sm-flx flx-ai-sm-c">
                                                     <p className="pre-avatar-name flx-order-sm-1 flx-order-lg--1 body-4 u-bold" data-var="email" aria-label="Account">Hi, {user.firstName}</p>
@@ -188,15 +190,11 @@ const BrandHeader = () => {
                             <div className="d-lg-flx" data-var="desktopLoginButtons">
                                 <div className="pre-login-btns d-lg-flx flx-ai-lg-c" data-pre="DesktopLoginButtons">
                                     <Link to={'/lookup'} className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm">
-                                        {/* <a data-type="click_navMembership" data-path="join us" href="https://www.nike.com/membership" className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm" data-pre="ILink"> */}
                                         <span id="hf_title_joinus_membership">Join Us</span>
-                                        {/* </a> */}
                                     </Link>
                                     <span className="ml1-sm mr1-sm body-4">|</span>
                                     <Link to={'/lookup'} className="body-4 d-lg-flx flx-ai-lg-c u-bold ml2-sm mr2-sm">
-                                        {/* <button data-var="loginBtn" data-type="click_navMembership" data-path="sign in" className="nav-btn p0-sm d-sm-b body-4 u-bold ml2-sm mr2-sm" data-pre="ILink"> */}
                                         <span id="hf_title_signin_membership">Sign In</span>
-                                        {/* </button> */}
                                     </Link>
                                 </div>
                             </div>

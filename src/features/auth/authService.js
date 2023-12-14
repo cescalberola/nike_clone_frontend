@@ -4,9 +4,7 @@ const API_URL = "https://nike-clone-backend-dev-sbrt.4.us-1.fl0.io/users";
 
 
 const checkEmail = async (email) => {
-    // console.log(email)
     const res = await axios.post(API_URL + "/check-email", { email: email });
-    // console.log(res)
     return res.data;
 };
 const register = async (data) => {
@@ -21,12 +19,24 @@ const login = async (userData) => {
     }
     return res.data;
 };
+const logout = async () => {
+    const token = JSON.parse(localStorage.getItem("token"));
+    const res = await axios.delete(API_URL + "/logout", {
+        headers: {
+            Authorization: token,
+        },
+    });
+    if (res.data) {
+        localStorage.clear();
+    }
+    return res.data
+};
 
 const authService = {
     checkEmail,
     register,
     login,
-    // logout
+    logout,
 };
 
 export default authService;
